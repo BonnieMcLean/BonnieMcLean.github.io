@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Search</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body { font-family:'Arial'; color:#646464; }		
+	.continents-wrap { float:left; width:20%; margin:0 5% 0 0; padding:0; }		
+	.flowers-wrap { float:left; width:20%; margin:0 5% 0 0; padding:0; position:relative; }	
+	.flowers { float:left; width:50%; }
+	.flowers div { float:left; width:90%; height:68px; line-height:68px; padding:0 5%; background:#eee; margin:0 0 1px; position:relative; }
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}	
+</style>
+<script src="https://code.jquery.com/jquery-1.8.3.js"></script>
+</head>
+<body>
+<div class="topnav">
+  <a href="./index.html">Home</a>
+  <a class="active" href="./search.html">Search</a>
+  <a href="./ingredients.html">Ingredients</a>
+  <a href="./aboutme.html">About me</a>
+
+</div>
+
+<h1>Search for recipes here</h1>
+<pre id=result> </pre>
+            
+			<div class="flowers-wrap">
+            
+                <h3 style="font-size:14px; font-weight:normal;">Effort</h3>
+                <form>
+                    <label style="font-size:12px;"><input type="checkbox" name="effort" value="e1" id="e1" /> &#128555;</label><br>
+                    <label style="font-size:12px;"><input type="checkbox" name="effort" value="e2" id="e2" /> &#128555;&#128555;</label><br> 
+                    <label style="font-size:12px;"><input type="checkbox" name="effort" value="e3" id="e3" /> &#128555;&#128555;&#128555;</label><br>                     
+                    <label style="font-size:12px;"><input type="checkbox" name="effort" value="e4" id="e4" /> &#128555;&#128555;&#128555;&#128555;</label><br>
+                </form>
+				<h3 style="font-size:14px; font-weight:normal;">Reward</h3>
+                <form>
+                	<label style="font-size:12px;"><input type="checkbox" name="reward" value="r1" id="r1" /> &#128523;</label><br>
+                    <label style="font-size:12px;"><input type="checkbox" name="reward" value="r2" id="r2" /> &#128523;&#128523;</label><br>
+                    <label style="font-size:12px;"><input type="checkbox" name="reward" value="r3" id="r3" /> &#128523;&#128523;&#128523;</label><br>                  
+                    <label style="font-size:12px;"><input type="checkbox" name="reward" value="r4" id="r4" /> &#128523;&#128523;&#128523;&#128523;</label><br>
+                </form>                
+                                            
+          	</div>
+            
+            <div class="continents-wrap">
+            
+                <h3 style="font-size:14px; font-weight:normal;">Dish</h3>
+                
+                <div class="continents" style="font-size:12px;">
+                	<div>Soup <input type="checkbox" name="meal" value="soup" id="soup" /></div>
+                    <div>Noodles <input type="checkbox" name="meal" value="noodles" id="noodles" /></div>     
+					
+                </div>                
+                
+          	</div>
+            
+            <div class="flowers">
+            	<div class="flower" data-id="aloe" data-category="e3 r3 soup"><a href="./chickennoodlesoup.html">Chicken noodle soup</a> &#127823;</div>
+           		<div class="flower" data-id="lavendar" data-category="e3 r3 noodles"><a href="./japchae.html">Japchae</a> &#127823;&#127812;</div>
+
+       		</div>
+			
+	<p>&#127823; = healthy</p>
+	<p>&#127812; = vegetarian (or can be vegetarian)</p>
+<script>
+var byProperty = [], byColor = [], byLocation = [];
+		
+		$("input[name=effort]").on( "change", function() {
+			if (this.checked) byProperty.push("[data-category~='" + $(this).attr("value") + "']");
+			else removeA(byProperty, "[data-category~='" + $(this).attr("value") + "']");
+		});
+		
+		$("input[name=reward]").on( "change", function() {
+			if (this.checked) byColor.push("[data-category~='" + $(this).attr("value") + "']");
+			else removeA(byColor, "[data-category~='" + $(this).attr("value") + "']");
+		});
+		
+		$("input[name=meal]").on( "change", function() {
+			if (this.checked) byLocation.push("[data-category~='" + $(this).attr("value") + "']");
+			else removeA(byLocation, "[data-category~='" + $(this).attr("value") + "']");
+		});
+		
+		$("input").on( "change", function() {
+			var str = "Include items \n";
+			var selector = '', cselector = '', nselector = '';
+					
+			var $lis = $('.flowers > div'),
+				$checked = $('input:checked');	
+				
+			if ($checked.length) {	
+			
+				if (byProperty.length) {		
+					if (str == "Include items \n") {
+						str += "    " + "with (" +  byProperty.join(',') + ")\n";				
+						$($('input[name=effort]:checked')).each(function(index, byProperty){
+							if(selector === '') {
+								selector += "[data-category~='" + byProperty.id + "']";  					
+							} else {
+								selector += ",[data-category~='" + byProperty.id + "']";	
+							}				 
+						});					
+					} else {
+						str += "    AND " + "with (" +  byProperty.join(' OR ') + ")\n";				
+						$($('input[name=reward]:checked')).each(function(index, byProperty){
+							selector += "[data-category~='" + byProperty.id + "']";
+						});
+					}							
+				}
+				
+				if (byColor.length) {						
+					if (str == "Include items \n") {
+						str += "    " + "with (" +  byColor.join(' OR ') + ")\n";					
+						$($('input[name=reward]:checked')).each(function(index, byColor){
+							if(selector === '') {
+								selector += "[data-category~='" + byColor.id + "']";  					
+							} else {
+								selector += ",[data-category~='" + byColor.id + "']";	
+							}				 
+						});					
+					} else {
+						str += "    AND " + "with (" +  byColor.join(' OR ') + ")\n";				
+						$($('input[name=reward]:checked')).each(function(index, byColor){
+							if(cselector === '') {
+								cselector += "[data-category~='" + byColor.id + "']";  					
+							} else {
+								cselector += ",[data-category~='" + byColor.id + "']";	
+							}					
+						});
+					}			
+				}
+				
+				if (byLocation.length) {			
+					if (str == "Include items \n") {
+						str += "    " + "with (" +  byLocation.join(' OR ') + ")\n";				
+						$($('input[name=meal]:checked')).each(function(index, byLocation){
+							if(selector === '') {
+								selector += "[data-category~='" + byLocation.id + "']";  					
+							} else {
+								selector += ",[data-category~='" + byLocation.id + "']";	
+							}				 
+						});				
+					} else {
+						str += "    AND " + "with (" +  byLocation.join(' OR ') + ")\n";				
+						$($('input[name=meal]:checked')).each(function(index, byLocation){
+							if(nselector === '') {
+								nselector += "[data-category~='" + byLocation.id + "']";  					
+							} else {
+								nselector += ",[data-category~='" + byLocation.id + "']";	
+							}	
+						});
+					}			 
+				}
+				
+				$lis.hide(); 
+				console.log(selector);
+				console.log(cselector);
+				console.log(nselector);
+				
+				if (cselector === '' && nselector === '') {			
+					$('.flowers > div').filter(selector).show();
+				} else if (cselector === '') {
+					$('.flowers > div').filter(selector).filter(nselector).show();
+				} else if (nselector === '') {
+					$('.flowers > div').filter(selector).filter(cselector).show();
+				} else {
+					$('.flowers > div').filter(selector).filter(cselector).filter(nselector).show();
+				}
+				
+			} else {
+				$lis.show();
+			}	
+								  
+			$("#result").html(str);	
+	
+		});
+		
+		function removeA(arr) {
+			var what, a = arguments, L = a.length, ax;
+			while (L > 1 && arr.length) {
+				what = a[--L];
+				while ((ax= arr.indexOf(what)) !== -1) {
+					arr.splice(ax, 1);
+				}
+			}
+			return arr;
+		}
+</script>
+</body>
+</html>
