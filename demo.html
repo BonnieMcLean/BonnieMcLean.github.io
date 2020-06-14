@@ -1,0 +1,435 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+<style>
+
+.trialDiv {
+
+  padding-left: 20px;
+
+  width: 400px;
+
+  margin: 0 auto;
+
+  font-family: Arial, Helvetica;
+
+  font-size: 14pt;
+
+  margin-top: 100px;
+
+  display: none;
+
+}
+
+
+
+#submitButton {
+
+	display: none;
+
+	padding-left: 20px;
+
+	margin: 0 auto;
+
+	font-family: Arial, Helvetica;
+
+	font-size: 14pt;
+
+	margin-top: 100px;
+
+	
+
+}
+
+
+
+.optionsDiv {
+
+  padding-left: 20px;
+
+  width: 400px;
+
+  margin: 0 auto;
+
+  font-family: Arial, Helvetica;
+
+  font-size: 14pt;
+
+  display:none;
+
+}
+
+
+
+#about {
+
+	width: 800px;
+
+	margin: 0 auto;
+
+	font-family: Arial, Helvetica;
+
+    font-size: 14pt;
+
+	text-align: left;
+
+	margin-top: 100px;
+
+}
+
+
+
+#instructions {
+
+	width: 800px;
+
+	margin: 0 auto;
+
+	text-align:center;
+
+	font-family: Arial, Helvetica;
+
+    font-size: 14pt;
+
+	text-align: left;
+
+	margin-top: 100px;
+
+	display:none;
+
+}
+
+
+
+#startExperiment {
+
+	color:white;
+
+	text-decoration: none;
+
+	font-family: Arial, Helvetica;
+
+
+
+}
+
+#startExperimentButton {
+
+	width: 200px;
+
+	border: 4px outset steelblue;
+
+	background: steelblue;
+
+	padding: 5px;
+
+	margin: 0 auto;
+
+	text-align:center
+
+}
+
+
+
+#continue {
+
+	color:white;
+
+	text-decoration: none;
+
+	font-family: Arial, Helvetica;
+
+}
+
+
+
+#continueButton {
+
+	width: 200px;
+
+	border: 4px outset steelblue;
+
+	background: steelblue;
+
+	padding: 5px;
+
+	margin: 0 auto;
+
+	text-align:center;
+
+	display:none;
+
+}
+
+</style>
+
+<div id="about">
+
+<h3 style="text-align: center">About</h3>
+
+<p>We are collecting data on the 'iconicity' of Japanese words. That is, how much the words <i>sound like</i> what they mean. We want to know if you can guess the meanings of Japanese words based purely on how they sound.</p>
+
+<p>Because your answers should be guesses, it is very important for our experiment that you do NOT speak or understand Japanese. If you do know Japanese, we kindly ask that you do NOT complete this experiment.</p> 
+
+</div>
+
+<div id="instructions">
+
+    <p style="text-align:center">---------------------Instructions---------------------</p>
+
+    <p>
+
+	You will hear 15 Japanese words. After listening to each word, try to guess its meaning from a choice of two possible English translations. For context, meanings are given in a sentence, with the meaning in CAPITALS. Choose the meaning you think the word most <i>sounds like</i>. </p>
+
+	<p>For example, if you think the word sounds like it could mean BRIGHT in the sentence 'The sun is BRIGHT', choose that sentence. If you think it sounds like it could mean ROUND in the sentence, 'The sun is ROUND', choose that sentence. Don't think too long about each item, just go with your gut feeling. Good luck!</p>
+
+
+
+</div>
+
+<div id = "startExperimentButton">
+
+<a href="#" id="startExperiment">Participate</a>
+
+</div>
+
+
+
+<div id = "continueButton">
+
+<a href="#" id="continue">Start Experiment</a>
+
+</div>
+
+
+
+<div id="trial1" class="trialDiv">
+
+<p>Listen to the Japanese word, and guess its meaning. For context, meanings are given in a sentence, with the meaning in CAPITALS.</p>
+
+<audio controls class="player">
+
+  <source src="http://johnhuisman.nl/sounddata/test.ogg" type="audio/ogg">
+  <source src="http://johnhuisman.nl/sounddata/test.ogg" type="audio/ogg">
+  <source src="http://johnhuisman.nl/sounddata/test.mp3" type="audio/ogg">
+  <source src="http://johnhuisman.nl/sounddata/test.mp3" type="audio/ogg">
+Your browser does not support the audio element.
+
+</audio>
+
+</div>
+
+
+
+<div id="options1" class="optionsDiv">
+
+<p><input type="radio" class="responseButton" name="musyimusyi" value="correct"> After the torrential rain it was very HUMID.</p>
+
+<p><input type="radio" class="responseButton" name="musyimusyi" value="incorrect"> After having a shower the bathroom was very HUMID.</p>
+
+<input type="hidden" name="question1RT" value="0" id="reactionTime1">
+
+</div>
+
+
+
+<div id="trial2" class="trialDiv">
+
+<p>Listen to the Japanese word, and guess its meaning. For context, meanings are given in a sentence, with the meaning in CAPITALS.</p>
+
+<audio controls class="player">
+
+  <source src="http://johnhuisman.nl/sounddata/test.ogg" type="audio/ogg">
+  <source src="http://johnhuisman.nl/sounddata/test.ogg" type="audio/ogg">
+  <source src="http://johnhuisman.nl/sounddata/test.mp3" type="audio/ogg">
+  <source src="http://johnhuisman.nl/sounddata/test.mp3" type="audio/ogg">
+Your browser does not support the audio element.
+
+</audio>
+
+</div>
+
+
+
+<div id="options2" class="optionsDiv">
+
+<p><input type="radio" class="responseButton" name="oisyii" value="correct"> After adding a little more seasoning the meal was DELICIOUS.</p>
+
+<p><input type="radio" class="responseButton" name="oisyii" value="incorrect"> After adding too much sugar the cake was too SWEET.</p>
+
+<input type="hidden" name="question2RT" value="0" id="reactionTime2">
+
+</div>
+
+
+
+<div id="trial3" class="trialDiv">
+
+<p>Listen to the Japanese word, and guess its meaning. For context, meanings are given in a sentence, with the meaning in CAPITALS.</p>
+
+<audio controls class="player">
+
+  <source src="http://johnhuisman.nl/sounddata/test.ogg" type="audio/ogg">
+  <source src="http://johnhuisman.nl/sounddata/test.ogg" type="audio/ogg">
+  <source src="http://johnhuisman.nl/sounddata/test.mp3" type="audio/ogg">
+  <source src="http://johnhuisman.nl/sounddata/test.mp3" type="audio/ogg">
+Your browser does not support the audio element.
+
+</audio>
+
+</div>
+
+<div id="options3" class="optionsDiv">
+
+<p><input type="radio" class="responseButton" name="suzusyii" value="incorrect"> After a few days of sun the water in the pool was nice and WARM.</p>
+
+<p><input type="radio" class="responseButton" name="suzusyii" value="correct"> After a few days of sweltering heat there was a COOL change.</p>
+
+<input type="hidden" name="question3RT" value="0" id="reactionTime3">
+
+</div>
+
+
+
+<div id="trial4" class="trialDiv">
+
+<p>Listen to the Japanese word, and guess its meaning. For context, meanings are given in a sentence, with the meaning in CAPITALS.</p>
+
+<audio controls class="player">
+
+  <source src="http://johnhuisman.nl/sounddata/test.ogg" type="audio/ogg">
+  <source src="http://johnhuisman.nl/sounddata/test.ogg" type="audio/ogg">
+  <source src="http://johnhuisman.nl/sounddata/test.mp3" type="audio/ogg">
+  <source src="http://johnhuisman.nl/sounddata/test.mp3" type="audio/ogg">
+Your browser does not support the audio element.
+
+</audio>
+
+</div>
+
+<div id="options4" class="optionsDiv">
+
+<p><input type="radio" class="responseButton" name="zyireQtai" value="incorrect"> After I heard the gunshots, I was very AFRAID.</p>
+
+<p><input type="radio" class="responseButton" name="zyireQtai" value="correct"> After spending several hours trying and failing to build the IKEA furniture I was feeling very annoyed.</p>
+
+<input type="hidden" name="question4RT" value="0" id="reactionTime4">
+
+</div>
+
+
+
+<script>
+
+//REMEMBER TO UPDATE THE ARRAY YOU'RE SHUFFLING SO IT'S ALSO 15 TRIALS
+
+var trialOrder = shuffle([4,3,2,1]);
+
+var curTrial=0;
+
+//REMEMBER TO UPDATE THE NUMBER OF TRIALS BELOW (YOU SHOULD HAVE 15)
+
+var nTrials=4
+
+var startTrialTime;
+
+
+
+function audioplayed() {
+
+	$('#options'+trialOrder[curTrial]).show()
+
+	startTrialTime=new Date();
+
+}
+
+
+
+function buttonClicked() {
+
+	var curTime = new Date();
+
+	var rt = curTime - startTrialTime;
+
+	$('#reactionTime' + trialOrder[curTrial]).val(rt);
+
+	// If you want to change another attribute of an object use this
+
+	//$('#reactionTime'+curTrial).attr("value",rt);
+
+	console.log(rt);
+
+	$('#trial'+trialOrder[curTrial]).hide();
+
+	$('#options'+trialOrder[curTrial]).hide();
+
+	curTrial++;
+
+	if (curTrial >= nTrials) {
+
+		$('#submitButton').show();
+
+	} else {	
+
+		$('#trial'+trialOrder[curTrial]).show();
+
+		startTrialTime = new Date();
+
+	}
+
+}
+
+function showFirstTrial() {
+
+	$('#trial'+trialOrder[0]).show();
+
+	$('#instructions').hide();
+
+	$('#continueButton').hide();
+
+}
+
+
+
+function showInstructions() {
+
+	$('#about').hide();
+
+	$('#startExperimentButton').hide();
+
+	$('#instructions').show();
+
+	$('#continueButton').show();
+
+}
+
+
+
+/* Fisher-Yates shuffle */
+
+function shuffle(o){
+
+    for(var j, x, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
+
+    return o;
+
+}
+
+
+
+$('#startExperiment').click(showInstructions)
+
+$('#continue').click(showFirstTrial)
+
+$('.responseButton').click(buttonClicked)
+
+$('.player').bind("ended",audioplayed)
+
+
+
+</script>
+
+
+
+<!--The following line is to check the submit button appears at the right time on Amazon Turk. DELETE BEFORE COPYING AND PASTING YOUR HTML TO AMAZON TURK-->
+
+<input type="submit" id="submitButton">
