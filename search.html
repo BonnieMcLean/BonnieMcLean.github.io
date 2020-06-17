@@ -69,10 +69,10 @@ body { font-family:'Arial'; color:#646464; }
 				
 			    <h3 style="font-size:14px; font-weight:normal;">Meal</h3>
                 <form>
-                	<label style="font-size:12px;"><input type="checkbox" name="meal" value="breakfast" id="breakfast" />breakfast</label><br>
-                    <label style="font-size:12px;"><input type="checkbox" name="meal" value="main" id="main" /> main</label><br>
-                    <label style="font-size:12px;"><input type="checkbox" name="meal" value="dessert" id="dessert" />dessert</label><br>                  
-                    <label style="font-size:12px;"><input type="checkbox" name="meal" value="tea" id="tea" />tea</label><br>
+                	<label style="font-size:12px;"><input type="checkbox" name="type" value="breakfast" id="breakfast" />breakfast</label><br>
+                    <label style="font-size:12px;"><input type="checkbox" name="type" value="main" id="main" /> main</label><br>
+                    <label style="font-size:12px;"><input type="checkbox" name="type" value="dessert" id="dessert" />dessert</label><br>                  
+                    <label style="font-size:12px;"><input type="checkbox" name="type" value="tea" id="tea" />tea</label><br>
                 </form>
 				
 				<!--<h3 style="font-size:14px; font-weight:normal;">Plus</h3>
@@ -85,7 +85,7 @@ body { font-family:'Arial'; color:#646464; }
             
             <div class="continents-wrap">
             
-                <h3 style="font-size:14px; font-weight:normal;">Type:</h3>
+                <h3 style="font-size:14px; font-weight:normal;">Type</h3>
                 
                 <div class="continents" style="font-size:18px;">
                 	<div>&#127858; <input type="checkbox" name="meal" value="soup" id="soup" /></div>
@@ -128,7 +128,7 @@ body { font-family:'Arial'; color:#646464; }
 			
 
 <script>
-var byProperty = [], byColor = [], byLocation = [];
+var byProperty = [], byColor = [], byLocation = [],byType=[];
 		
 		$("input[name=effort]").on( "change", function() {
 			if (this.checked) byProperty.push("[data-category~='" + $(this).attr("value") + "']");
@@ -143,6 +143,10 @@ var byProperty = [], byColor = [], byLocation = [];
 		$("input[name=meal]").on( "change", function() {
 			if (this.checked) byLocation.push("[data-category~='" + $(this).attr("value") + "']");
 			else removeA(byLocation, "[data-category~='" + $(this).attr("value") + "']");
+		});
+		$("input[name=type]").on( "change", function() {
+			if (this.checked) byType.push("[data-category~='" + $(this).attr("value") + "']");
+			else removeA(byType, "[data-category~='" + $(this).attr("value") + "']");
 		});
 		
 		$("input").on( "change", function() {
@@ -211,6 +215,28 @@ var byProperty = [], byColor = [], byLocation = [];
 								nselector += "[data-category~='" + byLocation.id + "']";  					
 							} else {
 								nselector += ",[data-category~='" + byLocation.id + "']";	
+							}	
+						});
+					}			 
+				}
+				
+				if (byType.length) {			
+					if (str == "Include items \n") {
+						str += "    " + "with (" +  byType.join(' OR ') + ")\n";				
+						$($('input[name=type]:checked')).each(function(index, byType){
+							if(selector === '') {
+								selector += "[data-category~='" + byType.id + "']";  					
+							} else {
+								selector += ",[data-category~='" + byType.id + "']";	
+							}				 
+						});				
+					} else {
+						str += "    AND " + "with (" +  byType.join(' OR ') + ")\n";				
+						$($('input[name=type]:checked')).each(function(index, byType){
+							if(nselector === '') {
+								nselector += "[data-category~='" + byType.id + "']";  					
+							} else {
+								nselector += ",[data-category~='" + byType.id + "']";	
 							}	
 						});
 					}			 
