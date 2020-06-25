@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by  Charlie Tomlin</title>
+  <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css'>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="row">
+        <div class="col-md-2">
+            <h4>Meal</h4>
+           <select id="projectfilter" name="projectfilter" class="table-filter form-control" data-col="2">
+             <option value="">Select one</option>
+             <option value="1">Main</option><option value="2">Dessert</option></select>
+        </div>
+     <div class="col-md-2">
+            <h4>Effort</h4>
+           <select id="servicefilter" name="servicefilter" class="table-filter form-control"  data-col="3">
+             <option value="">Select one</option>
+             <option value="1">1</option><option value="2">2</option></select>
+        </div>
+	 <div class="col-md-2">
+            <h4>Reward</h4>
+           <select id="servicefilter" name="servicefilter" class="table-filter form-control"  data-col="3">
+             <option value="">Select one</option>
+             <option value="1">1</option><option value="2">2</option></select>
+        </div>
+    </div>
+<table id="testTable" class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Meal</th>
+                    <th scope="col">Effort</th>
+                   <th scope="col">Reward</th>
+               
+                </tr>
+            </thead>
+            <tbody id="report">
+              <tr>
+                <td class="proposalId">9</td><td> Main</td> <td> e1</td><td> r1</td>
+              </tr>
+              <tr><td class="proposalId">8</td><td> Main</td><td> e2</td><td> r2</td></tr>
+              <tr><td class="proposalId">7</td><td> Dessert</td><td> e1</td><td> r1</td></tr>
+              <tr style=""><td class="proposalId">3</td><td> Main</td><td> e1</td><td> r2</td></tr>
+              
+    </tbody>
+        </table>
+<!-- partial -->
+  <script src='https://code.jquery.com/jquery-3.3.1.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

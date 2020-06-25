@@ -1,16 +1,43 @@
-
-<!DOCTYPE html>
 <html>
 <head>
-<title>Search</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
+<script src="https://code.jquery.com/jquery-1.8.3.js"></script>
 <style>
-body { font-family:'Arial'; color:#646464; }		
-	.continents-wrap { float:left; width:20%; margin:0 5% 0 0; padding:0; }		
-	.flowers-wrap { float:left; width:20%; margin:0 5% 0 0; padding:0; position:relative; }	
-	.flowers { float:left; width:50%; }
-	.flowers div { float:left; width:90%; height:68px; line-height:68px; padding:0 5%; background:#eee; margin:0 0 1px; position:relative; }
+body {
+  margin: 0;
+  vertical-align:top;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.continents-wrap {
+  float: left;
+  width: 20%;
+  margin: 0 5% 0 0;
+  padding: 0;
+}
+
+.flowers-wrap {
+  float: left;
+  width: 20%;
+  margin: 0 5% 0 0;
+  padding: 0;
+  position: relative;
+}
+
+.flowers {
+  float: left;
+  width: 50%;
+}
+
+.flowers div {
+  float: left;
+  width: 90%;
+  height: 68px;
+  line-height: 68px;
+  padding: 0 5%;
+  background: #eee;
+  margin: 0 0 1px;
+  position: relative;
+}
 .topnav {
   overflow: hidden;
   background-color: #333;
@@ -33,9 +60,8 @@ body { font-family:'Arial'; color:#646464; }
 .topnav a.active {
   background-color: #4CAF50;
   color: white;
-}	
+}
 </style>
-<script src="https://code.jquery.com/jquery-1.8.3.js"></script>
 </head>
 <body>
 <div class="topnav">
@@ -45,249 +71,212 @@ body { font-family:'Arial'; color:#646464; }
   <a href="./aboutme.html">About me</a>
 
 </div>
+<pre id=result style="font-family:Arial;font-size:16px;"><strong>Search for recipes here</strong> </pre>
 
-<h1>Search for recipes here</h1>
-<p>&#127823; = healthy &#127812; = vegetarian option</p>
-<p></p>
-<pre id=result> </pre>
-            
-			<div class="flowers-wrap">
-            
-                <h3 style="font-size:14px; font-weight:normal;">Effort</h3>
-                <form>
-                    <label style="font-size:12px;"><input type="checkbox" name="effort" value="e1" id="e1" /> &#128555;</label><br>
-                    <label style="font-size:12px;"><input type="checkbox" name="effort" value="e2" id="e2" /> &#128555;&#128555;</label><br> 
-                    <label style="font-size:12px;"><input type="checkbox" name="effort" value="e3" id="e3" /> &#128555;&#128555;&#128555;</label><br>                     
-                    <label style="font-size:12px;"><input type="checkbox" name="effort" value="e4" id="e4" /> &#128555;&#128555;&#128555;+</label><br>
-                </form>
-				<h3 style="font-size:14px; font-weight:normal;">Reward</h3>
-                <form>
-                	<label style="font-size:12px;"><input type="checkbox" name="reward" value="r1" id="r1" /> &#128523;</label><br>
-                    <label style="font-size:12px;"><input type="checkbox" name="reward" value="r2" id="r2" /> &#128523;&#128523;</label><br>
-                    <label style="font-size:12px;"><input type="checkbox" name="reward" value="r3" id="r3" /> &#128523;&#128523;&#128523;</label><br>                  
-                    <label style="font-size:12px;"><input type="checkbox" name="reward" value="r4" id="r4" /> &#128523;&#128523;&#128523;+</label><br>
-                </form>                
-				
-			    <h3 style="font-size:14px; font-weight:normal;">Meal</h3>
-                <form>
-                	<label style="font-size:12px;"><input type="checkbox" name="type" value="breakfast" id="breakfast" />breakfast</label><br>
-                    <label style="font-size:12px;"><input type="checkbox" name="type" value="main" id="main" /> main</label><br>
-                    <label style="font-size:12px;"><input type="checkbox" name="type" value="dessert" id="dessert" />dessert</label><br>                  
-                    <label style="font-size:12px;"><input type="checkbox" name="type" value="tea" id="tea" />tea</label><br>
-                </form>
-				
-				<h3 style="font-size:14px; font-weight:normal;">Weather</h3>
-                <form>
-                	<label style="font-size:12px;"><input type="checkbox" name="reward" value="summer" id="summer" />&#127774;</label><br>
-					<label style="font-size:12px;"><input type="checkbox" name="reward" value="winter" id="winter" />&#10052;</label><br>
-				<!--<h3 style="font-size:14px; font-weight:normal;">Plus</h3>
-                <form>
-                	<label style="font-size:12px;"><input type="checkbox" name="plus" value="healthy" id="healthy" />healthy</label><br>
-                    <label style="font-size:12px;"><input type="checkbox" name="plus" value="vegetarian" id="vegetarian" /> vegetarian</label><br>
-                </form>-->
-                                            
-          	</div>
-            
-            <div class="continents-wrap">
-            
-                <h3 style="font-size:14px; font-weight:normal;">Type</h3>
-                
-                <div class="continents" style="font-size:18px;">
-                	<div>&#127858; <input type="checkbox" name="meal" value="soup" id="soup" /></div>
-                    <div>&#127836; <input type="checkbox" name="meal" value="noodles" id="noodles" /></div> 
-					<div>&#127837; <input type="checkbox" name="meal" value="pasta" id="pasta" /></div> 
-					<div>&#127835;<input type="checkbox" name="meal" value="curry" id="curry" /></div> 					
-					<div>&#128031; <input type="checkbox" name="meal" value="fish" id="fish" /></div> 
-					<div>&#127831; <input type="checkbox" name="meal" value="chicken" id="chicken" /></div> 
-					<div>&#128055; <input type="checkbox" name="meal" value="pork" id="pork" /></div> 
-					<div>&#128004; <input type="checkbox" name="meal" value="beef" id="beef" /></div> 
-					<div>&#127856; <input type="checkbox" name="meal" value="cakes" id="cakes" /></div> 
-					<div>&#127846;<input type="checkbox" name="meal" value="icecream" id="icecream" /></div> 
-					<div>&#127854;<input type="checkbox" name="meal" value="pudding" id="pudding" /></div> 
-				</div>
-				<p></p>
+<div class="flowers-wrap">
 
-          	</div>
-            
-            <div class="flowers">
-            	<div class="flower" data-id="aloe" data-category="e3 r3 soup main healthy winter"><a href="./recipes/chickennoodlesoup.html">Chicken noodle soup</a> &#127823;</div>
-           		<div class="flower" data-id="lavendar" data-category="e3 r4 noodles main healthy vegetarian summer"><a href="./recipes/japchae.html">Japchae</a> &#127823;&#127812;</div>
-				<div class="flower" data-id="rum" data-category="e2 r4 cakes dessert summer"><a href="./recipes/pavlova.html">Pavlova</a></div>
-				<div class="flower" data-id="rum" data-category="e1 r2 cakes tea"><a href="./recipes/appleteacake.html">Apple tea cake</a></div>
-				<div class="flower" data-id="rum" data-category="e1 r4 soup fish main healthy winter"><a href="./recipes/kimchistew.html">Kimchi and tuna stew</a>&#127823;</div>
-				<div class="flower" data-id="rum" data-category="e1 r2 icecream dessert"><a href="./recipes/icecream-vanilla.html">Vanilla icecream</a></div>
-				<div class="flower" data-id="rum" data-category="e2 r3 pudding dessert"><a href="./recipes/goldenpudding.html">Golden pudding</a></div>
-				<div class="flower" data-id="rum" data-category="e1 r1 chicken main"><a href="./recipes/chickenadobo.html">Chicken Adobo</a></div>
-				<div class="flower" data-id="rum" data-category="e1 r2 pork main"><a href="./recipes/mustardporkchops.html">Mustard Pork Chops</a></div>
-				<div class="flower" data-id="rum" data-category="e2 r3 curry main healthy vegetarian"><a href="./recipes/tomatopeacurry.html">Tomato Pea Curry</a>&#127823;&#127812;</div>
-				<div class="flower" data-id="rum" data-category="e2 r3 curry main vegetarian"><a href="./recipes/palakpaneer.html">Palak Paneer</a>&#127812;</div>
-				<div class="flower" data-id="rum" data-category="e1 r4 chicken main summer"><a href="./recipes/chickenshawarma.html">Chicken Shawarma</a></div>
-				<div class="flower" data-id="rum" data-category="e3 r4 pasta main winter"><a href="./recipes/mushroomrisotto.html">Mushroom Risotto </a></div>
-				<div class="flower" data-id="rum" data-category="e2 r4 pasta main winter beef"><a href="./recipes/slowcookspaghetti.html">Bolognaise </a></div>
-				<div class="flower" data-id="rum" data-category="e1 r1 cakes tea"><a href="./recipes/lemondrizzle.html">Lemon Drizzle Cake</a></div>
-				<div class="flower" data-id="rum" data-category="e3 r3 cakes tea"><a href="./recipes/carrotcake.html">Carrot Cake</a></div>
-				<div class="flower" data-id="rum" data-category="e2 r3 pudding dessert"><a href="./recipes/crumble.html">Basic Crumble</a></div>
-				<div class="flower" data-id="rum" data-category="e1 r3 main fish summer"><a href="./recipes/lemonfish.html">Lemon fish</a></div>
-				<div class="flower" data-id="rum" data-category="e2 r3 main pasta summer"><a href="./recipes/gemelli.html">Pasta w/ mascarpone, tomatoes, & anchovies</a></div>
-				<div class="flower" data-id="rum" data-category="e3 r3 main summer"><a href="./recipes/cornfritters.html">Corn fritters</a>&#127812;</div>
-				<div class="flower" data-id="rum" data-category="e1 r2 breakfast"><a href="./recipes/granola.html">Granola</a></div>
-				<div class="flower" data-id="rum" data-category="e1 r3 main fish summer"><a href="./recipes/teriyakisalmon.html">Teriyaki salmon</a>&#127823;</div>
-				<div class="flower" data-id="rum" data-category="e1 r3 breakfast"><a href="./recipes/crepes.html">Crepes</a></div>
-				<div class="flower" data-id="rum" data-category="e2 r2 dessert pudding"><a href="./recipes/stickytoffeepudding.html">Sticky Toffee Pudding</a></div>
-				<div class="flower" data-id="rum" data-category="e1 r3 dessert pudding"><a href="./recipes/caramelcroissantpudding.html">Caramel Croissant Pudding</a></div>
-				<div class="flower" data-id="rum" data-category="e2 r2 cakes breakfast tea"><a href="./recipes/bananabread.html">Banana Bread</a></div>
+  <p style="font-size:12px;"><strong>Effort:</strong></p>
+  <form>
+    <label style="font-size:12px;">
+      <input type="checkbox" name="fl-effort" value="e1" id="e1" /> &#128555;</label>
+    <br>
+    <label style="font-size:12px;">
+      <input type="checkbox" name="fl-effort" value="e2" id="e2" /> &#128555;&#128555;</label>
+    <br>
+    <label style="font-size:12px;">
+      <input type="checkbox" name="fl-effort" value="e3" id="e3" /> &#128555;&#128555;&#128555;</label>
+    <br>
+    <label style="font-size:12px;">
+      <input type="checkbox" name="fl-effort" value="e4" id="e4" /> &#128555;&#128555;&#128555;+</label>
+  </form>
+  <p style="font-size:12px;"><strong>Reward:</strong></p>
+  <form>
+    <label style="font-size:12px;">
+      <input type="checkbox" name="fl-reward" value="r1" id="r1" /> &#128523;</label>
+    <br>
+    <label style="font-size:12px;">
+      <input type="checkbox" name="fl-reward" value="r2" id="r2" /> &#128523;&#128523;</label>
+    <br>
+    <label style="font-size:12px;">
+      <input type="checkbox" name="fl-reward" value="r3" id="r3" /> &#128523;&#128523;&#128523;</label>
+    <br>
+    <label style="font-size:12px;">
+      <input type="checkbox" name="fl-reward" value="r4" id="r4" /> &#128523;&#128523;&#128523;+</label>
+  </form>
+  
+    <p style="font-size:12px;"><strong>Meal:</strong></p>
+  <form>
+    <label style="font-size:12px;">
+      <input type="checkbox" name="fl-meal" value="breakfast" id="breakfast" /> breakfast</label>
+    <br>
+    <label style="font-size:12px;">
+      <input type="checkbox" name="fl-meal" value="main" id="main" /> main</label>
+    <br>
+    <label style="font-size:12px;">
+      <input type="checkbox" name="fl-meal" value="tea" id="tea" /> tea</label>
+    <br>
+    <label style="font-size:12px;">
+      <input type="checkbox" name="fl-meal" value="dessert" id="dessert" /> dessert</label>
+  </form>
 
-       		</div>
-			
+    <p style="font-size:12px;"><strong>Plus:</strong></p>
+  <form>
+    <label style="font-size:12px;">
+      <input type="checkbox" name="fl-plus" value="healthy" id="healthy" /> healthy&#127823;</label>
+    <br>
+    <label style="font-size:12px;">
+      <input type="checkbox" name="fl-plus" value="vege" id="vege" /> vegetarian&#127812;</label>
+<!--    <br>
+    <label style="font-size:12px;">
+      <input type="checkbox" name="fl-season" value="winter" id="winter" /> winter</label>
+    <br>
+    <label style="font-size:12px;">
+      <input type="checkbox" name="fl-season" value="spring" id="spring" /> spring</label>-->
+  </form>
+</div>
 
+<div class="continents-wrap">
+
+  <h3 style="font-size:14px; font-weight:normal;">Type:</h3>
+
+  <div class="continents" style="font-size:12px;">
+    <div>&#127836;
+      <input type="checkbox" name="fl-type" value="noodles" id="noodles" />
+    </div>
+	<div>&#127837;
+      <input type="checkbox" name="fl-type" value="pasta" id="pasta" />
+    </div>
+    <div>&#127858;
+      <input type="checkbox" name="fl-type" value="soup" id="soup" />
+    </div>
+	<div>&#127835;
+      <input type="checkbox" name="fl-type" value="curry" id="curry" />
+    </div>
+	<div>&#128031;
+      <input type="checkbox" name="fl-type" value="fish" id="fish" />
+    </div>
+	<div>&#127831;
+      <input type="checkbox" name="fl-type" value="chicken" id="chicken" />
+    </div>
+	<div>&#128055;
+      <input type="checkbox" name="fl-type" value="pork" id="pork" />
+    </div>
+	<div>&#128004;
+      <input type="checkbox" name="fl-type" value="beef" id="beef" />
+    </div>
+    <div>&#127856;
+      <input type="checkbox" name="fl-type" value="cake" id="cake" />
+    </div>
+    <div>&#127854;
+      <input type="checkbox" name="fl-type" value="pudding" id="pudding" />
+    </div>
+    <div>&#127846;
+      <input type="checkbox" name="fl-type" value="icecream" id="icecream" />
+    </div>
+  </div>
+  
+   <h3 style="font-size:14px; font-weight:normal;">Season:</h3>
+   <div class="continents" style="font-size:12px;">
+    <div>&#127774;
+      <input type="checkbox" name="fl-season" value="summer" id="summer" />
+    </div>
+    <div>&#127810;
+      <input type="checkbox" name="fl-season" value="autumn" id="autumn" />
+    </div>
+	<div>&#10052;
+      <input type="checkbox" name="fl-season" value="winter" id="winter" />
+    </div>
+    <div>&#127793;
+      <input type="checkbox" name="fl-season" value="spring" id="spring" />
+    </div>
+  </div>
+
+</div>
+
+<div class="flowers">
+  <div class="flower" data-id="1" data-category="e3 r3 soup main healthy winter"><a href="./recipes/chickennoodlesoup.html">Chicken noodle soup</a></div>
+  <div class="flower" data-id="2" data-category="e3 r4 noodles main healthy vege summer"><a href="./recipes/japchae.html">Japchae</a></div>
+  <div class="flower" data-id="3" data-category="e2 r4 cake dessert summer"><a href="./recipes/pavlova.html">Pavlova</a></div>
+  <div class="flower" data-id="4" data-category="e1 r2 cake tea"><a href="./recipes/appleteacake.html">Apple tea cake</a></div>
+  <div class="flower" data-id="5" data-category="e1 r4 soup fish main healthy winter"><a href="./recipes/kimchistew.html">Kimchi and tuna stew</a></div>
+  <div class="flower" data-id="6" data-category="e1 r2 icecream dessert"><a href="./recipes/icecream-vanilla.html">Vanilla icecream</a></div>
+  <div class="flower" data-id="7" data-category="e2 r3 pudding dessert"><a href="./recipes/goldenpudding.html">Golden pudding</a></div>
+  <div class="flower" data-id="8" data-category="e1 r1 chicken main"><a href="./recipes/chickenadobo.html">Chicken Adobo</a></div>
+  <div class="flower" data-id="9" data-category="e1 r2 pork main"><a href="./recipes/mustardporkchops.html">Mustard Pork Chops</a></div>
+  <div class="flower" data-id="10" data-category="e2 r3 curry main healthy vege"><a href="./recipes/tomatopeacurry.html">Tomato Pea Curry</a></div>
+  <div class="flower" data-id="11" data-category="e2 r3 curry main vege"><a href="./recipes/palakpaneer.html">Palak Paneer</a></div>
+  <div class="flower" data-id="12" data-category="e1 r4 chicken main summer"><a href="./recipes/chickenshawarma.html">Chicken Shawarma</a></div>
+  <div class="flower" data-id="13" data-category="e3 r4 pasta main winter"><a href="./recipes/mushroomrisotto.html">Mushroom Risotto</a></div>
+  <div class="flower" data-id="14" data-category="e2 r4 pasta main winter beef"><a href="./recipes/slowcookspaghetti.html">Spaghetti Bolognaise</a></div>
+  <div class="flower" data-id="15" data-category="e1 r1 cake tea"><a href="./recipes/lemondrizzle.html">Lemon Drizzle Cake</a></div>
+  <div class="flower" data-id="16" data-category="e3 r3 cake tea"><a href="./recipes/carrotcake.html">Carrot Cake</a></div>
+  <div class="flower" data-id="17" data-category="e2 r3 pudding dessert"><a href="./recipes/crumble.html">Basic Crumble</a></div>
+  <div class="flower" data-id="18" data-category="e1 r3 main fish summer healthy"><a href="./recipes/lemonfish.html">Lemon Fish</a></div>
+  <div class="flower" data-id="19" data-category="e2 r3 main pasta summer"><a href="./recipes/gemelli.html">Mascarpone, tomato, anchovy pasta</a></div>
+  <div class="flower" data-id="20" data-category="e3 r3 main summer vege"><a href="./recipes/cornfritters.html">Corn fritters</a></div>
+  <div class="flower" data-id="21" data-category="e1 r2 breakfast"><a href="./recipes/granola.html">Granola</a></div>
+  <div class="flower" data-id="22" data-category="e1 r3 main fish summer healthy"><a href="./recipes/teriyakisalmon.html">Teriyaki salmon</a></div>
+  <div class="flower" data-id="23" data-category="e1 r3 breakfast"><a href="./recipes/crepes.html">Crepes</a></div>
+  <div class="flower" data-id="24" data-category="e2 r2 dessert pudding"><a href="./recipes/stickytoffeepudding.html">Sticky Toffee Pudding</a></div>
+  <div class="flower" data-id="25" data-category="e1 r3 dessert pudding"><a href="./recipes/caramelcroissantpudding.html">Caramel Croissant Pudding</a></div>
+  <div class="flower" data-id="26" data-category="e2 r2 cake breakfast tea"><a href="./recipes/bananabread.html">Banana Bread</a></div>
+  <div class="flower" data-id="27" data-category="e1 r3 pudding dessert winter"><a href="./recipes/chocolatepearpudding.html">Chocolate Pear Pudding</a></div>
+  <div class="flower" data-id="28" data-category="e2 r2 main pork"><a href="./recipes/mushroomporkchops.html">Mushroom Pork Chops</a></div>
+
+
+</div>
 <script>
-var byProperty = [], byColor = [], byLocation = [],byType=[];
-		
-		$("input[name=effort]").on( "change", function() {
-			if (this.checked) byProperty.push("[data-category~='" + $(this).attr("value") + "']");
-			else removeA(byProperty, "[data-category~='" + $(this).attr("value") + "']");
-		});
-		
-		$("input[name=reward]").on( "change", function() {
-			if (this.checked) byColor.push("[data-category~='" + $(this).attr("value") + "']");
-			else removeA(byColor, "[data-category~='" + $(this).attr("value") + "']");
-		});
-		
-		$("input[name=meal]").on( "change", function() {
-			if (this.checked) byLocation.push("[data-category~='" + $(this).attr("value") + "']");
-			else removeA(byLocation, "[data-category~='" + $(this).attr("value") + "']");
-		});
-		$("input[name=type]").on( "change", function() {
-			if (this.checked) byType.push("[data-category~='" + $(this).attr("value") + "']");
-			else removeA(byType, "[data-category~='" + $(this).attr("value") + "']");
-		});
-		
-		$("input").on( "change", function() {
-			var str = "Include items \n";
-			var selector = '', cselector = '', nselector = '';
-					
-			var $lis = $('.flowers > div'),
-				$checked = $('input:checked');	
-				
-			if ($checked.length) {	
-			
-				if (byProperty.length) {		
-					if (str == "Include items \n") {
-						str += "    " + "with (" +  byProperty.join(',') + ")\n";				
-						$($('input[name=effort]:checked')).each(function(index, byProperty){
-							if(selector === '') {
-								selector += "[data-category~='" + byProperty.id + "']";  					
-							} else {
-								selector += ",[data-category~='" + byProperty.id + "']";	
-							}				 
-						});					
-					} else {
-						str += "    AND " + "with (" +  byProperty.join(' OR ') + ")\n";				
-						$($('input[name=reward]:checked')).each(function(index, byProperty){
-							selector += "[data-category~='" + byProperty.id + "']";
-						});
-					}							
-				}
-				
-				if (byColor.length) {						
-					if (str == "Include items \n") {
-						str += "    " + "with (" +  byColor.join(' OR ') + ")\n";					
-						$($('input[name=reward]:checked')).each(function(index, byColor){
-							if(selector === '') {
-								selector += "[data-category~='" + byColor.id + "']";  					
-							} else {
-								selector += ",[data-category~='" + byColor.id + "']";	
-							}				 
-						});					
-					} else {
-						str += "    AND " + "with (" +  byColor.join(' OR ') + ")\n";				
-						$($('input[name=reward]:checked')).each(function(index, byColor){
-							if(cselector === '') {
-								cselector += "[data-category~='" + byColor.id + "']";  					
-							} else {
-								cselector += ",[data-category~='" + byColor.id + "']";	
-							}					
-						});
-					}			
-				}
-				
-				if (byLocation.length) {			
-					if (str == "Include items \n") {
-						str += "    " + "with (" +  byLocation.join(' OR ') + ")\n";				
-						$($('input[name=meal]:checked')).each(function(index, byLocation){
-							if(selector === '') {
-								selector += "[data-category~='" + byLocation.id + "']";  					
-							} else {
-								selector += ",[data-category~='" + byLocation.id + "']";	
-							}				 
-						});				
-					} else {
-						str += "    AND " + "with (" +  byLocation.join(' OR ') + ")\n";				
-						$($('input[name=meal]:checked')).each(function(index, byLocation){
-							if(nselector === '') {
-								nselector += "[data-category~='" + byLocation.id + "']";  					
-							} else {
-								nselector += ",[data-category~='" + byLocation.id + "']";	
-							}	
-						});
-					}			 
-				}
-				
-				if (byType.length) {			
-					if (str == "Include items \n") {
-						str += "    " + "with (" +  byType.join(' OR ') + ")\n";				
-						$($('input[name=type]:checked')).each(function(index, byType){
-							if(selector === '') {
-								selector += "[data-category~='" + byType.id + "']";  					
-							} else {
-								selector += ",[data-category~='" + byType.id + "']";	
-							}				 
-						});				
-					} else {
-						str += "    AND " + "with (" +  byType.join(' OR ') + ")\n";				
-						$($('input[name=type]:checked')).each(function(index, byType){
-							if(nselector === '') {
-								nselector += "[data-category~='" + byType.id + "']";  					
-							} else {
-								nselector += ",[data-category~='" + byType.id + "']";	
-							}	
-						});
-					}			 
-				}
-				
-				$lis.hide(); 
-				console.log(selector);
-				console.log(cselector);
-				console.log(nselector);
-				
-				if (cselector === '' && nselector === '') {			
-					$('.flowers > div').filter(selector).show();
-				} else if (cselector === '') {
-					$('.flowers > div').filter(selector).filter(nselector).show();
-				} else if (nselector === '') {
-					$('.flowers > div').filter(selector).filter(cselector).show();
-				} else {
-					$('.flowers > div').filter(selector).filter(cselector).filter(nselector).show();
-				}
-				
-			} else {
-				$lis.show();
-			}	
-								  
-			$("#result").html(str);	
-	
-		});
-		
-		function removeA(arr) {
-			var what, a = arguments, L = a.length, ax;
-			while (L > 1 && arr.length) {
-				what = a[--L];
-				while ((ax= arr.indexOf(what)) !== -1) {
-					arr.splice(ax, 1);
-				}
-			}
-			return arr;
-		}
+var $filterCheckboxes = $('input[type="checkbox"]');
+
+$filterCheckboxes.on('change', function() {
+
+  var selectedFilters = {};
+
+  $filterCheckboxes.filter(':checked').each(function() {
+
+    if (!selectedFilters.hasOwnProperty(this.name)) {
+      selectedFilters[this.name] = [];
+    }
+
+    selectedFilters[this.name].push(this.value);
+
+  });
+
+  // create a collection containing all of the filterable elements
+  var $filteredResults = $('.flower');
+
+  // loop over the selected filter name -> (array) values pairs
+  $.each(selectedFilters, function(name, filterValues) {
+
+    // filter each .flower element
+    $filteredResults = $filteredResults.filter(function() {
+
+      var matched = false,
+        currentFilterValues = $(this).data('category').split(' ');
+
+      // loop over each category value in the current .flower's data-category
+      $.each(currentFilterValues, function(_, currentFilterValue) {
+
+        // if the current category exists in the selected filters array
+        // set matched to true, and stop looping. as we're ORing in each
+        // set of filters, we only need to match once
+
+        if ($.inArray(currentFilterValue, filterValues) != -1) {
+          matched = true;
+          return false;
+        }
+      });
+
+      // if matched is true the current .flower element is returned
+      return matched;
+
+    });
+  });
+
+  $('.flower').hide().filter($filteredResults).show();
+
+});
+
 </script>
 </body>
 </html>
