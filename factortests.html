@@ -1,0 +1,684 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<style>
+.trialDiv {
+  padding-left: 20px;
+  width: 400px;
+  margin: 0 auto;
+  font-family: Arial, Helvetica;
+  font-size: 14pt;
+  margin-top: 100px;
+  display: none;
+}
+
+input[type=submit] {
+  text-align: center;
+  font-family: Arial, Helvetica;
+  font-size: 14pt;
+  height: 50px;
+  width: 70px;
+  }
+
+.wrapper {
+  text-align: center;
+}
+
+#submitButton {
+	display: none;
+	margin: 0 auto;
+	font-family: Arial, Helvetica;
+	font-size: 14pt;
+	margin-top: 100px;
+	text-align: center;
+	
+}
+
+.optionsDiv {
+  padding-left: 20px;
+  width: 400px;
+  margin: 0 auto;
+  font-family: Arial, Helvetica;
+  font-size: 14pt;
+  display:none;
+}
+
+#about {
+	width: 800px;
+	margin: 0 auto;
+	font-family: Arial, Helvetica;
+    font-size: 14pt;
+	text-align: left;
+	margin-top: 100px;
+}
+
+#instructions {
+	width: 800px;
+	margin: 0 auto;
+	text-align:center;
+	font-family: Arial, Helvetica;
+    font-size: 14pt;
+	text-align: left;
+	margin-top: 100px;
+	display:none;
+}
+
+#errormessage {
+	width: 800px;
+	margin: 0 auto;
+	font-family: Arial, Helvetica;
+    font-size: 14pt;
+	text-align: left;
+	margin-top: 100px;
+	display: none;
+}
+
+#audiotest {
+  	width: 800px;
+	margin: 0 auto;
+	text-align:center;
+	font-family: Arial, Helvetica;
+    font-size: 14pt;
+	text-align: left;
+	margin-top: 100px;
+	display:none;
+}
+
+#exitsurvey {
+  	width: 800px;
+	margin: 0 auto;
+	text-align:center;
+	font-family: Arial, Helvetica;
+    font-size: 14pt;
+	text-align: left;
+	margin-top: 100px;
+	display:none;
+}
+
+#participate {
+	color:white;
+	text-decoration: none;
+	font-family: Arial, Helvetica;
+
+}
+#participateButton {
+	width: 200px;
+	border: 4px outset steelblue;
+	background: steelblue;
+	padding: 5px;
+	margin: 0 auto;
+	text-align:center
+}
+
+#startExperiment {
+	color:white;
+	text-decoration: none;
+	font-family: Arial, Helvetica;
+}
+
+#startexperimentButton {
+	width: 200px;
+	border: 4px outset steelblue;
+	background: steelblue;
+	padding: 5px;
+	margin: 0 auto;
+	text-align:center;
+	display:none;
+}
+</style>
+<div id="about">
+<h3 style="text-align: center">About</h3>
+<p>We are interested in how well people can guess the meanings of words in foreign languages. In this experiment, we are interested in your intuitions about the meanings of JAPANESE words.</p>
+<p><strong>Criteria for participation</strong></p>
+<p>Because your answers should be guesses, it is very important for our experiment that you do NOT speak or understand Japanese. Also, since the experiment requires you to listen to the words, you will need to complete it in a quiet place using headphones. We will check at the beginning of the experiment that you are using headphones, so please make sure to use them as participants who do not use headphones will not be able to complete the experiment.</p> 
+<p>Participation is completely voluntary, anonymous and confidential. If you meet the above criteria and agree to participate, please click 'Participate'.</p>
+</div>
+
+<div id="audiotest">
+<h2>Headphone check</h2>
+<p>When you play each item you will hear three sounds separated by silences. Simply judge WHICH SOUND WAS SOFTEST (quietest) -- 1, 2, or 3?</p>
+<h3>Item 1</h3>
+<audio controls>
+  <source src="https://bonniemclean.github.io/headcheck/middle.wav" type="audio/wav">
+  <source src="https://bonniemclean.github.io/headcheck/middle.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+<p><input type="radio" name="item1" value=0> 1</p>
+<p><input type="radio" name="item1" value=1> 2</p>
+<p><input type="radio" name="item1" value=0> 3</p>
+<h3>Item 2</h3>
+<audio controls>
+  <source src="https://bonniemclean.github.io/headcheck/first.wav" type="audio/wav">
+  <source src="https://bonniemclean.github.io/headcheck/first.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+<p><input type="radio" name="item2" value=1> 1</p>
+<p><input type="radio" name="item2" value=0> 2</p>
+<p><input type="radio" name="item2" value=0> 3</p>
+<h3>Item 3</h3>
+<audio controls>
+  <source src="https://bonniemclean.github.io/headcheck/last.wav" type="audio/wav">
+  <source src="https://bonniemclean.github.io/headcheck/last.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+<p><input type="radio" name="item3" id="item3" value=0> 1</p>
+<p><input type="radio" name="item3" id="item3" value=0> 2</p>
+<p><input type="radio" name="item3" id="item3" value=1> 3</p>
+
+<a href="#" id="continue">Continue</a>
+</div>
+
+<div id="errormessage">
+<p>Your test results indicate you aren't using headphones. Please use headphones if you want to participate.</p>
+<a href="#" id="again">Try again</a>
+
+</div>
+
+<div id="instructions">
+    <p>Thank you for wearing headphones. You may now continue to the experiment. Please read the instructions before you start.</p>
+    <p style="text-align:center">---------------------Instructions---------------------</p>
+    <p>
+	You will hear 25 Japanese words. After listening to each word, try to guess its meaning from a choice of two possible English translations. For context, meanings are given in a sentence, with the intended meaning in CAPITALS. </p> 
+		<p>For example, if you think the word could mean BRIGHT in the sentence 'The sun is BRIGHT', choose that sentence. If you think it could mean ROUND in the sentence, 'The sun is ROUND', choose that sentence. Trust your gut, and good luck!</p>
+
+</div>
+<div id = "participateButton">
+<a href="#" id="participate">Participate</a>
+</div>
+
+<div id = "startexperimentButton">
+<a href="#" id="startexperiment">Start Experiment</a>
+</div>
+<form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSezJ8QVaNcXgFAHp8MchZo-_5AQhZq2WZptgrzyrbrYukOMbQ/formResponse" method="post">
+<div id="practice1" class="trialDiv">
+<p>Listen to the Japanese word, and guess its meaning. For context, meanings are given in a sentence, with the meaning in CAPITALS.</p>
+<audio controls class="practiceplayer">
+  <source src="https://www.honestcookingblog.com/soundfiles/nameraka.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</div>
+<div id="practice1-options" class="optionsDiv">
+<p><input type="radio" class="practiceButton" name="entry.1777074833" value="correct"> After using the cream my hands were very SLEEK.</p>
+<p><input type="radio" class="practiceButton" name="entry.1777074833" value="incorrect"> After kneading the dough my hands were very STICKY.</p>
+</div>
+
+<div id="practice2" class="trialDiv">
+<p>Listen to the Japanese word, and guess its meaning. For context, meanings are given in a sentence, with the meaning in CAPITALS.</p>
+<audio controls class="practiceplayer">
+  <source src="https://www.honestcookingblog.com/soundfiles/yawai.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+
+</div>
+<div id="practice2-options" class="optionsDiv">
+<p><input type="radio" class="practiceButton" name="entry.1818916264" value="incorrect"> After being left in the fridge, the chocolate was HARD.</p>
+<p><input type="radio" class="practiceButton" name="entry.1818916264" value="correct"> After being left in the sun, the chocolate was SOFT.</p>
+</div>
+
+
+<div id="trial1" class="trialDiv">
+<p>Listen to the Japanese word, and guess its meaning. For context, meanings are given in a sentence, with the meaning in CAPITALS.</p>
+<audio controls class="player">
+
+  <source src="https://www.honestcookingblog.com/soundfiles/syuuneNbukai.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</div>
+
+<div id="options1" class="optionsDiv">
+<p><input type="radio" class="responseButton" name="entry.1319396019" value="incorrect"> After being on holidays for six weeks, I was DAWDLING getting back to work.</p>
+<p><input type="radio" class="responseButton" name="entry.1319396019" value="correct"> After the new toy came out, the kids wouldn't stop NAGGING me for it</p>
+<input type="hidden" name="entry.1131443759" value="0" id="reactionTime1">
+</div>
+
+<div id="trial2" class="trialDiv">
+<p>Listen to the Japanese word, and guess its meaning. For context, meanings are given in a sentence, with the meaning in CAPITALS.</p>
+<audio controls class="player">
+
+  <source src="https://www.honestcookingblog.com/soundfiles/zurui.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</div>
+
+<div id="options2" class="optionsDiv">
+<p><input type="radio" class="responseButton" name="entry.1004808226" value="correct"> After dealing out the cards, he took a very CUNNING glance at the one on top.</p>
+<p><input type="radio" class="responseButton" name="entry.1004808226" value="incorrect"> After the new toy came out, the kids wouldn't stop NAGGING me for it.</p>
+<input type="hidden" name="entry.93944153" value="0" id="reactionTime2">
+</div>
+
+<div id="trial3" class="trialDiv">
+<p>Listen to the Japanese word, and guess its meaning. For context, meanings are given in a sentence, with the meaning in CAPITALS.</p>
+<audio controls class="player">
+
+  <source src="https://www.honestcookingblog.com/soundfiles/syizukaya.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</div>
+<div id="options3" class="optionsDiv">
+<p><input type="radio" class="responseButton" name="entry.86975495" value="incorrect"> After not eating anything all day, there was a RUMBLE in my stomach.</p>
+<p><input type="radio" class="responseButton" name="entry.86975495" value="correct"> After the hurricane finally passed, it was very HUSHED in the town.</p>
+<input type="hidden" name="entry.1806051941" value="0" id="reactionTime3">
+</div>
+
+<div id="trial4" class="trialDiv">
+<p>Listen to the Japanese word, and guess its meaning. For context, meanings are given in a sentence, with the meaning in CAPITALS.</p>
+<audio controls class="player">
+
+  <source src="https://www.honestcookingblog.com/soundfiles/tyittyai.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</div>
+<div id="options4" class="optionsDiv">
+<p><input type="radio" class="responseButton" name="entry.1973517852" value="correct"> After letting all the air out, the balloon was very TINY.</p>
+<p><input type="radio" class="responseButton" name="entry.1973517852" value="incorrect"> After rubbing it for ages, the metal was very SHINY.</p>
+<input type="hidden" name="entry.1985094701" value="0" id="reactionTime4">
+</div>
+
+<div id="trial5" class="trialDiv">
+<p>Listen to the Japanese word, and guess its meaning. For context, meanings are given in a sentence, with the meaning in CAPITALS.</p>
+<audio controls class="player">
+
+  <source src="https://www.honestcookingblog.com/soundfiles/dekkai.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</div>
+<div id="options5" class="optionsDiv">
+<p><input type="radio" class="responseButton" name="entry.479863521" value="correct"> After filling it up with air, the balloon was very BIG.</p>
+<p><input type="radio" class="responseButton" name="entry.479863521" value="incorrect"> After putting everything away, the room was CLEAN.</p>
+<input type="hidden" name="entry.663177710" value="0" id="reactionTime5">
+</div>
+
+<div id="trial6" class="trialDiv">
+<p>Listen to the Japanese word, and guess its meaning. For context, meanings are given in a sentence, with the meaning in CAPITALS.</p>
+<audio controls class="player">
+
+  <source src="https://www.honestcookingblog.com/soundfiles/ookii.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</div>
+<div id="options6" class="optionsDiv">
+<p><input type="radio" class="responseButton" name="entry.1145630296" value="incorrect"> After opening the blinds, the room was very BRIGHT.</p>
+<p><input type="radio" class="responseButton" name="entry.1145630296" value="correct"> After filling it up with air, the balloon was very HUGE.</p>
+<input type="hidden" name="entry.607639347" value="0" id="reactionTime6">
+</div>
+
+<div id="trial7" class="trialDiv">
+<p>Listen to the Japanese word, and guess its meaning. For context, meanings are given in a sentence, with the meaning in CAPITALS.</p>
+<audio controls class="player">
+
+  <source src="https://www.honestcookingblog.com/soundfiles/haQkiri.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</div>
+<div id="options7" class="optionsDiv">
+<p><input type="radio" class="responseButton" name="entry.1732769952" value="correct"> After a nice relaxing bath, my mind felt incredibly SHARP.</p>
+<p><input type="radio" class="responseButton" name="entry.1732769952" value="incorrect"> After missing breakfast and lunch, I was incredibly HUNGRY.  </p>
+<input type="hidden" name="entry.1331801076" value="0" id="reactionTime7">
+</div>
+
+<div id="trial8" class="trialDiv">
+<p>Listen to the Japanese word, and guess its meaning. For context, meanings are given in a sentence, with the meaning in CAPITALS.</p>
+<audio controls class="player">
+
+  <source src="https://www.honestcookingblog.com/soundfiles/syaNsyaN.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</div>
+<div id="options8" class="optionsDiv">
+<p><input type="radio" class="responseButton" name="entry.1119866658" value="incorrect"> After missing breakfast and lunch, I was incredibly HUNGRY.</p>
+<input type="hidden" name="entry.2042925464" value="0" id="reactionTime8">
+<p><input type="radio" class="responseButton" name="entry.1119866658" value="correct"> After three days on the medicine, I finally began to feel PERKY.</p>
+</div>
+
+
+<div id="trial9" class="trialDiv">
+<p>Listen to the Japanese word, and guess its meaning. For context, meanings are given in a sentence, with the meaning in CAPITALS.</p>
+<audio controls class="player">
+
+  <source src="https://www.honestcookingblog.com/soundfiles/doroNdoroN.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</div>
+<div id="options9" class="optionsDiv">
+<p><input type="radio" class="responseButton" name="entry.664452354" value="correct"> After working on the house all day, I was completely EXHAUSTED.</p>
+<p><input type="radio" class="responseButton" name="entry.664452354" value="incorrect"> After getting everything that I wanted, I was completely PLACID.</p>
+<input type="hidden" name="entry.16749478" value="0" id="reactionTime9">
+</div>
+
+<div id="trial10" class="trialDiv">
+<p>Listen to the Japanese word, and guess its meaning. For context, meanings are given in a sentence, with the meaning in CAPITALS.</p>
+<audio controls class="player">
+
+  <source src="https://www.honestcookingblog.com/soundfiles/syitsukoi.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</div>
+<div id="options10" class="optionsDiv">
+<p><input type="radio" class="responseButton" name="entry.1183405968" value="incorrect"> After dealing out the cards, he took a very CUNNING glance at the one on top.</p>
+<p><input type="radio" class="responseButton" name="entry.1183405968" value="correct"> After the new toy came out, the kids wouldn't stop NAGGING me for it.</p>
+<input type="hidden" name="entry.1529379921" value="0" id="reactionTime10">
+</div>
+
+<div id="trial11" class="trialDiv">
+<p>Listen to the Japanese word, and guess its meaning. For context, meanings are given in a sentence, with the meaning in CAPITALS.</p>
+<audio controls class="player">
+
+  <source src="https://www.honestcookingblog.com/soundfiles/zoNzoN.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</div>
+<div id="options11" class="optionsDiv">
+<p><input type="radio" class="responseButton" name="entry.1036662086" value="correct"> After hearing the strange sound, my spine was JITTERY. </p>
+<p><input type="radio" class="responseButton" name="entry.1036662086" value="incorrect"> After working on the house all day, I was very TIRED.</p>
+<input type="hidden" name="entry.347190422" value="0" id="reactionTime11">
+</div>
+
+<div id="trial12" class="trialDiv">
+<p>Listen to the Japanese word, and guess its meaning. For context, meanings are given in a sentence, with the meaning in CAPITALS.</p>
+<audio controls class="player">
+
+  <source src="https://www.honestcookingblog.com/soundfiles/guQtari.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</div>
+<div id="options12" class="optionsDiv">
+<p><input type="radio" class="responseButton" name="entry.67734694" value="incorrect"> After missing breakfast and lunch, I was very HUNGRY.</p>
+<p><input type="radio" class="responseButton" name="entry.67734694" value="correct"> After working on the house all day, I was very EXHAUSTED.</p>
+<input type="hidden" name="entry.2031672255" value="0" id="reactionTime12">
+</div>
+
+<div id="trial13" class="trialDiv">
+<p>Listen to the Japanese word, and guess its meaning. For context, meanings are given in a sentence, with the meaning in CAPITALS.</p>
+<audio controls class="player">
+
+  <source src="https://www.honestcookingblog.com/soundfiles/kirakira.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</div>
+<div id="options13" class="optionsDiv">
+<p><input type="radio" class="responseButton" name="entry.391242932" value="correct"> After driving out into the country, the stars were DAZZLING.</p>
+<p><input type="radio" class="responseButton" name="entry.391242932" value="incorrect"> After several years of wear and tear, the coat was TATTERED.</p>
+<input type="hidden" name="entry.143295884" value="0" id="reactionTime13">
+</div>
+
+<div id="trial14" class="trialDiv">
+<p>Listen to the Japanese word, and guess its meaning. For context, meanings are given in a sentence, with the meaning in CAPITALS.</p>
+<audio controls class="player">
+
+  <source src="https://www.honestcookingblog.com/soundfiles/gizagiza.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</div>
+<div id="options14" class="optionsDiv">
+<p><input type="radio" class="responseButton" name="entry.570009994" value="incorrect"> After opening the blinds, the room was completely BRIGHT. </p>
+<p><input type="radio" class="responseButton" name="entry.570009994" value="correct"> After losing control of the saw, the edges were JAGGED.</p>
+<input type="hidden" name="entry.404046768" value="0" id="reactionTime14">
+</div>
+
+<div id="trial15" class="trialDiv">
+<p>Listen to the Japanese word, and guess its meaning. For context, meanings are given in a sentence, with the meaning in CAPITALS.</p>
+<audio controls class="player">
+
+  <source src="https://www.honestcookingblog.com/soundfiles/kamu.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</div>
+<div id="options15" class="optionsDiv">
+<p><input type="radio" class="responseButton" name="entry.1993530384" value="correct"> After leaving him alone all day, I found the dog CHEWING on my shoes.</p>
+<p><input type="radio" class="responseButton" name="entry.1993530384" value="incorrect"> After too many drinks, the old man became very ARROGANT with the girl.</p>
+<input type="hidden" name="entry.107606300" value="0" id="reactionTime15">
+</div>
+
+<div id="trial16" class="trialDiv">
+<p>Listen to the Japanese word, and guess its meaning. For context, meanings are given in a sentence, with the meaning in CAPITALS.</p>
+<audio controls class="player">
+
+  <source src="https://www.honestcookingblog.com/soundfiles/urusai.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</div>
+<div id="options16" class="optionsDiv">
+<p><input type="radio" class="responseButton" name="entry.413285129" value="incorrect"> After not eating anything all day, there was a GROWLING in my stomach.</p>
+<p><input type="radio" class="responseButton" name="entry.413285129" value="correct"> After the football team arrived, it was DEAFENING at the party.</p>
+<input type="hidden" name="entry.2138716649" value="0" id="reactionTime16">
+</div>
+
+<div id="trial17" class="trialDiv">
+<p>Listen to the Japanese word, and guess its meaning. For context, meanings are given in a sentence, with the meaning in CAPITALS.</p>
+<audio controls class="player">
+
+  <source src="https://www.honestcookingblog.com/soundfiles/karai.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</div>
+<div id="options17" class="optionsDiv">
+<p><input type="radio" class="responseButton" name="entry.1138085661" value="correct"> After adding too much salt, the soup was SALTY.</p>
+<p><input type="radio" class="responseButton" name="entry.1138085661" value="incorrect"> After adding too much water, the soup was BLAND.</p>
+<input type="hidden" name="entry.1449786779" value="0" id="reactionTime17">
+</div>
+
+<div id="trial18" class="trialDiv">
+<p>Listen to the Japanese word, and guess its meaning. For context, meanings are given in a sentence, with the meaning in CAPITALS.</p>
+<audio controls class="player">
+
+  <source src="https://www.honestcookingblog.com/soundfiles/piiN.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</div>
+<div id="options18" class="optionsDiv">
+<p><input type="radio" class="responseButton" name="entry.881497858" value="correct"> After pulling it and pulling it, the rubber band was very LONG</p>
+<p><input type="radio" class="responseButton" name="entry.881497858" value="incorrect"> After cutting up the tomatoes, my hands were RED.</p>
+<input type="hidden" name="entry.398522028" value="0" id="reactionTime18">
+</div>
+
+<div id="trial19" class="trialDiv">
+<p>Listen to the Japanese word, and guess its meaning. For context, meanings are given in a sentence, with the meaning in CAPITALS.</p>
+<audio controls class="player">
+
+  <source src="https://www.honestcookingblog.com/soundfiles/kaN.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</audio>
+</div>
+<div id="options19" class="optionsDiv">
+<p><input type="radio" class="responseButton" name="entry.747736053" value="correct"> After cutting up the tomatoes, my hands were RED.</p>
+<p><input type="radio" class="responseButton" name="entry.747736053" value="incorrect"> After cutting up the beetroot, my hands were PURPLE.</p>
+<input type="hidden" name="entry.1162477198" value="0" id="reactionTime19">
+</div>
+
+<div id="trial20" class="trialDiv">
+<p>Listen to the Japanese word, and guess its meaning. For context, meanings are given in a sentence, with the meaning in CAPITALS.</p>
+<audio controls class="player">
+
+  <source src="https://www.honestcookingblog.com/soundfiles/zyitazyita.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</div>
+<div id="options20" class="optionsDiv">
+<p><input type="radio" class="responseButton" name="entry.1826336301" value="incorrect"> After the winds blew in from the Arctic, the air was CRISP.</p>
+<p><input type="radio" class="responseButton" name="entry.1826336301" value="correct"> After a hot shower, the air in the bathroom was MUGGY.</p>
+<input type="hidden" name="entry.1008847362" value="0" id="reactionTime20">
+</div>
+
+<!--The following trials are used as attention checks-->
+<div id="trial21" class="trialDiv">
+<p>Listen to the Japanese word, and guess its meaning. For context, meanings are given in a sentence, with the meaning in CAPITALS.</p>
+<audio controls class="player">
+  <source src="https://www.honestcookingblog.com/soundfiles/pyoNpyoN.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</div>
+<div id="options21" class="optionsDiv">
+<p><input type="radio" class="responseButton" name="entry.1365576661" value="incorrect"> After it saw us, the deer SKITTERED away.</p>
+<p><input type="radio" class="responseButton" name="entry.1365576661" value="correct"> After it saw us the rabbit went HOPPING away.</p>
+<input type="hidden" name="entry.1150863258" value="0" id="reactionTime21">
+</div>
+
+<div id="trial22" class="trialDiv">
+<p>Listen to the Japanese word, and guess its meaning. For context, meanings are given in a sentence, with the meaning in CAPITALS.</p>
+<audio controls class="player">
+  <source src="https://www.honestcookingblog.com/soundfiles/katai.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</div>
+<div id="options22" class="optionsDiv">
+<p><input type="radio" class="responseButton" name="entry.1372588685" value="correct"> After being left in the oven too long, the cookies were SOLID.</p>
+<p><input type="radio" class="responseButton" name="entry.1372588685" value="incorrect"> After microwaving them too long, the cookies were SOFT.</p>
+<input type="hidden" name="entry.1383691916" value="0" id="reactionTime22">
+</div>
+
+<div id="trial23" class="trialDiv">
+<p>Listen to the Japanese word, and guess its meaning. For context, meanings are given in a sentence, with the meaning in CAPITALS.</p>
+<audio controls class="player">
+  <source src="https://www.honestcookingblog.com/soundfiles/hayai.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</div>
+<div id="options23" class="optionsDiv">
+<p><input type="radio" class="responseButton" name="entry.870016364" value="incorrect"> After I saw the giant hill, I began to run very SLOW.</p>
+<p><input type="radio" class="responseButton" name="entry.870016364" value="correct"> After I saw the finish line, I began to run very FAST.</p>
+<input type="hidden" name="entry.84798950" value="0" id="reactionTime23">
+</div>
+
+<div id="exitsurvey">
+<h2 style="text-align:center">Congratulations!</h2>
+<p>This is the end of the experiment. However, before you submit we need to collect some information from you. Kindly fill in the following:</p>
+<p><strong>Prolific ID*:</strong><input type="text" name="entry.493358885" required></p>
+<p><strong>Native Language*:</strong><input type="text" name="entry.1043919116" required></p>
+<p><strong>Other languages you understand:</strong><input type="text" name="entry.2107595716"></p>
+<p><strong>Were there any words in the ENGLISH TRANSLATION SENTENCES you did not understand?*</strong>
+<p><input type="radio" name="entry.2116245475" value="yes" required>yes</p>
+<p><input type="radio" name="entry.2116245475" value="no" required>no</p>
+<p><strong>If you clicked yes and you remember which words they were, please write them here. If you don't remember, leave this blank.</strong>
+<p><input type="text" name="entry.336706884"></p>
+<p><strong>*For our feedback, please also describe the TASK you were performing*:</strong></p>
+<p><input type="text" name="entry.1282303835" size="80"></p>
+<p>*Required</p>
+<div style="text-align:center">
+<p><input type="submit"></p>
+</div>
+
+</div>
+
+<!--POST EXPERIMENT INFORMATION COLLECTION-->
+<!--Include a short text description of the experiment to check people were paying attention-->
+<script>
+//REMEMBER TO UPDATE THE ARRAY YOU'RE SHUFFLING SO IT'S ALSO 13 TRIALS
+var trialOrder = shuffle([1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23]);
+var curTrial=0;
+//REMEMBER TO UPDATE THE NUMBER OF TRIALS BELOW (YOU SHOULD HAVE 13)
+var nTrials=23
+var startTrialTime;
+
+function audioplayed() {
+	$('#options'+trialOrder[curTrial]).show()
+	startTrialTime=new Date();
+}
+
+function buttonClicked() {
+	var curTime = new Date();
+	var rt = curTime - startTrialTime;
+	$('#reactionTime' + trialOrder[curTrial]).val(rt);
+	// If you want to change another attribute of an object use this
+	//$('#reactionTime'+curTrial).attr("value",rt);
+	console.log(rt);
+	$('#trial'+trialOrder[curTrial]).hide();
+	$('#options'+trialOrder[curTrial]).hide();
+	curTrial++;
+	if (curTrial >= nTrials) {
+		$('#exitsurvey').show();
+	} else {	
+		$('#trial'+trialOrder[curTrial]).show();
+		startTrialTime = new Date();
+	}
+}
+function showFirstTrial() {
+	$('#trial'+trialOrder[0]).show();
+
+}
+
+function showAudioTest() {
+	$('#about').hide();
+	$('#participateButton').hide();
+	$('#audiotest').show()
+}
+
+function processAudioTest() {
+  first=$( "input[type=radio][name=item1]:checked" ).val()
+  second=$( "input[type=radio][name=item2]:checked" ).val()
+  third=$( "input[type=radio][name=item3]:checked" ).val()
+  score=first+second+third
+  if (score>=2) {
+    $('#instructions').show();
+    $('#startexperimentButton').show();
+    $('#audiotest').hide();
+  } else {
+    $('#audiotest').hide();
+    $('#errormessage').show()
+  }
+  
+}
+
+function showInstructions() {
+	$('#about').hide();
+	$('#participateButton').hide();
+	$('#instructions').show();
+	$('#startexperimentButton').show();
+}
+
+function showpractice() {
+    $('#instructions').hide();
+	$('#startexperimentButton').hide();
+	$('#practice1').show();
+	}
+	
+practice_no=1
+function practice() {
+	if(practice_no==1) {
+	  $('#practice1-options').show()
+	} else if (practice_no==2) {
+	  $('#practice2-options').show()
+	}	
+}
+
+firstpractice=1
+function practicebuttonClicked() {
+	if(firstpractice==1) {
+	  $('#practice2').show()
+	  $('#practice1').hide()
+	  $('#practice1-options').hide()
+	  firstpractice=2
+	  practice_no=2
+	 } else {
+	  $('#trial'+trialOrder[0]).show();
+	  $('#practice2').hide()
+	  $('#practice2-options').hide()	  
+	  }
+
+}
+
+function tryagain() {
+  $('#errormessage').hide()
+  $('#audiotest').show()
+}
+
+/* Fisher-Yates shuffle */
+function shuffle(o){
+    for(var j, x, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
+    return o;
+}
+
+$('#participate').click(showAudioTest)
+$('#again').click(tryagain)
+
+$('#continue').click(processAudioTest)
+$('#startexperiment').click(showpractice)
+$('.practiceplayer').bind("ended",practice)
+$('.practiceButton').click(practicebuttonClicked)
+
+
+//$('#startexperiment').click(showFirstTrial)
+$('.player').bind("ended",audioplayed)
+$('.responseButton').click(buttonClicked)
+
+
+</script>
+</form>
