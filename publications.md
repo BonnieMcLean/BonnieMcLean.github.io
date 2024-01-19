@@ -12,7 +12,7 @@
 
 ## Popular Science Articles
 
-1. McLean, B. (2022, August). Iconicity in language change. [*Babel Linguistic Horizons*](https://cloud.3dissue.com/18743/41457/106040/issue40/index.html?page=40)
+1. McLean, B. (2022, August). Iconicity in language change. [*Babel Linguistic Horizons*](https://cloud.3dissue.com/18743/41457/106040/issue40/index.html?page=40). 🧵[Summary](https://www.bonniemclean.net/news/2022-08-01-babellinguisticshorizons/)
 
 ## Conference Presentations
 
