@@ -31,7 +31,7 @@ Uppsala University <span class="icon-library" aria-hidden="true"></span><br>Depa
 * Språk, kultur, och tanke (Language, Culture, Thought), Spring 2023, Uppsala University
 * Lingvistisk forskning och forskningsmetoder (Linguistic research and research methods), Spring 2021, Uppsala University
 
-## Supervision
+## Supervision <span class="icon-users" aria-hidden="true"></span>
 
 * Johanna Lebert, for her BA thesis ['Establishing a relative chronology of Old Norse Loanwords in Irish: Insights from phonology'](https://uu.diva-portal.org/smash/record.jsf?pid=diva2%3A1750095&dswid=2290)
 
