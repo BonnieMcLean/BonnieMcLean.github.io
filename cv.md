@@ -35,7 +35,7 @@ Uppsala University <span class="icon-library" aria-hidden="true"></span><br>Depa
 
 * Johanna Lebert, for her BA thesis ['Establishing a relative chronology of Old Norse Loanwords in Irish: Insights from phonology'](https://uu.diva-portal.org/smash/record.jsf?pid=diva2%3A1750095&dswid=2290)
 
-## Languages <span class="icon-bubbles" aria-hidden="true"></span>
+## Spoken Languages <span class="icon-bubbles" aria-hidden="true"></span>
 
 English <span class="icon-star-full" aria-hidden="true"></span><span class="icon-star-full" aria-hidden="true"></span><span class="icon-star-full" aria-hidden="true"></span><span class="icon-star-full"><span class="icon-star-full">
 
