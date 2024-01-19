@@ -2,7 +2,7 @@
 
 ## Journals
 
-1. McLean, B., Dunn, M., & Dingemanse, M. (2023). Two measures are better than one: Combining iconicity ratings and guessing experiments for a more nuanced picture of iconicity in the lexicon. [*Language and Cognition,*](https://doi.org/10.1017/langcog.2023.9) 1-24. doi:10.1017/langcog.2023.9.  <span class="icon-award" aria-hidden="true"></span> **Best PhD paper at SLE 2021** 🧵[Summary](https://www.bonniemclean.net/news/2023-04-18-iconicitymeasurespaper/) 📊 [Slides](https://osf.io/y3a2u/download)
+1. McLean, B., Dunn, M., & Dingemanse, M. (2023). Two measures are better than one: Combining iconicity ratings and guessing experiments for a more nuanced picture of iconicity in the lexicon. [*Language and Cognition,*](https://doi.org/10.1017/langcog.2023.9) 1-24. doi:10.1017/langcog.2023.9. 🏆 **Best PhD paper at SLE 2021** 🧵[Summary](https://www.bonniemclean.net/news/2023-04-18-iconicitymeasurespaper/) 📊 [Slides](https://osf.io/y3a2u/download)
 1. McLean, B. (2021). Revising an implicational hierarchy for the meanings of ideophones, with special reference to Japonic. [*Linguistic Typology*](https://doi.org/10.1515/lingty-2020-2063), *25*(3), 507–549. ✨ [**Shiny App**](https://bonnie-mclean.shinyapps.io/ideophonesacrossjapan-eng/)
 1. Smith, H. A., Giacon, J., & McLean, B. (2017). A community development approach using free online tools for language revival in Australia. [*Journal of Multilingual and Multicultural Development*](https://doi.org/10.1080/01434632.2017.1393429), 1–20. 
 
