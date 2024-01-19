@@ -17,7 +17,7 @@ Uppsala University <span class="icon-library" aria-hidden="true"></span><br>Depa
 ## Prizes and Scholarships <span class="icon-award" aria-hidden="true"></span>
 
 * *Best PhD Presentation* (Societas Linguistica Europaea 2021)
-* [*Australian Federation of Graduate Women Prize*](https://www.anu.edu.au/students/program-administration/prizes/australian-federation-of-graduate-women-act-inc-prize) 
+* [*Australian Federation of Graduate Women Prize*](https://www.anu.edu.au/students/program-administration/prizes/australian-federation-of-graduate-women-act-inc-prize) (Australian National University)
 * [*New Colombo Plan Scholarship*](https://www.dfat.gov.au/people-to-people/new-colombo-plan/about) (Australian Department of Foreign Affairs and Trade)
 * *Reginald de Bray Prize for Linguistics* (Australian National University)
 
