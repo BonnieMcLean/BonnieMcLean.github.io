@@ -17,6 +17,8 @@
 ## Conference Presentations
 
 1. McLean, B. (2019, May 3 – 5). The diachronic stability of Japanese ideophones and the iconicity-systematicity relationship. Paper presented at the [*12th International Symposium on Iconicity in Language and Literature*](https://konferens.ht.lu.se/fileadmin/user_upload/conference/ill-12/McLean_IIL-12.pdf), Lund, Sweden.
+2. McLean, B. (2022, August 22). What’s in a name? On the persistence of motivated form-meaning
+mappings in lexicons. Plenary presentation at _Societas Linguistica Europaea 55_, Bucharest, Romania.   
 
 ## Theses
 
