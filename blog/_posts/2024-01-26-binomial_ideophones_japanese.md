@@ -31,4 +31,4 @@ The picture at the top of this post is of some lollies that are *mogyu.fuwa*.
 
 You could say the following is *gakuburu*:
 
-![](assets/img/blog/gakuburu.gif)
+![](https://media0.giphy.com/media/C5QBwUWlhHAfb2MbxJ/giphy.gif?cid=6c09b952papr7us468n0wyw9dhwpoumc5voi6ect4n560at1&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g)
