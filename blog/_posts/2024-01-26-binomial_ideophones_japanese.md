@@ -43,4 +43,6 @@ And this beef is *toroumai*
 
 Anyway, aside from being really cool and innovative, I mention these compounds because they're typologically unusual, particularly the ones which combine ideophones with other parts of speech. I think Korean does this as well, but other than that I don't know of any other languages like Japanese and Korean where the ideophones are so well integrated into the rest of the lexicon. 
 
-If you want to learn more about the system integration of Japanese ideophones, my colleague Kimi Akita has a paper on that too! (He has a paper for everything!) You can read it [here](https://drive.google.com/file/d/1-fYXYjbRXFhkr0C7gnKq3kZ9RvzwcAnV/view?usp=sharing) (linking from [Kimi Akita's site](https://sites.google.com/site/akitambo/Home)
+If you want to learn more about the system integration of Japanese ideophones, my colleague Kimi Akita has a paper on that too! (He has a paper for everything!)
+
+You can read it [here](https://drive.google.com/file/d/1-fYXYjbRXFhkr0C7gnKq3kZ9RvzwcAnV/view?usp=sharing) (linking from [Kimi Akita's site](https://sites.google.com/site/akitambo/Home)
