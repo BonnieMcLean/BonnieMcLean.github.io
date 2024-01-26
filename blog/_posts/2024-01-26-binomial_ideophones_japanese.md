@@ -1,7 +1,7 @@
 ---
 layout: post  
 title: Binomial ideophones in Japanese   
-image: assets/img/blog/20240126_193151.jpg
+image: assets/img/blog/mogyufuwa.jpg
 description: >  
   A cool new phenomenon in the land of Japanese ideophones!  
 sitemap: false  
