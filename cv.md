@@ -21,7 +21,7 @@ Uppsala University <span class="icon-library" aria-hidden="true"></span><br>Depa
 * [*New Colombo Plan Scholarship*](https://www.dfat.gov.au/people-to-people/new-colombo-plan/about) (Australian Department of Foreign Affairs and Trade)
 * *Reginald de Bray Prize for Linguistics* (Australian National University)
 
-## Grants <span class="icon-trophy" aria-hidden="true"></span>
+## Grants  <span class="icon-trophy"></span>
 
 * [Gjerdmans Stiftelse](https://uaf.se/soek-stipendier/stiftelser/o-gjerdmans-stiftelse/), 2022
 * [Scandinavia-Japan Sasakawa Foundation Grant](https://sjsf.se/), 2022
