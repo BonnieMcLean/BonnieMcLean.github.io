@@ -25,10 +25,22 @@ Below are some fun examples:
 |*mogyu.fuwa*|IDEO+IDEO|chewy (*mogyumogyu*) and fluffy (*fuwafuwa*)|
 |*gaku.buru* |IDEO+IDEO|knocking together (*gakugaku*) and shaking (*buruburu*)|
 |*fuwa.toro* |IDEO+IDEO|fluffly (*fuwafufwa*) then melting (*torotoro*), of Japanese omelettes|
-|*toro.uma*    |IDEO+ADJ |melting (*torotoro*) and delicious (*uma.i*), of kobe beef|
+|*toro.umai*   |IDEO+ADJ |melting (*torotoro*) and delicious (*uma.i*), of kobe beef|
 
 The picture at the top of this post is of some lollies that are *mogyu.fuwa*.
 
 You could say the following is *gakuburu*:
 
 ![](https://media0.giphy.com/media/C5QBwUWlhHAfb2MbxJ/giphy.gif?cid=6c09b952papr7us468n0wyw9dhwpoumc5voi6ect4n560at1&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=g)
+
+This omelette is *fuwatoro*
+
+![](https://media4.giphy.com/media/EZ327Zoie6YO4/giphy.webp?cid=6c09b952zatp6xhqyxixl07o8ni0oltxbbyox98magfserlc&ep=v1_internal_gif_by_id&rid=giphy.webp&ct=g)
+
+And this beef is *toroumai*
+
+![](https://img.rurubu.jp/img_srw/andmore/images/dYEJoU2wyuXFeRrbpbY5RtBRgc0YNkCUecbtnKzR.jpeg)
+
+Anyway, aside from being really cool and innovative, I mention these compounds because they're typologically unusual, particularly the ones which combine ideophones with other parts of speech. I think Korean does this as well, but other than that I don't know of any other languages like Japanese and Korean where the ideophones are so well integrated into the rest of the lexicon. 
+
+If you want to learn more about the system integration of Japanese ideophones, my colleague Kimi Akita has a paper on that too! (He has a paper for everything!) You can read it [here](https://drive.google.com/file/d/1-fYXYjbRXFhkr0C7gnKq3kZ9RvzwcAnV/view?usp=sharing) (linking from [Kimi Akita's site](https://sites.google.com/site/akitambo/Home)
