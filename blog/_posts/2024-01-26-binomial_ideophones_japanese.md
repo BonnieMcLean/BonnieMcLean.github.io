@@ -1,14 +1,13 @@
-
 ---
-layout: post
-title: Binomial ideophones in Japanese 
+layout: post  
+title: Binomial ideophones in Japanese   
 image: assets/img/blog/20240126_193151.jpg
-description: >
-  A cool new phenomenon in the land of Japanese ideophones!
-sitemap: false
-hide_last_modified: true
-tags: [japanese, ideophones]
-excerpt_separator: <!--more-->
+description: >  
+  A cool new phenomenon in the land of Japanese ideophones!  
+sitemap: false  
+hide_last_modified: true  
+tags: [japanese, ideophones]  
+excerpt_separator: <!--more-->  
 ---
 
 Today I wanted to write about this cool new phenomenon that is becoming increasingly common in Japanese, which involves the compounding of pairs of ideophones, or of single ideophones with prosaic words.
