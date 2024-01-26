@@ -10,7 +10,7 @@ tags: [japanese, ideophones]
 excerpt_separator: <!--more-->  
 ---
 
-Today I wanted to write about this cool new phenomenon that is becoming increasingly common in Japanese, which involves the compounding of pairs of ideophones, or of single ideophones with prosaic words. (Ideophones are sort of like onomatopoeia on crack, see [Dingemanse 2019](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://osf.io/preprints/psyarxiv/u96zt/download&ved=2ahUKEwi---X35vuDAxXLJhAIHUPlCckQFnoECBAQAQ&usg=AOvVaw2K7zFjabJ1LyvkAJ9ymOQC) for a full definition)
+Today I wanted to write about this cool new phenomenon that is becoming increasingly common in Japanese, which involves the compounding of pairs of ideophones, or of single ideophones with prosaic words. (Ideophones are sort of like onomatopoeia on crack, see [Dingemanse 2021](https://osf.io/preprints/psyarxiv/u96zt) for a full definition)
 
 Kimi Akita and Keiko Murasagi have written a very interesting paper on it in the journal *Morphology*, see the citation below:
 
