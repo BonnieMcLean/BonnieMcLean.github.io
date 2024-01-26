@@ -23,8 +23,9 @@ Uppsala University <span class="icon-library" aria-hidden="true"></span><br>Depa
 
 ## Grants  <span class="icon-trophy"></span>
 
-* [Gjerdmans Stiftelse](https://uaf.se/soek-stipendier/stiftelser/o-gjerdmans-stiftelse/), 2022
-* [Scandinavia-Japan Sasakawa Foundation Grant](https://sjsf.se/), 2022
+| <span style="font-weight:normal">2022</span> | <span style="font-weight:normal; text-align:left">[Gjerdmans Stiftelse](https://uaf.se/soek-stipendier/stiftelser/o-gjerdmans-stiftelse/)</span> |
+| :----------------------------------------------------- | :----------------------------------------------------------- |
+| 2022                                                   |[Scandinavia-Japan Sasakawa Foundation Grant](https://sjsf.se/)|
 
 ## Teaching <span class="icon-briefcase"></span>
   
