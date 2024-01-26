@@ -45,4 +45,4 @@ Anyway, aside from being really cool and innovative, I mention these compounds b
 
 If you want to learn more about the system integration of Japanese ideophones, my colleague Kimi Akita has a paper on that too! (He has a paper for everything!)
 
-You can read it [here](https://drive.google.com/file/d/1-fYXYjbRXFhkr0C7gnKq3kZ9RvzwcAnV/view?usp=sharing) (linking from [Kimi Akita's site](https://sites.google.com/site/akitambo/Home)
+You can read it [here](https://drive.google.com/file/d/1-fYXYjbRXFhkr0C7gnKq3kZ9RvzwcAnV/view?usp=sharing) (linking from [Kimi Akita's site](https://sites.google.com/site/akitambo/Home))
