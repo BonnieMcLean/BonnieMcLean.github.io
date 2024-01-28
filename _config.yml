@@ -53,8 +53,6 @@ author:
 menu:
   - title:             About
     url:               /about/
-  - title:             News
-    url:               /news/
   - title:             Blog
     url:               /tags/
   - title:             Publications
