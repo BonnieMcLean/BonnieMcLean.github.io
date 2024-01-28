@@ -53,7 +53,7 @@ author:
 menu:
   - title:             About
     url:               /about/
-  - title:             Blog
+  - title:             Posts
     url:               /tags/
   - title:             Publications
     url:               /publications/
