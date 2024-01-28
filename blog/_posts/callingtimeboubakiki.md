@@ -14,3 +14,7 @@ Unpopular opinion: As an iconicity researcher, I'm over bouba kiki! I think that
 
 <!--more-->
 
+History of bouba kiki effect
+
+make one of those graphs of articles published mentioning bouba kiki
+
