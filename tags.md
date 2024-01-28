@@ -1,6 +1,6 @@
 ---
 layout: tags
-title: Posts
+title: Blog Posts
 permalink: /tags/
 sidebar: true
 order: 4
