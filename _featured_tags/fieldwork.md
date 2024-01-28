@@ -1,7 +1,7 @@
 ---
 # Featured tags need to have either the `list` or `grid` layout (PRO only).fhds
 layout: list
-
+type: tag
 # The title of the tag's page.
 title: Fieldwork
 
