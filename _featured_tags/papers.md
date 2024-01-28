@@ -1,6 +1,7 @@
 ---
 # Featured tags need to have either the `list` or `grid` layout (PRO only).fds
 layout: list
+type: tag
 
 # The title of the tag's page.
 title: Papers
