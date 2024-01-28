@@ -2,6 +2,7 @@
 # Featured tags need to have either the `list` or `grid` layout (PRO only).fsd
 layout: tag-list
 type: tag
+category: blog
 # The title of the tag's page.
 title: Iconicity
 
