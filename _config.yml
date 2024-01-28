@@ -56,7 +56,7 @@ menu:
   - title:             News
     url:               /news/
   - title:             Blog
-    url:               /blog/
+    url:               /tags/
   - title:             Publications
     url:               /publications/
   - title:             CV
