@@ -1,9 +1,9 @@
 ---
 layout: tags
-title: Tags
+title: Posts
 permalink: /tags/
 sidebar: true
 order: 4
 description: >
-  List of all categories & tags of blog.
+  All post on the blog, organised by category and tag.
 ---
