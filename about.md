@@ -14,7 +14,7 @@ Want to know what I'm talking about? Think about words like *perky*, *pesky*, or
 
 In my research, I look at whether these kinds of words got their forms by accident, or if they are adapted to suit their meanings. I also look at the same question in reverse. That is, whether word meanings adapt to suit word forms.
 
-This involves three challenges, (1) *quantifying* the relative 'goodness of fit' between words and their meanings, and (2) *reconstructing* the evolutionary histories of these words through time, and (3) *simulating* language change for things that are hard to reconstruct, like word meanings. As I'm interested in this question as it relates to language in general, I work with data from a variety of languages. However, I am most at home with the Japonic language family.
+This involves three challenges, (1) *quantifying* the relative 'goodness of fit' between words and their meanings, and (2) *reconstructing* the evolutionary histories of these words through time, and (3) *simulating* language change for things that are hard to reconstruct, like word meanings. As I'm interested in these questions as they relate to language in general, I work with data from a variety of languages. However, I am most at home with the Japonic language family.
 
 This places my research within the fields of **psycholinguistics**, **historical linguistics**, **language evolution**, and **linguistic typology**.
 
