@@ -12,11 +12,11 @@ Hej! I'm Bonnie. I'm a PhD student in Linguistics at Uppsala University (Sweden)
 
 Want to know what I'm talking about? Think about words like *perky*, *pesky*, or *fug*. Words that are really satisfying to use.
 
-In my research, I look at whether these kinds of words got their forms by accident, or if they are adapted to suit their meanings. 
+In my research, I look at whether these kinds of words got their forms by accident, or if they are adapted to suit their meanings. I also look at the same question in reverse. That is, whether word meanings adapt to suit word forms.
 
-This involves two challenges, (1) *quantifying* the relative 'goodness of fit' between words and their meanings, and (2) *reconstructing* the evolutionary histories of these words through time. As I'm interested in this question as it relates to language in general, I work with data from a variety of languages. However, I am most at home with the Japonic language family.
+This involves three challenges, (1) *quantifying* the relative 'goodness of fit' between words and their meanings, and (2) *reconstructing* the evolutionary histories of these words through time, and (3) *simulating* language change for things that are hard to reconstruct, like word meanings. As I'm interested in this question as it relates to language in general, I work with data from a variety of languages. However, I am most at home with the Japonic language family.
 
-This places my research within the fields of **psycholinguistics**, **historical linguistics**, and **linguistic typology**.
+This places my research within the fields of **psycholinguistics**, **historical linguistics**, **language evolution**, and **linguistic typology**.
 
 Before starting my PhD, I completed an Honours Degree in Linguistics at The Australian National University, where I wrote my thesis on the phonological and semantic development of Japanese **ideophones**. Ideophones are an example *par excellence* of words that suit their meanings, and are satisfying to use. They are what got me interested in this topic in the first place!
 
