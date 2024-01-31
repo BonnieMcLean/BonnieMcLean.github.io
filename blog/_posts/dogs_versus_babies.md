@@ -27,6 +27,6 @@ Make the image a picture of Duncan's baby shoot, and then the same baby shoot wi
 |----|----|
 |Unconditional love|Cannot use a human toilet|
 |Adorable|May develop your anxiety|
-|They will never get sick of you|May develop separation anxiety|
+|Will never get sick of you|Separation anxiety|
 |They can stay small and cuddly forever!|Will never learn to feed themselves|
 |Will never leave you|Will die before you 😭|
