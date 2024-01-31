@@ -10,7 +10,7 @@ excerpt_separator: <!--more-->
 tags: [life, feminism]
 ---
 
-If you're a human with hormones, at some point in your life you may find yourself wanting babies, which may also lead to you wanting to get pregnant. One thing you have to remember here is that your body and biology don't give a shit about you! They are just trying to repopulate! So if you're thinking about getting pregnant, and you care about *you*, read this first so you know what you're getting yourself into (speaking to my future self here)! Also good reading/warning for the partners of people who want to get pregnant.
+If you're a human with hormones, at some point in your life you may find yourself wanting babies, which may also lead to you wanting to get pregnant. One thing you have to remember here is that your body and biology don't give a shit about you! They are just trying to repopulate! So if you're thinking about getting pregnant, and you care about *you*, read this first so you know what you're getting yourself into (speaking to my future self here)! Also good reading/warning for partners of people who want to get pregnant.
 
 <!--more-->
 
