@@ -30,5 +30,6 @@ Make the image a picture of Duncan's baby shoot, and then the same baby shoot wi
 |Adorable|May develop your anxiety|
 |Will never get sick of you|Separation anxiety|
 |They can stay small and cuddly forever!|Will never learn to feed themselves|
+|You can study animal communication with them!|They might not listen to you|
 |You have a reason to go on walks now!|Difficult to take overseas|
 |Will never leave you|Will die before you 😭|
