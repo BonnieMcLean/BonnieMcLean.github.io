@@ -5,6 +5,7 @@ description: >
   Just preprinted mine and Mark Dingemanse's chapter for the upcoming book, *Capturing Expressivity* by PUBLISHER. 
 sitemap: false
 hide_last_modified: true
+tags: papers, ideophones
 ---
 
 You can find (and cite) it below:
