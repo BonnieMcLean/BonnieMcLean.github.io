@@ -6,7 +6,7 @@ description: >
 sitemap: false
 hide_last_modified: true
 excerpt_separator: <!--more-->
-tags: [life, feminism]
+tags: [life]
 ---
 
 Make the image a picture of Duncan's baby shoot, and then the same baby shoot with our dog.
