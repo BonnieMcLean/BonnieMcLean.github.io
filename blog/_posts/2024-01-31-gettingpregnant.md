@@ -32,4 +32,4 @@ So, here you have the pros and cons of pregnancy as of day 115:
 |You get to experience ~ the miracle of life ~|You will be *objectified*. In the eyes of many (doctors) you are not a person anymore but a *walking womb*. Everything everyone tells you to do is *for the baby*. It's super annoying! And your body is the worst of all of them! It's not working for *you* anymore, everything it does too is *for the baby* so it will steal all your calcium *for the baby*, it steals your oxygen *for the baby*, all your energy is gone, stolen *for the baby*. Pregnancy must be great if you're the baby! If not it's just highway robbery! Bring on the artificial wombs!|
 |You get *a baby*!|You have to look after *a baby*.|
 
-There are probably more things that I'm forgetting. I'll continue to update as needed until the little vampire is finally out of me.
+There are probably more things that I'm forgetting. I'll continue to update as needed until the vampire baby is finally out of me.
