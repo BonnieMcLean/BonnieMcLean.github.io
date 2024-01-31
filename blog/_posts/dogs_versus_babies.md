@@ -10,3 +10,20 @@ tags: [life, feminism]
 ---
 
 Make the image a picture of Duncan's baby shoot, and then the same baby shoot with our dog.
+
+# Babies
+
+|Pros|Cons|
+|----|----|
+|Unconditional love|Little brats|
+|Adorable|Useless|
+|One day they can do housework for you|One day they will be teenagers|
+|Look after you when you're old|Have to look after them for 18 years|
+
+# Dogs
+|Pros|Cons|
+|----|----|
+|Unconditional love|Cannot use a human toilet|
+|Adorable|May develop your anxiety|
+|They can stay small and cuddly forever!|Will never learn to feed themselves|
+|Will never leave you|Will die before you 😭|
