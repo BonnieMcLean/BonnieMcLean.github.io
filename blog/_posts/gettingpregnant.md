@@ -18,4 +18,13 @@ Writing this on pregnancy day 117 at 6am because that's when my body wakes up no
 
 I'm going to preface this by saying that these are just my experiences, every pregnancy is different of course (seems to be random roulette whether you have a good or bad experience though I feel like the good ones are possibly over represented on social media). I would consider my pregnancy to be an average pregnancy; there are people who have it a lot worse than me, and some annoying unicorn people who have it a lot better 🦄 But you can take the stuff I've written here as like a minimum baseline of what to expect. 
 
-I knew going in that pregnancy would be difficult, but it's been *more* difficult and difficult in *different ways* than how I expected from what I've read in the media/online, and what people have told me. I don't regret getting pregnant, I still want a baby (traitorous hormones!), and until they make some more progress with artificial wombs (I've been googling) this is my best option for that, but still it would've been nice to have a more objective voice to inform me about it going in. So that's what I'm trying to do here.
+I knew going in that pregnancy would be difficult, but it's been *more* difficult and difficult in *different ways* than how I expected from what I've read in the media/online, and what people have told me. I don't regret getting pregnant, I still want a baby (traitorous hormones!), and until they make some more progress with artificial wombs (I've been googling) this is my best option for that, but still it would've been nice to have a more objective voice to inform me about it going in. So that's what I'm trying to do here, and what could be more objective than a list of pros and cons!😂
+
+So, here you have the pros and cons of pregnancy as of day 117:
+
+|Pros|Cons|
+|----|----|
+|You get *amazing* boobs|they're painful, heavy, and annoying (especially at night)|
+|Your partner treats you like a queen. If they don't, they're doing it wrong!|You achieve absolutely nothing except to survive for all of first trimester (~95 days!). Your partner will achieve nothing except to keep you alive for all of first trimester (~95 days!). Second trimester is only *marginally* better than first trimester. That burst of energy they keep telling you about is a lie! It still sucks, you're only slightly less incapacitated than before and growing increasing more incapacitated as you approach third trimester|
+|You get an excuse to buy new clothes for yourself and adorable baby clothes for the baby!|All of your money will be sucked away by the pregnancy/baby|
+|You get *a baby*!|You have to look after *a baby*|
