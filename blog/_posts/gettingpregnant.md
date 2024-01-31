@@ -25,6 +25,6 @@ So, here you have the pros and cons of pregnancy as of day 117:
 |Pros|Cons|
 |----|----|
 |You get *amazing* boobs|they're painful, heavy, and annoying (especially at night)|
-|Your partner treats you like a queen. If they don't, they're doing it wrong!|You achieve absolutely nothing except to survive for all of first trimester (~95 days!). Your partner will achieve nothing except to keep you alive for all of first trimester (~95 days!). Second trimester is only *marginally* better than first trimester. That burst of energy they keep telling you about is a lie! It still sucks, you're only slightly less incapacitated than before and growing increasing more incapacitated as you approach third trimester|
+|Your partner treats you like a queen. If they don't, they're doing it wrong!|You achieve absolutely nothing except to survive for all of first trimester (~95 days!). Your partner will achieve nothing except to keep you alive for all of first trimester (~95 days!). Second trimester is only *marginally* better than first trimester. That burst of energy they keep telling you about is *a lie*! It still sucks, you're only slightly less incapacitated than before and growing increasing more incapacitated as you approach third trimester|
 |You get an excuse to buy new clothes for yourself and adorable baby clothes for the baby!|All of your money will be sucked away by the pregnancy/baby|
 |You get *a baby*!|You have to look after *a baby*|
