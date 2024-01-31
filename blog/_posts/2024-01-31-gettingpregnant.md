@@ -31,6 +31,6 @@ So, here you have the pros and cons of pregnancy as of day 115:
 |You will become a ~ morning person ~|You don't want to become a morning person! Mornings suck! You're tired! You haven't had a satisfying minimum 12 hour long sleep (that's how long it takes to be well rested now) and you *never will* because your *traitorous body* is constantly needing to pee and eat at ungodly hours of the morning! This only gets worse as the pregnancy progresses! Including during second trimester! Also, you can't go out at night anymore because you *fall asleep*!|
 |You get to experience ~ the miracle of life ~|You will be *objectified*. In the eyes of many (doctors) you are not a person anymore but a *walking womb*. Everything everyone tells you to do is *for the baby*. It's super annoying! And your body is the worst of all of them! It's not working for *you* anymore, everything it does too is *for the baby* so it will steal all your calcium *for the baby*, it steals your oxygen *for the baby*, all your energy is gone, stolen *for the baby*. Pregnancy must be great if you're the baby! If not it's just highway robbery! Bring on the artificial wombs!|
 |No periods for nine months!|Mega period post partum 😬|
-|You get *a baby*!|You have to look after *a baby*.|
+|You get *a baby!*|You have to look after *a baby*.|
 
 There are probably more things that I'm forgetting. I'll continue to update as needed until the vampire baby is finally out of me.
