@@ -20,6 +20,7 @@ Make the image a picture of Duncan's baby shoot, and then the same baby shoot wi
 |One day they can do housework for you|One day they will be teenagers|
 |You can teach them to vote with a conscience!|They may not listen to you|
 |You can teach them to love David Bowie!|It's inconceivable to me that this would not work|
+|You can relive all the fun things from your childhood with them!|You have to deal with schools again|
 |Look after you when you're old|Have to look after them for 18 years|
 
 # Dogs
@@ -29,4 +30,5 @@ Make the image a picture of Duncan's baby shoot, and then the same baby shoot wi
 |Adorable|May develop your anxiety|
 |Will never get sick of you|Separation anxiety|
 |They can stay small and cuddly forever!|Will never learn to feed themselves|
+|You have a reason to go on walks now!|Difficult to take overseas|
 |Will never leave you|Will die before you 😭|
