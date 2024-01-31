@@ -14,7 +14,7 @@ If you're a human with hormones, at some point in your life you may find yoursel
 
 <!--more-->
 
-Writing this on pregnancy day 115 at 6am because that's when my body wakes up now (I *used* to wake up at 9am; consider yourselves warned). Still have a whopping 164 days to go but I wanted to start making this list of the pros and cons of pregnancy now (might do another post later on babies themselves) so my traitorous hormones don't brainwash me into forgetting all the bad stuff because I'm starting to forget already and I don't want to! I need to be able to make an informed decision if I ever want to do this again. 
+Writing this on pregnancy day 115 at 6am because that's when my body wakes up now (I *used* to wake up at 9am; consider yourselves warned). Still have a whopping 164 days to go but I wanted to start making this list of the pros and cons of pregnancy now (might do another post on babies themselves later) so my traitorous hormones don't brainwash me into forgetting all the bad stuff because I'm starting to forget already and I don't want to! I need to be able to make an informed decision if I ever want to do this again. 
 
 I'm going to preface this by saying that these are just my experiences, every pregnancy is different of course (seems to be random roulette whether you have a good or bad experience though I feel like the good ones are possibly over represented on social media). I would consider my pregnancy to be an average pregnancy; there are people who have it a lot worse than me, and some annoying unicorn people who have it a lot better 🦄 But you can take the stuff I've written here as like a minimum baseline of what to expect. 
 
