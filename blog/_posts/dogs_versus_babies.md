@@ -28,6 +28,7 @@ Make the image a picture of Duncan's baby shoot, and then the same baby shoot wi
 |----|----|
 |Unconditional love|Cannot use a human toilet|
 |Adorable|May develop your anxiety|
+|Don't have to go through pregnancy/IVF/adoption to get a dog|There's no cons to that, pregnancy sucks (see [here](https://www.bonniemclean.net/blog/2024-01-31-gettingpregnant/?fbclid=IwAR1hp7Om20xiQEfi1s_6X2YgK59Ni5tnP5N5D396-2SClz1IyaeVIHmdSKA)) and the other options are also extremely difficult|
 |Will never get sick of you|Separation anxiety|
 |They can stay small and cuddly forever!|Will never learn to feed themselves|
 |You can study animal communication with them!|They might not listen to you|
