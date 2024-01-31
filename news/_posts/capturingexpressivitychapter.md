@@ -1,4 +1,13 @@
-Just preprinted mine and Mark Dingemanse's chapter for the upcoming book, *Capturing Expressivity* by PUBLISHER. You can find (and cite) it below:
+---
+layout: post
+title: ✨ New Preprint - A multi-methods toolkit for documentary research on ideophones
+description: >
+  Just preprinted mine and Mark Dingemanse's chapter for the upcoming book, *Capturing Expressivity* by PUBLISHER. 
+sitemap: false
+hide_last_modified: true
+---
+
+You can find (and cite) it below:
 
 !<--more-->
 
