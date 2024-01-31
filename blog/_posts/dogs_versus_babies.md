@@ -18,6 +18,7 @@ Make the image a picture of Duncan's baby shoot, and then the same baby shoot wi
 |Unconditional love|Little brats|
 |Adorable|Useless|
 |One day they can do housework for you|One day they will be teenagers|
+|You can teach them to vote with a conscience!|They may not listen to you|
 |Look after you when you're old|Have to look after them for 18 years|
 
 # Dogs
