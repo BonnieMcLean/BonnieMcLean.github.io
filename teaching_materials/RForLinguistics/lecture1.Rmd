@@ -2,7 +2,9 @@
 title: "Doing linguistic research"
 author: "Bonnie McLean"
 date: "23/02/2021"
-output: slidy_presentation
+output: 
+  slidy_presentation:
+    footer: "Copyright (CC-By Attribution 4.0 International) 2021, Bonnie McLean"
 ---
 
 ```{r setup, include=FALSE}
