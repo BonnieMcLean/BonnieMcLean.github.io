@@ -4,6 +4,6 @@ A collection of my teaching materials from various courses and workshops. Free t
 
 <details>
 <summary>R for Data Visualisation</summary>
-1. Example
+1. Example  
 2. Example
 </details>
