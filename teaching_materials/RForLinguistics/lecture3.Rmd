@@ -1,0 +1,574 @@
+---
+title: "Basic Statistical Concepts"
+author: "Bonnie McLean"
+date: "`r Sys.Date()`"
+output:
+  html_notebook:
+    number_sections: yes
+    toc: yes
+    toc_float: true
+    code_folding: show
+---
+
+```{r setup, include=FALSE}
+library(tidyverse)
+knitr::opts_chunk$set(echo = TRUE,warning = FALSE,message = FALSE)
+
+```
+
+# A new example dataset: nettle_1999_climate.csv
+
+Today we'll use a new linguistic dataset for examples, `nettle_1999_climate.csv`
+
+This is in the data.zip folder on Studiuum, so you should already have it on your computer.
+
+Lets have a look at it.
+
+```{r}
+nettle <- read_csv("data/nettle_1999_climate.csv")
+nettle %>% head
+```
+
+MGS is the *maximum growing season*, and tells you how many months of the year you can grow things for in each country. 
+
+This data is from a paper trying to link *linguistic diversity* (measured in terms of the number of languages in a given area) to *maximum growing season*. Here's an extract from the abstract:
+
+> Two belts of extremely high language diversity can be identified. One runs through West and Central Africa, while the other covers South and South-East Asia and the Pacific. Most of the world’s languages are found in these two areas. This paper attempts to explain aspects of the global distribution of language diversity. It is proposed that a key factor influencing it has been climatic variability. Where the climate allows continuous food production throughout the year, small groups of people can be reliably self-sufficient and so populations fragment into many small languages. 
+
+If you want to read more, below is the paper:
+
+Nettle, D. (1998). [*Explaining global patterns of language diversity*](https://www.staff.ncl.ac.uk/daniel.nettle/jaa2.pdf). Journal of anthropological archaeology, 17(4), 354-374.
+
+## Operations on vectors and datasets: length(), nrow(), unique(), sum()
+
+`length()` on a vector returns the numbers of items in the vector; on a dataset it returns the number of *columns* in the dataset.
+
+You can use the function `nrow()` to get the number of *rows* in a dataset.
+
+```{r}
+length(nettle)
+
+# columns in a dataset are like vectors
+length(nettle$Country)
+
+nrow(nettle)
+```
+
+Notice that the number of rows in the dataset is also the number of items in any column in the dataset, so NAs are also counted by `length()`:
+
+```{r}
+NA_vec <- c(NA,NA,NA)
+length(NA_vec)
+```
+
+`unique()` on a vector returns only unique items in that vector; on a dataset it returns the dataset without any duplicated rows
+
+```{r}
+my_vec <- c(1,2,3,3,3,4)
+my_dat <- data.frame(my_vec,my_vec)
+my_dat
+
+unique(my_vec)
+unique(my_dat)
+```
+
+`sum()` on a vector returns the sum of all the numbers in the vector; on a dataframe of numbers it returns the sum of the numbers in the dataframe. 
+
+```{r}
+sum(my_vec)
+sum(my_dat)
+```
+
+But these don't work if you have character vectors
+
+```{r}
+v <- c('hi','bye')
+d <- data.frame(v,v)
+
+sum(v)
+```
+
+```{r}
+sum(d)
+```
+
+## pull() for retrieving columns in a pipe
+
+Recall that you can use `$` to get just one column of a dataset
+```{r}
+nettle$Population
+```
+
+You can also use the `pull` function:
+
+```{r}
+pull(nettle, Population)
+```
+
+This works better in pipelines, which we'll see below.
+
+## Combining pull() and sum()
+
+In the Nettle data, what is the total area of countries with more than 100 languages?
+
+Let's try to do this with pipes %>% 
+
+```{r}
+# take the nettle data
+nettle %>% 
+  # filter it to just include countries with more than 100 languages 
+  filter(Langs > 100) %>% 
+  # pull out the area column
+  pull(Area) %>% 
+  # and sum all the numbers in that column (remember, with pipes the previous thing in the pipe is the input to the next function in the pipe)
+  sum()
+```
+
+## Exercise
+
+What is the total population of countries with less than 25 languages?
+
+```{r}
+nettle%>%
+  filter(Langs<25)%>%
+  pull(Population)%>%
+  sum()
+```
+
+
+# Means and Medians
+
+## Means
+
+Now that we know about `sum` and `length`, we can calculate the *mean* (or "average") value of a vector.
+
+Unsurprisingly, R has a built-in function for computing means, and it's just called `mean()`. 
+
+Use this function to answer the question: What is the mean number of languages per country?
+
+```{r}
+nettle%>%
+  pull(Langs)%>%
+  mean()
+```
+
+Is this higher than you expected? Take a look at the number of languages in Indonesia and Papua New Guinea. 
+
+```{r}
+nettle%>%
+  arrange(-Langs)
+```
+
+`arrange()` is a useful function for sorting datasets by a given column. By default, it sorts it in ascending order, but if you add a - in front of the column name, it will sort it in descending order. 
+
+Indonesia and Papua New Guinea have geographic features (mountains and island chains) that lead to lots of diversity (even more than the maximum growing season), so they have magnitudes more languages than most of the languages in the dataset. Taking out just these two languages already reduces the mean by 20 languages. 
+
+```{r}
+nettle%>%
+  filter(Country!="Indonesia"&Country!="Papua New Guinea")%>%
+  pull(Langs)%>%
+  mean()
+```
+
+## Median -- more robust than the mean against outliers
+
+Means are not very robust against "outliers" - extreme values. Countries like Australia and PNG make the mean number of languages in any country look crazily high.
+
+The median is more "robust" than the mean when you have outliers.
+
+The median of a set of values has the property that half the values in the set are lower than the median and half of them are higher.
+
+```{r}
+median(nettle$Langs)
+```
+
+So the mean for this dataset was more than twice the median! Looking at the dataset as a whole, because of those outlier countries, the median gives a more accurate idea of the usual linguistic diversity of these countries. Even so, this number is much greater than the median number of languages for countries in Europe. 
+
+# Dispersian
+
+* The mean and median are both *summary statistics* which measure of "central tendency".
+* They give some idea of what is "normal" or "typical" in a dataset.
+* But central tendency alone is not the whole story
+
+Two datasets can have the same mean...
+
+```{r}
+x <- c(4,5,7,6,5,4,6,5,3,6,5,4)
+mean(x)
+y <- c(1,8,3,5,7,9,2,9,1,5,5)
+mean(y)
+```
+
+... but a different 'spread' of data.
+
+## Range, min, and max
+
+When we plot these x numbers, we can see they range from 3 to 7.
+
+```{r}
+plot(x)
+```
+
+When we plot the y values, they have a larger range, from 1 to 9.
+
+```{r}
+plot(y)
+```
+
+We can also compare ranges using the `range()` function:
+
+```{r}
+range(x)
+range(y)
+```
+
+If you want to get just the minimum, or just the maximum, you can use the `min()` and `max()` functions:
+
+```{r}
+min(x)
+max(y)
+```
+
+These can help us tell how "spread out" or *dispersed* the data is around the *central tendency* (the mean/median)
+
+But `min` and `max` have the same problem as `mean`: they are not robust against outliers.
+
+For instance, lets look at the range of the numbers of languages in the nettle data
+
+```{r}
+range(nettle$Langs)
+```
+
+This is a huge range!
+
+However, if we plot this:
+
+```{r}
+plot(nettle$Langs)
+```
+
+We can see that actually, most of the data points are in a much smaller range. It's just a few outliers that make the range seem really large.
+
+For this reason, we use some slightly more complicated statistics to measure dispersion: **variance** and **standard deviation**
+
+## Variance and standard deviation
+
+Remember that when we add or subtract individual numbers to/from vectors, the operation is performed on each part of the vector individually:
+
+```{r}
+c(1,2,3,4,5) + 10
+```
+
+The following shows how much each country's language count differs from the mean number of languages:
+
+```{r}
+langs <- pull(nettle,Langs)
+langs - mean(langs)
+```
+
+Some differences are small, while some are large:
+
+```{r}
+range(langs - mean(langs))
+```
+
+Well, let's take the mean of all these differences to get an idea of what the typical difference from the mean is! 
+
+```{r}
+mean(langs - mean(langs))
+```
+
+See that e-15... this number is VERY VERY small, which doesn't seem right.
+
+Because some differences are positive and others are negative, when we add them all up (and then divide them by the number of numbers to work out the mean) we get a very small number, which isn't reflective of the average difference at all. 
+
+The solution is to square the values, which makes them all positive (and exaggerates the effect of large differences):
+
+```{r}
+mean((langs - mean(langs))**2)
+```
+
+We could also take the absolute value of all the differences, but if you square it instead the formula ends up having the nice property where the variance of A + B is equal to the variance of A, plus the variance of B (where A and B are independent), so that's why the mathematicians used squaring.
+
+The average square of the difference from the mean is called the *variance* in a dataset.
+
+Because of the squaring, the variance ends up being a large number, and also a little abstract.
+
+We can take the square root of the variance to "undo" this to some extent:
+
+```{r}
+sqrt(mean((langs - mean(langs))**2))
+```
+
+This feels better connected to the actual differences from the mean we observed:
+
+```{r}
+langs - mean(langs)
+```
+
+This quantity (the square root of the average square of the difference from the mean) is called the *standard deviation*, and just like the mean is the "go to" measure of central tendency, standard deviation is the "go to" measure of dispersion.
+
+For many kinds of data, the mean and standard deviation together are all you need to provide a very good description of the data.
+
+# Sample versus population statistics
+
+* Generally, data scientists don't work with entire populations, they work with smaller *samples* of a population.
+* The formula for the sample mean and the population mean are the same, but the formula for the sample standard deviation and the population standard deviation are a little different.
+* The formulas on the left are for the population mean (denoted by $\mu$, pronounced "mju") and the population standard deviation (denoted by $\sigma$, called "sigma"). The formulas on the right are for the sample mean ($\bar{x}$ "ex bar") and the sample standard deviation ($s$).
+
+$$\mu = \frac{\Sigma x_i}{N}   \hspace{3cm} \bar{x} = \frac{\Sigma x_i }{N}$$
+$$\sigma = \sqrt{\frac{\Sigma(x_i - \mu)^2}{N}} \hspace{3cm} s = \sqrt{\frac{\Sigma(x_i - \bar{x})^2}{n - 1}}$$
+
+* What we just learnt is how you would calculate the *population* standard deviation.
+* The sample standard deviation is an *estimate* of the population deviation.
+* As the sample size increases, we are likely to get a better and better estimate (because we are missing less data). But if we only have a small sample, our estimate of the standard deviation is likely to not be very good.
+* Because of this, we add some extra details to the formula for the sample standard deviation that make this deviation a little *larger* when our sample size is small, i.e. to play it safe.
+* So, we divide by $n-1$ instead of just $n$. This makes our estimate of the standard deviation a little *larger* to compensate for the fact that it is only based on a sample. Notice that as $n$ gets larger and larger, taking away that 1 makes less and less of a difference.
+
+# Distributions
+
+* Even a mean and SDs do not tell you everything about a datset
+* Different datasets can have very similar means and SDs but have different "shapes"
+* The formal name for the "shape" of a dataset is its *distribution*.
+* Distributions are idealised descriptions of the shape of data.
+* Real world data *is not guaranteed* to take on one of the convenient shapes that you'll find in a textbook!
+* But very often times it comes close enough that the distributions are useful models of reality.
+* The most famous distribution is...
+
+## The Normal distribution
+
+* aka "Gaussian distribution", aka "Bell curve"
+* Seems to occur widely in nature
+
+In a normal distribution:
+- 68.2% of values are within one standard deviation of the mean
+- 95.4% are within two standard deviations
+- 99.7% are within 3
+- 99.99% within 4
+
+![Standard deviations](images\sdev.png)
+
+## Plotting histograms
+
+The function `hist()` can be used to plot numbers in a histogram. The argument `breaks` determines how many bars there are.
+
+```{R}
+hist(nettle$Population,breaks=20)
+```
+
+The population numbers in the nettle data are given in millions, so 2.4 million, 3.4 million etc. 
+
+If we use less breaks, more of the data points get lumped together:
+
+```{r}
+hist(nettle$Population,breaks=10)
+```
+
+## Generating data with rnorm()
+
+Normal distributions can be described by two parameters, mean and standard deviation. The `rnorm()` function generates vectors of random numbers according to a normal distribution.
+
+`rnorm(N, mean, sd)`
+ 
+```{r warning=FALSE}
+small_sample <- rnorm(100, 10, 2.5)
+
+small_sample %>% 
+  hist(50)
+```
+
+A small sample will be jagged, but the larger the sample the smoother it gets:
+
+```{r}
+large_sample <- rnorm(10000, 10, 2.5)
+
+large_sample%>%
+  hist(50)
+
+```
+
+# Functions
+
+To facilitate the homework exercise, I'm now going to introduce functions.
+
+- A *function* is a named bundle of code that we can use over and over
+- Typically, functions have one or more *inputs* (called parameters or arguments)
+- Typically, functions return a single *output* (called the return values)
+- R has lots and lots of *built in functions*, like `sqrt()` or `mean()`
+- But if we want to do something really specific, we can also make our own!
+
+## Function to get the length of the hypotenuse, given the smaller two sides
+
+I'm sure you all know Pythagoras's famous theorem:
+
+![](images\hypotenuse.png)
+
+$c^2 = a^2 + b^2$
+
+We can make a function that will return the length of the hypotenuse of a triangle, given the length of its other two sides.
+
+When making functions in R, the format is as follows:
+
+```
+function_name <- function(inputs,inputs,inputs){
+# do stuff
+.
+.
+.
+return(output)
+}
+```
+
+Functions can have as many inputs as you like, but only one output. But of course, that output could be a vector or a list containing multiple things.
+
+Below is a function that, given the shortside and middleside of a triangle as inputs, returns the hypotenuse.
+
+```{r}
+get_hypotenuse <- function(shortside, middleside) { 
+  # shortside and middleside are the inputs (arguments)
+  hypotenuse_squared<-shortside**2+middleside**2
+  hypotenuse<-sqrt(hypotenuse_squared)
+  return(hypotenuse)# hypotenuse is the output
+}
+get_hypotenuse(4,5)
+```
+
+# Loops
+
+Functions work well together with loops. Like functions, you use loops when you want to *reuse* some bit of code.
+
+Often, you see functions used inside of loops.
+
+For example, say we know a bunch of lengths of short sides and middle sides for some triangles, and we want to calculate the hypotenuse for *all* those triangles. We could do that by using our `get_hypotenuse` function inside a loop.
+
+Below is the syntax for making a loop:
+
+```
+for(A in B){
+  # do something
+}
+```
+
+'A in B' refers to the things you are looping over.
+
+For example, you can loop over all the items in a single vector with something like this:
+
+```{r}
+dogs <- c('Coco','Spot','Lucky')
+
+for (dog in dogs){
+  print(dog)
+}
+```
+
+It doesn't matter what you call the 'A' part in your 'A in B' formula, but B should be an R object (e.g. a vector).
+
+```{r}
+for(i in dogs){
+  print(i)
+}
+```
+
+This works well when we are only dealing with items from one vector, but for our triangle example, we want a loop that can access numbers from *two different vectors* (a vector of shortsides, and a vector of middle-length sides, both of which are the same length).
+
+In this case, it is useful to use *indexing*, and instead of looping over the items in the vector, loop over the *indexes* for all the items in the vector. Like this:
+
+```{r}
+shortsides <- c(3,4,5,8,1,3)
+middlesides <- c(8,10,12,14,2,1)
+
+for(i in 1:length(shortsides)){
+  print(i)
+}
+```
+
+1:length(shortsides) just makes a vector with the numbers 1 - 6:
+
+```{r}
+1:length(shortsides)
+```
+
+
+We can then use the numbers in this vector as *indexes* to extract the items from both our shortsides vector *and* our longsides vector, like this:
+
+```{r}
+for(i in 1:length(shortsides)){
+  print(shortsides[i])
+  print(middlesides[i])
+}
+```
+
+Note that this only works when your vectors are the same length.
+
+But what we really want to do in this loop is work out the hypotenuses for all these triangles.
+
+Our first step will be to make another, empty vector to store these hypotenuses. Then we can run our loop, calculating the relevant hypotenuse each time with our `get_hypotenuse` function, and storing it in the hypotenuses vector.
+
+```{r}
+# make an empty vector to store the hypotenuses
+hypotenuses <- c()
+
+for(i in 1:length(shortsides)){
+  # run our function
+  hypotenuse <- get_hypotenuse(shortsides[i],middlesides[i])
+  # update the hypotenuse vector, so it contains the hypotenuses we've already calculated, plus the one we just calculated in this iteration of the loop
+  hypotenuses <- c(hypotenuses,hypotenuse)
+}
+
+# let's look at the hypotenuse vector after the loop is run
+hypotenuses
+```
+
+The way to add something to a vector in R is just to make a new vector (with the same name) consisting of the old vector, plus whatever you are adding, like this:
+
+```{r}
+my_vec <- c('a')
+my_vec <- c(my_vec,'b','c','d')
+my_vec
+```
+
+There is also a function `append()`, but this is actually longer to type out:
+
+```{r}
+my_vec <- append(my_vec,'e')
+my_vec
+```
+
+Especially if you want to append more than one thing, because then you have to put all of those in a vector as well:
+
+```{r}
+my_vec <- append(my_vec,c('f','g','h'))
+my_vec
+```
+
+So I wouldn't recommend append for that reason, it's quicker to just use c().
+
+# Homework
+
+For homework, I want you to make your own function to investigate how taking larger and larger samples of a population will give you a *sample mean* that is closer and closer to the true *population* mean.
+
+Given a sample size $n$, the function will sample $n$ items from a normal distribution with a mean of 42 and a standard deviation of 10.
+
+It will then return the difference between the mean of this sample, and the true mean (42).
+
+Use the function `abs()` when you are returning this difference, so that if the difference is negative, it will be made positive. [`abs()` gives you the *absolute value* of a number]
+
+Below I have provided a skeleton of the kind of function you need and the steps you have to take:
+
+```
+diff_from_true_mean <- function(sample_size){
+
+   # 1. take a sample of a given size, sample_size, from a normal distribution with a mean of 42, and a standard deviation of 10
+   
+   # 2. work out the mean of that sample
+   
+   # 3. return the absolute value of the difference between the mean of that sample, and the true mean of 42
+
+}
+```
+
+Run your function for sample sizes of 100, 1000, 10 000, 100 000, and 1 000 000. You should see that the difference between the sample mean and the true mean gets smaller and smaller the large the sample size. 
+
+If you want to be really fancy, you can try doing this last step inside a loop (so you only have to type the function call once). 
+
+Good luck!

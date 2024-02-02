@@ -1,0 +1,281 @@
+---
+title: "Visualising similarity and difference"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+```{r include=FALSE}
+library(tidyverse)
+library(ggrepel)
+library(kableExtra)
+knitr::opts_chunk$set(echo = TRUE,warning = FALSE,message = FALSE)
+```
+
+# Distance matrices and multidimensional scaling
+
+If we have just a few variables, we can easily visualise them. Even 3-4 variables can be visualised by using extra features (besides the x and y axis) like `colour` or `shape` (in the ggplot), or by using `facet_wrap()` and `facet_grid()` to create multiple plots.
+
+However, if we have *a lot* of variables (e.g. more than 4), it becomes much more difficult to visualise everything at once. 
+
+Distance matrices and multidimensional scaling provide a solution to this problem. 
+
+For example, the lynott connell database contains words rated on how strongly they are perceived through each of the five senses (sight, touch, sound, taste, and smell). So words that are experienced mainly through touch (e.g. *abrasive*) will have higher Touch ratings, words experienced mainly through taste (e.g. *acidic*) will have higher Taste ratings, etc.
+
+```{r}
+norms <- read_csv("data/lynott_connell_2009_modality.csv")
+norms
+```
+
+Say we wanted to identify words that have a similar, overall "sense profile" (based on their ratings across *all* of the senses).
+
+R has a function `dist()` which, given a dataset of (e.g.) words and their different sense ratings, calculates the *overall* distance (based on all the ratings for the word for each variable) between each pair of words in the dataset by summing their distances based on each individual variable (Sight/Touch/Taste etc.).
+
+This is called the *Euclidean distance*, and the formula to calculate it looks like this:
+
+$$
+d(x,y) = \sqrt{\sum_{i}^{n}(x_i - y_i)^2 }
+$$
+
+**Explanation**: The Euclidean distance between two rows of numeric data is the square root of the sum of the squares of the differences between each variable (from variable $i$ to variable $n$, etc.) in the table:
+
+So if we look at our table, to calculate the distance between e.g. abrasive and absorbent based on all these ratings we would do
+
+$$
+d(abrasive,absorbent) = \sqrt{(2.89 - 4.14)^2+(3.68 - 3.14)^2+(1.68 - 0.71)^2...etc.}
+$$
+First figuring out their distance based on their sight ratings, then their touch ratings, their sound ratings, etc. 
+
+The `dist()` function calculates these distances for *every* different pair of words. 
+
+```{r}
+norms%>%
+  sample_n(10)%>%
+  # we have to get rid of the columns that don't contain measurements of our variables of interest first
+  select(-PropertyBritish,-DominantModality)%>%
+  # if we want to keep the names of the words, we have to store them in rownames, not in a column (otherwise dist will try to calculate distances based on their name/spelling which we don't want)
+  column_to_rownames("Word")%>%
+  dist()-> distances
+distances
+```
+
+So words with a smaller distance between them are more similar in the senses that they involve.
+
+R also has a function `cmdscale()` which, given a distance matrix, for each word will try to give it some coordinates such that its distance from all the other words is as close as possible to the distances in the matrix.
+
+```{r}
+coordinates <- cmdscale(distances)
+coordinates
+```
+
+Coordinates are something that we can plot!
+
+But what `cmdscale()` returns is not a dataframe
+
+```{r}
+str(coordinates)
+```
+
+It's just some numbers in two dimensions.
+
+So we need to convert it to a dataframe using `as_data_frame()` before we can plot it, and we add an argument `rownames="Word"` to tell it to put the rownames in a column called Word (which we can plot), when we do this.
+
+```{r}
+coordinates%>%
+  # we can take the rownames and put them in a column called "Word" in the dataframe we make
+  as_data_frame(rownames="Word")%>%
+  ggplot(aes(x=V1,y=V2,label=Word))+
+  geom_point()+
+  geom_text_repel()+
+  theme_classic()
+```
+
+Now we can see that it has grouped together words that are "sensorily" similar.
+
+This is the best way to visualise how similar things are when you have more than two variables on which you are measuring similarity.
+
+This is also the technique that we will use in the final assignment!
+
+In the assignment, you will be measuring the similarity of the cake words based on their *usage* (i.e. which pictures they are used to describe).
+
+# Assessing the stress on the coordinates
+
+Remember I said that `cmdscale()` makes the coordinates so they reflect the distances we calculated *as well as possible*.
+
+How well it can actually do this depends on the dataset. For example, in large datasets, there may be just too much independent variation along different dimensions to be able to capture with two dimensions.
+
+We can calculate the "stress" of a MDS representation of a distance matrix to get a sense for how accurately the distances are represented. 
+
+The formula for the stress looks like this:
+
+$$
+Stress = \sqrt{\frac{\sum_{i<j}({d_{ij} - D_{ij}})^2 }{ \sum_{i<j}d_{ij}^2}}
+$$
+- $d_{ij}$ are the original distances from our matrix (made with `dist()`) and $D_{ij}$ are the fitted distances between the coordinates generated by `cmdscale()`
+- the formula uses the sum of squares so that negative and positive differences are the same
+- it calculates the sum for all values where i<j (i.e. $\sum_{i<j}$) so that it compares each pair only once
+- it divides by $\sum_{i<j}d_{ij}^2$ to normalise the value to the range 0 to 1.0
+
+This is just like how we figured out the distances to use for our original matrix, but now we are figuring out the distances between our *real distances* and the *distances between the coordinates* we made using `cmdscale()`.
+
+R doesn't come with a built-in stress function, but we can make our own function to calculate the stress on our coordinates, like this:
+
+```{r}
+stress <- function(d, D){
+  sqrt(sum((d - D) ^ 2) / sum(d ^ 2))
+}
+
+# compare the real distances with the distances between the coordinates we made
+stress(distances,dist(coordinates))
+```
+
+## Interpreting (normalised) stress values
+
+Normalised stress values are interpreted like this:
+
+Value                | Interpretation
+---------------------|-------
+Stress >= 0.2        | Poor
+0.1 <= Stress < 0.2  | Fair
+0.05 <= Stress < 0.1 | Good
+Stress < 0.05        | Excellent
+
+So our visualisation is a "fair" representation of the distances between the words based on their sense ratings!
+
+However, what if we were to take a larger sample?
+
+```{r}
+norms%>%
+  sample_n(30)%>%
+  select(-PropertyBritish,-DominantModality)%>%
+  column_to_rownames("Word")%>%
+  dist()-> distances
+
+coordinates <- cmdscale(distances)
+stress(distances,dist(coordinates))
+
+```
+
+More data usually leads to more stuff going on, which can make it harder for `cmdscale()` to accurately represent the distances, leading to higher stress values.
+
+Sometimes, a 3-dimensional solution or higher will work better. We can set the number of dimensions to use in `cmdscale()` with the argument `k`
+
+```{r}
+threeD_coordinates <- cmdscale(distances,k=3)
+stress(distances,dist(threeD_coordinates))
+```
+
+This is better, but a 3D solution is hard to plot
+
+In this case, I would use a different visualisation technique.
+
+# Cluster dendrograms
+
+Cluster dendograms are another way of visualising distances. They work by repeatedly joining together words to their closest pair words, until all the words have been joined together. Words that are further apart will be joined higher up in the tree, e.g. here *rustling* and *thudding* and closer to eachother than *banging* and *rumbling*, but all of these are more close to each other than they are to *raucous*. (Note that if you run this code yourself, you will get different words because it takes a different random sample each time)
+
+```{r}
+tree <- hclust(distances,method="ward.D2")
+plot(tree)
+```
+
+Cluster dendrograms aren't perfect either though; they won't always be able to accurately represent the distances, and different joining methods can produce different solutions. I recommend the method called "ward.D2", but if you want to read about the other methods available (and the difference between them) you can do that [here](https://www.rdocumentation.org/packages/stats/versions/3.6.2/topics/hclust). 
+
+# Binary distances
+
+If you don't have numerical data, you can still create a distance matrix by converting your categorical data into a *binary* format first.
+
+```{r}
+japonic <- read_csv("data/japvocabmatrix.csv")
+japonic%>%
+  filter(X!="Old_Japanese",X!="Middle_Japanese",X!="Okinawa")%>%
+  column_to_rownames("X")->japonic
+
+japonic[1:10,1:7]%>%
+  kable(col.names=c("ware","ore","temae","boku","jibun","ura","uchi"))%>%
+  kable_styling()
+```
+
+For example, this dataset contains a list of different locations in Japan (in the rows), and different words (in the columns). The first bunch of words are all words for the first person singular pronoun (I). If a language uses that word to mean 'I', it is coded as a 1, but if it doesn't use that word, it is coded as a 0.
+
+We can make a distance matrix from these 1s and 0s, to see how similar or far apart the locations are to eachother, based on how many words they share (the complete dataset contains hundreds of words, which would be impossible to plot as separate variables).
+
+When we do this, we have to add an argument `method="binary"` to our dist function, to tell it the data has been binarised.
+
+```{r include=TRUE}
+distances <- dist(japonic,method="binary")
+```
+
+Then we can get coordinates for these distances using `cmdscale()`, and plot the distances between the languages 
+
+```{r}
+coordinates <- cmdscale(distances)
+
+coordinates%>%
+  as_data_frame(rownames="Region")%>%
+  ggplot(aes(x=V2,y=-V1,label=Region))+
+  geom_point()+
+  geom_text_repel()+
+  theme_classic()+
+  labs(x="Conservative versus progressive",y="South-North")
+```
+
+If you compare the locations of the languages in this plots to their locations on a map of Japan (below), you can see that these distances seem to correlate well with geography. One exception is Hokkaido, which is linguistically closer to Tokyo than it is to other languages spoken in the north (like Akita). This actually makes sense, because Japanese people only moved to Hokkaido fairly recently, and the people who moved there came from Tokyo. Another difference is that the very far north and the very far south seem to have been squished together a bit/bended towards each other. This is because these varieties are both the most conservative. That is, they use the most old Japanese words. This is because all the new words come from the Tokyo/Kyoto area, and gradually spread outwards, so they reach the varities in the very north and the very south last. In the meantime, these varieties retain the older words. 
+
+So, in this case, we can actually come up with some nice labels for our two dimensions that make sense. 
+
+Creating distance matrices is an easy way to examine dialectal or language data, when you want to compare languages based on (e.g.) lots of words, or lots of linguistic features (if you can binarise those features as yes/no features).
+
+# Mapping data
+
+The last thing I want to show you before you do the assignment is how to plot points on maps in R. You might want to do this in the assignment, if for instance you find some interesting geographical patterns. However, you will need to make a dataset with the latitude and longitude for the locations of the participants. You can do this easily using [google maps](https://www.google.com/maps). Just find the country on the map, and then if you right click on a spot in that country, you can copy the latitude and longitude. I give an example of how to do this below.
+
+We can get maps from the packages `rnaturalearth` and `rnaturalearthdata`, and plot them using the `ggplot` function `geom_sf()`. `sf` is a file format for storing maps. 
+
+```{r mapping}
+# required packages
+library(rnaturalearth)
+library(rnaturalearthdata)
+library(ggrepel)
+
+# these packages may not function properly if you don't also have rgeos installed; if you get an error, run install.packages('rgeos') in your console and then try again
+
+# the function ne_countries will give you country maps, if you don't specify which countries, it gives you the whole world. 
+# Use returnclass="sf" to make sure you get an sf format back, as this is what geom_sf() works with
+world <- ne_countries(returnclass = "sf")
+
+# you need to have latitude and longitude information for the things you want to plot -- I get this from google maps -- just right click on a place in google maps (on a computer), and the latitude and longitude will show up and you can copy them
+type <- c("rental","parent's house","in-law's house","rental","rental")
+latitude <- c(59.865,-33.879,50.874,35.664,-35.284)
+longitude <- c(17.641,151.112,6.037,139.482,149.136)
+places <- data.frame(type,latitude,longitude)
+
+# start by plotting the map as a base layer
+# this always has to come first -- it won't work if you start with the points and try to add the map after
+world%>%
+  ggplot()+
+  geom_sf()+
+  # then you can add points on top of it -- note that you need to specify the data, because this comes from a different dataset to the one at the top of the pipe
+  geom_point(data = places,aes(x=longitude,y=latitude,colour=type))+
+  theme_void()+    # this is a nice theme for maps; it gets rid of the axes
+  labs(title="Places I've Lived")
+
+```
+
+You can use the 'country' argument in `ne_countries()` to get a map of a single country.
+
+```{r}
+Australia <- ne_countries(country="Australia",returnclass = "sf")
+
+australian_places <- places%>%filter(latitude<0)
+
+Australia%>%
+  ggplot()+
+  geom_sf()+
+  # since the data isn't coming from the top of the pipe, you need to tell it the data and aesthetics
+  geom_point(data = australian_places,aes(x=longitude,y=latitude))+
+  # you could use labels instead of colour -- but again you need to tell it the aesthesics and data to use
+  geom_text_repel(data = australian_places,aes(x=longitude,y=latitude,label=type))+
+  labs(title="Places I've Lived")+
+  theme_void()
+```

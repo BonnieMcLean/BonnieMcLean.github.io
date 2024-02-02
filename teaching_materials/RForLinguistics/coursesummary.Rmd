@@ -1,0 +1,821 @@
+---
+title: "R Cheatsheet"
+output: 
+  html_notebook:
+    toc: true
+    toc_float: true
+    code_folding: show
+    
+---
+
+```{r include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,warning = FALSE,message = FALSE)
+library(tidyverse)
+library(barnnamn)
+```
+
+
+# Installing and loading packages
+
+You only need to install packages once, but you need to load them for every new R session.   
+You should do this in the first chunk in your R markdown document.
+
+|            |                                  |
+|------------|----------------------------------|
+|*installing*|`install.packages("package_name")`|
+|*loading*   |`library(package_name)`           |
+
+The main package we use is the `tidyverse`.   
+So you should start all your .Rmd with a chunk of code containing `library(tidyverse)` (and any other libaries/packages you may be using).
+
+# Reading in data
+
+The function you use depends on the type of file being read:
+
+|                              |                                                                  |
+|------------------------------|------------------------------------------------------------------|
+|comma separated values        |`read_csv("csv_file.csv")`                                        |
+|tab separated values          |`read_tsv("tsv_file.txt")`                                        |
+|other separators              |`read_delim("anyfile.txt",sep=";")`                               |
+|for non utf-8 encodings       |`read_csv("csv_file.csv",locale = locale(encoding = "Shift_JIS"))`|
+|if you don't know the encoding|`guess_encoding("csv_file.csv")`                                  |
+
+Always use **plain text formats** (.csv or .txt files) and not excel (.xlsx) files.  
+Use **UTF-8 encoding** (especially if you have non-roman characters!).  
+The `read_` functions assume your encoding is UTF-8. But sometimes you get data from other people that isn't UTF-8, then you must specify the encoding with the `locale` argument (you can use it in any read function). If you don't know the encoding, `guess_encoding` will guess it for you.  
+For how to convert excel documents to plain text formats, and change the encoding to UTF-8, see the notes from Lecture 1.
+
+# Exploring datasets
+
+Examples with the dataset `cars`, that comes with R.
+
+|*to see...*                    |*use...*                   |
+|-------------------------------|---------------------------|
+|the first few rows             |`head(cars)`               |
+|the number of columns/variables|`length(cars)`/`ncol(cars)`|
+|the number of rows             |`nrow(cars)`               |
+|unique rows                    |`unique(cars)`             |
+|unique vals in column          |`unique(cars$speed)`       |
+|range of numbers in a column   |`range(cars$speed)`        |
+|min value in column            |`min(cars$speed)`          |
+|max value in column            |`max(cars$speed)`          |
+
+# Data wrangling
+
+## Dataframes
+
+It is easier if you do this using pipes. The pipe function is `%>%`.  
+The pipe function tells R to use the output from the previous function as input to the next function.  
+It means you don't have to keep typing the name of the dataset every time you use the function.  
+To save the output from a pipe, add an assignment operator `->` at the end, or `<-` at the beginning. Below are two ways of doing the same thing:
+
+```
+cars%>%
+  filter(speed<4)%>%
+  select(speed,dist)->slow_cars
+  
+slow_cars <- cars%>%
+               filter(speed<4)%>%
+               select(speed,dist)
+```
+
+|*to...*                                                |*use*...                                                              |Notes/Examples                                                                                                                                         |
+|-------------------------------------------------------|----------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------| 
+|**filter rows**                                        |`cars%>%filter(speed>2)`                                              |                                                                                                                                                       |
+|**select columns**                                     |`cars%>%select(speed,dist)`                                           |                                                                                                                                                       |
+|get only **unique rows**                               |`cars%>%unique()`                                                     |                                                                                                                                                       |
+|**sample** i **random rows**                           |`cars%>%sample_n(i)`                                                  |                                                                                                                                                       |
+|**pull** out a single column                           |`cars%>%pull(speed)`                                                  |You can use the vectors functions<br />in the next section on this column                                                                              |
+|**arrange** by a column, in ascending order            |`cars%>%arrange(speed)`                                               |                                                                                                                                                       |
+|arrange by a column, in descending order               |`cars%>%arrange(-speed)`                                              |                                                                                                                                                       |
+|**rename a column**, oldname, to newname               |`cars%>%rename(newname=oldname`                                       |                                                                                                                                                       |
+|**add a new column**, newcol                           |`cars%>%mutate(newcol= ...)`                                          |perform some operations to generate data for newcol in ... (see the Vectors section for ideas)                                                         |
+|refer to the variable being piped                      |`.`                                                                   |cars%>%mutate(ID=1:nrow(.)) where `.` is `cars`                                                                                                        |
+|**categorise data**                                    |`cars%>%mutate(cat=if_else(c,v1,v2)`                                  |cars%>%<br />  mutate(speed_cat=if_else(speed<5,'slow','fast') # for > 2 categories, write a function to categorise them                               |
+|add new values, **working on groups within columns**   |`mutate()` with `[]`                                                  |cars%>%<br />  mutate(slow_dist=sum(dist[speed_cat=='slow']),fast_dist=sum(dist[speed_cat='fast'])                                                     |
+|add new values, **working on groups within columns**   |`mutate()` with `group_by()`                                          |cars%>%<br />  group_by(speed_cat)%>%<br />  mutate(total_dist=sum(dist))                                                                              |
+|**calculate summary statistics** over columns          |`summarise()`                                                         |cars%>%<br />  summarise(mean(speed))                                                                                                                  |
+|calculate summary statistics over groups within columns|`group_by()` + `summarise()`                                          |cars%>%<br />  group_by(speed_cat)%>%<br />  summarise(mean(speed)                                                                                     |
+|calculate on each row separately                       |`rowwise()`                                                           |nettle%>%<br />  rowwise()%>%<br />  mutate(environment=MGS_categorise(MGS))                                                                           |
+|**add data from datB to datA**, matching on colA + colB|`left_join(datA,datB,by=c("colA","colB"))`                            |rows in datB that don't have a match in datA will be lost.                                                                                             |
+|                                                       |`right_join(datB,datA,by=c("colA","colB"))`                           |rows in datB that don't have a match in datA will be lost.                                                                                             |
+|**combine ALL data in datA and datB**                  |`full_join(datA,datB,by="colA")`                                      |the `by` argument is optional; use it to specify columns that you want merged. All rows in both datasets are kept.                                     |  
+|**get ONLY data in both datA and datB**                |`inner_join(datA,datB,by="colA")`                                     |rows that have a value in colA in one dataset, but not the other, will be lost                                                                         |
+|make data **wider** (add more columns)                 |`dat%>%pivot_wider(names_from=colA,values_from=colB,values_fill=0`    |Names for the new cols come from colA, and values to fill them come from colB. Use values_fill to specify how NAs should be represented (default is NA)|
+|make data **longer** (remove columns)                  |`dat%>%pivot_longer(c("colA","colB"),names_to="colD",values_to="colE"`|colA + colB are collapsed into a new col, colD, and their values will go to a new col, "colE"                                                          | 
+
+## Vectors
+
+You can try out these functions yourself; the `cars` and `iris` datasets both come with R.
+
+|*to...*                                                    |*use*...                   |
+|-----------------------------------------------------------|---------------------------|
+|sort items (alphabetically or numerically)                 |`sort(cars$speed)`         |
+|add 10 to every item in a vector                           |`cars$speed + 10`          |
+|see how many values there are                              |`length(cars$speed)`       |
+|add up all the values (for numbers)                        |`sum(cars$speed)`          |
+|count the values (for characters)                          |`count(iris,species)`      |
+|get an idea of 'typical' values                            |`mean(cars$speed)`         |
+|get an idea of 'typical' values when you have outliers     |`median(cars$speed)`       |
+|estimate the 'spread' (deviation) around this typical value|`sd(cars$speed)`           |
+|get the max value                                          |`max(cars$speed)`          |
+|get the min value                                          |`min(cars$speed)`          |
+|get the range of values                                    |`range(cars$speed)`        |
+|get only unique values                                     |`unique(cars$speed)`       |
+|get the ith item in the vector                             |`cars$speed[i]`            |
+|remove the ith item from the vector                        |`cars$speed[-i]`           |
+|get all items between i and j                              |`cars$speed[i:j]`          |
+|remove all items between i and j                           |`cars$speed[-(i:j)]`       |
+|sample n random values                                     |`sample(cars$speed,n)`     |
+|check if a character is in a vector                        |`"chr" %in% vector`        |
+|check if a character is NOT in a vector                    |`!("chr" %in% vector)`     |
+|check if a number is in a vector                           |`num %in% vector`          |
+
+## Characters/Strings
+
+Use the package `stringr` (it comes with the `tidyverse`, so you shouldn't have to load it separately)
+
+|to...                             |use...                         |e.g.                                |
+|----------------------------------|-------------------------------|------------------------------------|
+|subset a string                   |`str_sub(str,start,stop)`      |`str_sub("Wednesday",1,3)` = "Wed"  |
+|                                  |add `-` to start from the end  |`str_sub("Wednesday",-3,-1)` = "day"|
+|convert to lowercase              |`str_to_lower()`               |`str_to_lower("Bob")` = "bob"       |
+|convert to uppercase              |`str_to_upper()`               |`str_to_upper("bob")` = "BOB"       |
+|convert to title case             |`str_to_title()`               |`str_to_title("bob")` = "Bob"       |
+|find and replace                  |`str_replace(str,find,replace)`|`str_replace("fun","f","p")`="pun"  |
+|remove leading/trailing whitespace|`str_trim(str)`                |`str_trim(" hello ")`="hello"       |
+
+The `string_r` functions are most powerful when you combine them with regular expressions. Below are some of the most useful ones:
+
+|Regular expression|Meaning                    |
+|------------------|---------------------------|
+|"."               |any character              |
+|".*"              |any number of any character|
+|"\\b"             |a word boundary            |
+|"\\d"             |any number (digit)         |
+|"[:punct:]"       |punctuation marks          |
+
+**Important**: Because characters like "." have a special meaning in regular expressions, if you want to search for a literal period (.), you will need to use "\\.". The two slashes are called escape characters, they tell R not to treat whatever follows as a regular expression.
+
+You can find all the regular expressions on the cheatsheet [here](https://evoldyn.gitlab.io/evomics-2018/ref-sheets/R_strings.pdf).
+
+# Functions and Loops
+
+- Use these when you want to run the same code many times on different things.
+
+**Syntax for functions**:
+```
+function_name <- function(inputs,inputs,inputs){
+# do stuff
+.
+.
+.
+return(output)
+}
+```
+
+**Syntax for loops**:
+```
+for(A in B){
+  # do something
+}
+```
+
+**Usage example**:
+
+```
+# example of a function to get the hypotenuse of a triangle from the short and middle side
+
+get_hypotenuse <- function(shortside, middleside) { 
+  # shortside and middleside are the inputs (arguments)
+  hypotenuse_squared<-shortside**2+middleside**2
+  hypotenuse<-sqrt(hypotenuse_squared)
+  return(hypotenuse)# hypotenuse is the output
+}
+
+shortsides <- c(3,4,5,8,1,3)
+middlesides <- c(8,10,12,14,2,1)
+
+# now lets run it multiple times in a loop
+
+# make an empty vector to store the hypotenuses
+hypotenuses <- c()
+
+# we use these 'i' values as indexes to refer to items in our two vectors shortsides and middlesides
+for(i in 1:length(shortsides)){
+  # run our function
+  hypotenuse <- get_hypotenuse(shortsides[i],middlesides[i])
+  # update the hypotenuse vector, so it contains the hypotenuses we've already calculated, plus the one we just calculated in this iteration of the loop
+  hypotenuses <- c(hypotenuses,hypotenuse)
+}
+
+# after the loop the hypotenuses vector will be full 
+```
+
+## Categorising functions
+
+A function for categorising the environment, based on the length of the maximum growing season (mgs).
+
+```
+environment <- function(mgs) {
+  if(mgs < 4) {
+    return("dry")
+  } else if(mgs < 8) {
+    return("typical")
+  } else {
+    return("fertile")
+  }
+}
+```
+
+# Conditions
+
+|Expression |Meaning                        |
+|-----------|-------------------------------|
+|X==Y       |X equals Y                     |
+|X!=Y       |X is not equal to Y            |
+|X %in% Y   |X is in Y                      |
+|!(X %in% Y)|X is not in Y                  |
+|X<Y        |X is less than Y               |
+|X>Y        |X is greater than Y            |
+|X>=Y       |X is greater than or equal to Y|
+|X<= Y      |X is less than or equal to Y   |
+
+## if, else if, else statements
+
+![](images/if_ifelse.PNG){width=70%}
+
+Only the block of code for the FIRST condition that evaluates to TRUE will be run; so the order of your conditions matters.
+
+# Data visualisation
+
+We use `ggplot()`. These plots have a basic structure like this:
+
+`data %>% ggplot(aes(x=colA,y=colB,colour=colC)) +geom_point()/geom_line()/geom_col()`
+
+Optional extras:
+
+* `+labs(x="X axis title",y="Y axis title",colour="Legend title",title="Plot title",caption="Caption for plot")` [if you use `fill` instead of `colour`, then you will use `fill="Legend title"`]
+* `+theme_classic()`   # this is a nice theme
+* If you are printing in black and white, you can use `shape` instead of colour
+
+## When to use which type of graph?
+
+If you have a lot of x values:
+
+* `geom_point()` is good when your observations come from different sources, e.g. the number of covid deaths in people of different ages, and you want to communicate the *relationship between your x and y values*
+* `geom_line()` and `geom_smooth()` are better for plotting multiple observations from a single source, e.g. the number of covid cases in a country over multiple weeks, where you want to communicate the *change in your y value over time*
+
+If you have only a few x values:
+
+* `geom_col()` is good for when you have only one y observation per x value
+* `geom_violin()` is good when your x values are larger categories with multiple y observations per x value, and you want to *compare the distribution of the y values between the different groups*
+
+`geom_histogram()` is used to examine the distribution of a single variable. It's more used in the methods section of papers rather than the results, for example to show what your sample of data looks like.
+
+## geom_histogram()
+
+Below is a histogram showing the distribution of diamonds in the diamond dataset by their carat.
+
+```{r}
+diamonds%>%
+       # just put the variable you want to examine the distribution of
+  ggplot(aes(carat))+
+  geom_histogram()+
+  theme_classic()+
+  labs(title="Distribution of diamonds by carat")
+```
+
+Most of the diamonds in the dataset are less than 1 carat.
+
+## geom_point()
+
+```{r,include=FALSE}
+nettle <- read_csv("data/nettle_1999_climate.csv")
+nettle %>% 
+  mutate(MGS_category = if_else(MGS < 6, "dry", "fertile"))->MGS_nettle
+```
+
+With colours:
+
+```{r,message=FALSE,warning=FALSE}
+MGS_nettle%>%ggplot(aes(x=Population,y=Langs,colour=MGS_category))+
+  geom_point()+
+  labs(x='Population (in millions)',y='Number of languages',colour="Environment")+
+  theme_classic()   # a nicer presentation than the default ggplot theme
+```
+
+With shapes:
+
+```{r,message=FALSE,warning=FALSE}
+MGS_nettle%>%ggplot(aes(x=Population,y=Langs,shape=MGS_category))+
+  geom_point()+
+  labs(x='Population (in millions)',y='Number of languages',shape="Environment")+
+  theme_classic()   # a nicer presentation than the default ggplot theme
+```
+
+## Adding labels to points
+
+`geom_text()` and `geom_text_repel()` can be used to add labels to points on your plot. You will need to install and load the library `ggrepel` to use `geom_text_repel`, which positions the labels nicely so they don't overlap with anything, and you'll need to add an argument `label` to your `aes()` function in `ggplot()`, to specify which column to get the labels from.
+
+```{r}
+library(ggrepel)
+MGS_nettle%>%
+  sample_n(15)%>%
+  ggplot(aes(x=Population,y=log10(Langs),label=Country)) + geom_point(aes(colour=MGS_category)) + geom_text_repel()+theme_classic()
+
+```
+
+
+## geom_line() and geom_smooth()
+
+Use `geom_line()` for a jagged line:
+
+```{r,include=FALSE}
+barnnamn %>% 
+  mutate(FirstLetter=str_sub(name,1,1)) %>% 
+  filter(FirstLetter == "X" | FirstLetter == "Y" | FirstLetter == "Z") %>% 
+  group_by(year)  %>% 
+  summarise(TotalN=sum(n))->weird_names
+```
+
+
+```{r}
+weird_names%>%
+  ggplot(aes(x=year, y=TotalN)) + 
+  geom_line()+
+labs(x='Year',y='Total number of weird names',title='Popularity of weird names over time')+
+  theme_classic()
+```
+
+Use `geom_smooth()` to get a smoothed line:
+
+```{r,warning=FALSE,message=FALSE}
+weird_names%>%
+  ggplot(aes(x=year, y=TotalN)) + 
+  geom_smooth()+
+labs(x='Year',y='Total number of weird names',title='Popularity of weird names over time')+
+  theme_classic()
+```
+
+## geom_col() - bar plots
+
+```{r}
+barnnamn%>%
+  filter(name=='Lee')%>%
+  ggplot(aes(x=year,y=n))+geom_col()+
+  labs(title="Babies named Lee",x="Year",y="Number of babies")+
+  scale_x_continuous(breaks=c(2010:2017))+  # to specify the breaks on the x-axis
+  theme_classic()
+```
+
+## Reordering items on the x-axis
+
+* add a `reorder()` function to the `aes()` for the x-axis
+* works the same way as `arrange()`
+
+```{r}
+MGS_nettle%>%
+  sample_n(6)%>%
+  ggplot(aes(x=reorder(Country,Langs),y=Langs,fill=MGS_category))+
+  geom_col()+
+  labs(x='Country',y='Number of languages')+
+  scale_fill_discrete("Environment",c("dry","fertile"))+
+  theme_classic()
+```
+
+## Grouped bar plots
+
+* Use `fill=VarX` in the `aes()` of your ggplot call to colour the bars by a third variable.
+* Use `position="dodge()"` in your `geom_col()` to have the bars side-by-side
+* Use `scale_x_continuous` (for continuous variables) to specify the breaks on the x-axis; if you have discrete (e.g. categorical) variables, the function is `scale_x_discrete`
+
+```{r}
+barnnamn%>%
+  filter(name=='Lee')%>%
+  ggplot(aes(x=year,y=n,fill=sex))+
+  geom_col(position="dodge")+  # bars side-by-side
+  labs(title="Babies named Lee",x="Year",y="Number of babies",fill="Sex")+
+  scale_x_continuous(breaks=c(2010:2017))+  # to specify the breaks on the x-axis
+  theme_classic()
+```
+
+If you don't use `position="dodge"`, the different coloured bars will be stacked on top of eachother.
+
+```{r}
+barnnamn%>%
+  filter(name=='Lee')%>%
+  ggplot(aes(x=year,y=n,fill=sex))+
+  geom_col()+  
+  labs(title="Babies named Lee",x="Year",y="Number of babies",fill="Sex")+
+  scale_x_continuous(breaks=c(2010:2017))+  # to specify the breaks on the x-axis
+  theme_classic()
+```
+
+## Percent stacked bar plots
+
+Use `position="fill"` to show proportions instead of counts:
+
+```{r}
+barnnamn%>%
+  filter(name=='Lee')%>%
+  ggplot(aes(x=year,y=n,fill=sex))+
+  geom_col(position="fill")+  # to show proportions 
+  labs(title="Babies named Lee",x="Year",y="Proportion",fill="Sex")+
+  scale_x_continuous(breaks=c(2010:2017))+  # to specify the breaks on the x-axis
+  theme_classic()
+```
+
+## geom_violin()
+
+This is good to compare the distribution of the data between groups.
+
+```{r}
+# mpg is a dataset of cars
+mpg %>%
+  # the hwy column tells you how many miles a car can go on 1 gallon of petrol
+  # class is the type of car
+  ggplot( aes(x=reorder(class,hwy), y=hwy)) + 
+  geom_violin() +
+  theme_classic()+
+# we can use the stat_summary point to add points for summary statistics, here we show the mean
+  stat_summary(fun=mean, geom="point")+
+  labs(x="Car type",y="miles per gallon",title="Efficiency of cars on the highway",caption = "The mean miles per gallon for each car is indicated with a point")  
+
+```
+
+
+
+## Making data points less clumped or less spread apart
+
+* Log transformations (as in the graph above) are used to make data that is very spread apart/clumped together easier to visualise.
+* The most common base is 10. When we take the log10 of a number, $x$, we are trying to find a number $y$ such that $10^y=x$. The function for this in R is just `log10(x)`. For very far apart values of $x$, taking $log10(x)$ will give you values that are closer together, while for very close together values of $x$, $log10(x)$ will give you values that are further apart. This means that $log10(x)$ is often nicer to plot than $x$.
+* It is perfectly acceptable to do these kinds of transformations to your data, in order to make it easier to visualise.
+
+## Making multiple plots 
+
+`facet_wrap()` and `facet_grid()` let you produce multiple different plots for each value in a column/columns
+ 
+* `facet_wrap(~ColA)` --> will make different versions of the same graph for every different value in colA, all wrapped around each other (works well when you have a lot of different values of a variable)
+* `facet_grid(colA~colB)` --> makes a grid of graphs, where the different values of colA are the rows in the grid, and the different values of colB are the columns in the grid. This works best when colA and colB don't have too many different values.
+* `+theme_minimal()` is a nice theme to use with faceted plots (compared to our usual `+theme_classic()`)
+
+```{r}
+barnnamn %>% filter(name=="Lee") %>% ggplot(aes(x=year, y=n)) + geom_line() + facet_wrap("sex")+theme_minimal()
+```
+
+```{r,message=FALSE}
+barnnamn %>% 
+  mutate(FinalLetter = str_sub(name, -1, -1))  %>%  
+  mutate(Final = if_else(FinalLetter %in% c("a",'ä','ö','å', "e", "i", "o", "u", "y"), "vowel", "consonant")) %>% 
+  group_by(Final,year,sex) %>% 
+  summarise(total=sum(n))  %>% 
+  ggplot(aes(x=year, y=total)) + geom_line() + facet_grid(sex ~ Final)+theme_minimal()
+```
+
+## Changing the number and look of ticks on the x axis
+
+You can add more ticks to a continuous x-axis using the function `+scale_x_continuous(n.breaks=num_ticks)`. The number of ticks that you enter won't always be the exact number of labels it makes, but it will try to get it as close as possible while still ensuring nice break labels.
+
+We can also make the break labels nicer by changing their angle and position. This is done with the function `+theme(axis.text.x = element_text(angle=45,vjust=0.5))`, and again, just play around with the values for `angle` and `vjust` (vertical adjustment) until you get something that looks right. If `vjust` doesn't work for you, there is also an argument `hjust` (horizontal adjustment) that you can add.
+
+```{r,message=FALSE}
+barnnamn %>% 
+  mutate(FinalLetter = str_sub(name, -1, -1))  %>%  
+  mutate(Final = if_else(FinalLetter %in% c("a",'ä','ö','å', "e", "i", "o", "u", "y"), "vowel", "consonant")) %>% 
+  group_by(Final,year,sex) %>% 
+  summarise(total=sum(n))  %>% 
+  ggplot(aes(x=year, y=total)) + geom_line() + facet_grid(sex ~ Final)+theme_minimal()+scale_x_continuous(n.breaks=16)+theme(axis.text.x = element_text(angle=45,vjust=0.5))
+```
+
+## Mapping
+
+We can get maps from the packages `rnaturalearth` and `rnaturalearthdata`, and plot them using the `ggplot` function `geom_sf()`. `sf` is a file format for storing maps. 
+
+```{r mapping}
+# required packages
+library(rnaturalearth)
+library(rnaturalearthdata)
+library(ggrepel)
+
+# these packages may not function properly if you don't also have rgeos installed; if you get an error, run install.packages('rgeos') in your console and then try again
+
+# the function ne_countries will give you country maps, if you don't specify which countries, it gives you the whole world. 
+# Use returnclass="sf" to make sure you get an sf format back, as this is what geom_sf() works with
+world <- ne_countries(returnclass = "sf")
+
+# you need to have latitude and longitude information for the things you want to plot -- I get this from google maps -- just right click on a place in google maps (on a computer), and the latitude and longitude will show up and you can copy them
+type <- c("rental","parent's house","in-law's house","rental","rental")
+latitude <- c(59.865,-33.879,50.874,35.664,-35.284)
+longitude <- c(17.641,151.112,6.037,139.482,149.136)
+places <- data.frame(type,latitude,longitude)
+
+# start by plotting the map as a base layer
+# this always has to come first -- it won't work if you start with the points and try to add the map after
+world%>%
+  ggplot()+
+  geom_sf()+
+  # then you can add points on top of it -- note that you need to specify the data, because this comes from a different dataset to the one at the top of the pipe
+  geom_point(data = places,aes(x=longitude,y=latitude,colour=type))+
+  theme_void()+    # this is a nice theme for maps; it gets rid of the axes
+  labs(title="Places I've Lived")
+
+```
+
+You can use the 'country' argument in `ne_countries()` to get a map of a single country.
+
+```{r}
+
+Australia <- ne_countries(country="Australia",returnclass = "sf")
+
+australian_places <- places%>%filter(latitude<0)
+
+Australia%>%
+  ggplot()+
+  geom_sf()+
+  # since the data isn't coming from the top of the pipe, you need to tell it the data and aesthetics
+  geom_point(data = australian_places,aes(x=longitude,y=latitude))+
+  # you could use labels instead of colour -- but again you need to tell it the aesthesics and data to use
+  geom_text_repel(data = australian_places,aes(x=longitude,y=latitude,label=type))+
+  labs(title="Places I've Lived")+
+  theme_void()
+```
+
+You can add multiple countries if you like:
+
+```{r}
+map <- ne_countries(country=c("Australia","New Zealand"),returnclass = "sf")
+
+australian_places <- places%>%filter(latitude<0)
+
+map%>%
+  ggplot()+
+  geom_sf()+
+  # since the data isn't coming from the top of the pipe, you need to tell it the data and aesthetics
+  geom_point(data = australian_places,aes(x=longitude,y=latitude))+
+  # you could use labels instead of colour -- but again you need to tell it the aesthesics and data to use
+  geom_text_repel(data = australian_places,aes(x=longitude,y=latitude,label=type))+
+  labs(title="Places I've Lived")+
+  theme_void()
+
+```
+
+Or you can use the argument `continent` to specify an entire continent:
+
+```{r}
+Asia <- ne_countries(continent="Asia",returnclass = "sf")
+Asia%>%
+  ggplot()+
+  geom_sf()+
+  theme_void()
+```
+
+A full list of available countries and continents is shown below:
+
+```{r}
+library(reactable)
+data <- countries50
+countries <- data@data
+countries%>%
+  select(name,continent)%>%
+  unique()%>%
+  arrange(continent,name)%>%
+  rename(country=name)%>%
+  reactable(searchable = TRUE,filterable = TRUE)
+```
+
+## Visualing variation across multiple variables
+
+If you have 3 or 4 variables, I would try to visualise the third and fourth variables by using features like colour, or by making multiple plots (with `factet_wrap()` and `facet_grid()`).
+
+However, if you have a whole bunch of variables that are all related/form a cohesive set, and you want to get an idea of how similar or different items are overall, based on their values for *all* these variables, you can do this by creating a *distance matrix*. A distance matrix shows the *overall* distances between all the items in your data, by taking the sum of their distances based on each variable (for more explanation see the notes from lecture 8).
+
+Note that this only works if your data is numerical, or if it has been binarised. For numerical data, make sure you normalise the data so that values of each variable are comparable between different items (e.g. instead of using raw counts, use proportions).
+
+There are two different kinds of visualisations you can make from a distance matrix. 
+
+1. You can attempt to *plot* these distances, by transforming them into 2 or 3 dimensional coordinates, and plotting the items as points along these dimensions.
+2. You can cluster items that are close to eachother together repeatedly, until you get a branching tree.
+
+The first method is called *multidimensional scaling*, and the second is called *cluster analysis*.
+
+Multidimensional scaling works well if the data is easily reduced to two or three dimensions, but this isn't always possible. Cluster analysis works better when you have complicated data which varies along multiple dimensions/with many distinct groups.
+
+### Multidimensional scaling
+
+1. Convert the data into a distance matrix--make sure it is appropriately normalised/binarised first--using the function `dist()`. Add `method="binary"` if the data is binarised. If it's numerical, the default method (`euclidean`) is appropriate.
+2. Find coordinates for these distances using `cmdscale(distances, k=2)`. k sets the number of dimensions to use; the default is two. 
+3. `cmdscale()` will make coordinates for your distances as well as it can, but it can't always represent the distances perfectly, so you should check how closely the distances between the coordinates matches the actual distances. This is called calculating the *stress* on the coordinates, and we will make our own `stress()` function to do this.
+
+```{r,include=TRUE}
+# d is the original distances, D is the distances between the coordinates made by cmdscale()
+stress <- function(d, D){
+  sqrt(sum((d - D) ^ 2) / sum(d ^ 2))
+}
+```
+
+This is how stress values are interpreted:
+
+Value                | Interpretation
+---------------------|-------
+Stress >= 0.2        | Poor
+0.1 <= Stress < 0.2  | Fair
+0.05 <= Stress < 0.1 | Good
+Stress < 0.05        | Excellent
+
+4. If the stress is okay, then you can plot the coordinates in two dimensions. If it's not okay, then probably a three-dimensional or higher solution is needed to accurately represent the data. You can check how many dimesions are needed by playing around with different values of k in the `cmdscale()` function, and then checking the stress on those coordinates (see notes from lecture 8). 
+
+You will also need the functions `column_to_rownames()` and `as_dataframe(rownames="column_name")` to go between the data format required by `dist()`, and that needed for plotting. 
+
+Below is an example using euclidean distances (i.e. with numerical data), to visualise distances between different Japanese case particles in terms of their functions.
+
+```{r euclidean}
+library(ggrepel)
+
+# toy data about the frequency of use (as a proportion of the total frequency for each particle) with different cases for some Japanese particles
+particle <- c("ga","ni","de","wa","o")
+nominative <- c(0.95,0,0,0.5,0)
+genitive <- c(0.05,0,0,0,0)
+locative <- c(0,0.6,0.7,0.1,0)
+instrumental <- c(0,0,0.3,0.05,0)
+allative <- c(0,0.3,0,0.1,0)
+accusative <- c(0,0.1,0,0.35,1)
+
+particles <- data.frame(particle,nominative,genitive,locative,instrumental,allative,accusative)
+
+# 1. Make the distance matrix
+particles%>%
+  # turn the first column into rownames first -- your columns should only contain measurements of your variables of interest
+  column_to_rownames("particle")%>%
+  dist()-> distances
+
+# 2. Make coordinates
+                                   # use k=3, 4 etc. for higher-dimensional solutions
+coordinates <- cmdscale(distances,k=2)
+
+# 3. Check stress on coordinates
+
+stress(distances,dist(coordinates))
+```
+
+Here, the stress is less than 0.1 so the two-dimensional coordinates represent the distances well, and the data can be easily plotted
+
+```{r euclidean plot}
+# 3. Plot coordinates
+
+coordinates%>%
+        # put the rownames into a column first
+  as_data_frame(rownames="particle")%>%
+  ggplot(aes(x=V1,y=V2,label=particle))+geom_point()+geom_text_repel()+theme_classic()->plot1
+plot1
+```
+
+You can see that *de* and *ni* have similar functions, as they group together, while *ga* and *o* have opposite functions, with *wa* falling in between *ga* and *o*, but closer to *ga*. This is because *de* and *ni* both have to do with location, while *ga* is nominative and *o* is accusative. But *wa* can take both nominative and accusative case, because it's a topic marker--that's why it falls in between *ga* and *o*. However, nominatively marked nouns are more often topics than accusatively marked nouns, which is why it is closer to *ga* than to *o*.
+
+Below is an example with binary distances, using cognacy data to determine similarities between different dialects of Japanese.
+
+```{r binary,message=FALSE}
+japonic <- read_csv("data/japvocabmatrix.csv")
+
+japonic%>%
+  rename(language=X)%>%
+  # excluded dead languages and Okinawa because it is not a dialect and will mess up the scale on the map by being super far away
+  filter(language!="Old_Japanese",language!="Middle_Japanese",language!="Okinawa")%>%
+  column_to_rownames("language")%>%
+  dist(method = "binary")->distances
+
+coordinates <- cmdscale(distances,k=2)
+
+coordinates%>%
+  as_data_frame(rownames="Location")%>%
+  ggplot(aes(x=V2,y=-V1,label=Location))+
+  geom_point()+
+  geom_text_repel()+
+  theme_classic()+
+  labs(x="Conservative versus progressive",y="South to north")
+```
+
+Here, instead of having distinct groups, we actually have a continuum which we can label as reflecting the spatial location (south to north) on the one hand, as well as the conservativeness of the dialect on the other hand--if you know about Japanese dialectology. 
+
+The stress on this representation is actually fairly high
+
+```{r}
+stress(distances,dist(coordinates))
+```
+
+However, a three-dimensional solution is only marginally better:
+
+```{r}
+higher_solution <- cmdscale(distances,k=3)
+stress(distances,dist(higher_solution))
+```
+
+Here, the high stress value is likely because we have *a lot* of languages, so it may be that it is hard to get the correct positioning of the languages within each small group. That is, the spatial relationship between languages that are close to eachother may not be very accurate. However, the main dialect groups and the large distances in this figure are well-represented (based on what we already know about Japonic), so I think it is still a good representation--as long as you warn people not to look at the small distances. If this two-dimensional representation was really a bad represenation, we would expect a bigger difference between the stress levels of a two-dimensional versus three-dimensional solution. 
+
+### Cluster analysis
+
+If you want to know about the close relationships (small distances) as well, you could use a cluster analysis
+
+```{r}
+clusters <- hclust(distances,method="ward.D2")   # method="ward.D2" usually produces good results
+plot(clusters)
+```
+
+Compared to multidimensional scaling, cluster analyses are better at showing distinct groups when you have a lot of data points. From the first two splits in the tree here, we already have four distinct groups--they basically represent the north and east of country, versus the south and west of the country. However, in the multidimensional scaling representation the western and eastern groups ended up squished together (it was hard to clearly separate them), so that could also contribute to high stress levels. This is probably because the eastern and western groups are less distinct from eachother than the northern and southern groups (which were preserved), and like we said the multidimensional scaling representation just shows the general trends and not the small differences.
+
+So, if I were to present this data, I would include both the multidimensional scaling analysis (to show the overall trends), as well as the cluster analysis (to show distinct, including smaller-level, groupings).
+
+### When to use which method?
+
+If you only have a few data points (like in the first example with the Japanese particles), multidimensional scaling and cluster analyses are usually equally good at representing the distances, because there's enough space on the multidimensional scaled plot to keep all the groups distinct. So it's just a matter of personal preference as to which visualisation you prefer, although if you think the data is hierarchically structured the cluster analysis would represent this hierarchical structure better.
+
+If you have a lot of data points, however, it is hard to keep groups distinct on multidimensional scaling plots (as we saw with the Japanese data). In this case, the cluster analysis is better for showing the groupings, and it is only worth still using the multidimensional scaling plot if you think the dimensions are meaningful and represent some overall trends in the data (e.g. the north-south, conservative-progressive trends we saw in the Japanese data). If you cannot think of any meaningful labels for your dimensions, then probably all the multidimensional scaling analysis is doing is trying to represent distinct groups--rather than any kind of continuum--in which case I would just use a cluster analysis because that does grouping better when there's lots of data points.
+
+For instance, below is an example, plotting words based on their sensory modality ratings:
+
+```{r,message=FALSE}
+norms <- read_csv("data/lynott_connell_2009_modality.csv")
+
+norms%>%
+  select(-PropertyBritish,-DominantModality)%>%
+  column_to_rownames("Word")%>%
+  sample_n(50)%>%
+  dist()->distances
+
+coordinates <- cmdscale(distances)
+
+coordinates%>%
+  as_data_frame(rownames="Word")%>%
+  ggplot(aes(x=V1,y=V2,label=Word))+ 
+  geom_point()+
+  geom_text_repel()+
+  theme_classic()
+```
+
+There groupings are not very clear, nor can we come up with any meaningful labels for these dimensions. In this case, I would just use a cluster analysis because at least then the groupings are clear:
+
+```{r}
+clusters <- hclust(distances,method="ward.D2")   # method="ward.D2" usually produces good results
+plot(clusters)
+```
+
+We can see that the groupings are not well preserved in the multidimensional scaling plot from the high stress on the coordinates:
+
+```{r}
+stress(distances,dist(coordinates))
+```
+
+A three-dimensional solution is able to represent the groupings better:
+
+```{r}
+newcoordinates <- cmdscale(distances,k=3)
+stress(distances,dist(newcoordinates))
+```
+
+And we could extract the different groupings by plotting the dimensions one after the other:
+
+```{r}
+newcoordinates%>%
+  as_data_frame(rownames="Word")%>%
+  ggplot(aes(x=V1,y=V2,label=Word))+
+  geom_point()+
+  geom_text_repel()+
+  theme_classic()
+
+newcoordinates%>%
+  as_data_frame(rownames="Word")%>%
+  ggplot(aes(x=V1,y=V3,label=Word))+
+  geom_point()+
+  geom_text_repel()+
+  theme_classic()
+
+newcoordinates%>%
+  as_data_frame(rownames="Word")%>%
+  ggplot(aes(x=V2,y=V3,label=Word))+
+  geom_point()+
+  geom_text_repel()+
+  theme_classic()
+
+```
+
+But this is a lot more work (and still it's easier to see the groups in the cluster dendrogram), so I would just use the cluster analysis instead. I would only try plotting all the dimensions if you think they're all meaningful.
+
+```{r}
+plot(clusters)
+```
+
+
+# Dealing with Errors
+
+|Error                    |Possible explanation/fix                                                                                                     |
+|-------------------------|-----------------------------------------------------------------------------------------------------------------------------|
+|"Could not find function"|You haven't loaded (or installed) the library for the function you're trying to use, or you've spelt the function name wrong!|
+|"object 'blah' not found"|You have a typo with your variable name 'blah', i.e. you've spelt blah wrong somewhere.                                      |
+
+# Getting help
+
+* If you want to know more about any function, if you type `?function_name`, R will show you information about how the function works in the bottom right pane
+* If you still need help, try searching for your question on [stack exchange](https://stackoverflow.com/questions/tagged/r) or just google also usually works :)
+* There are also the [R cheatsheets](https://www.rstudio.com/resources/cheatsheets/)
+* And of course, also ask your question in the relevant discussion board on studium!
+

@@ -1,0 +1,360 @@
+---
+title: "What makes good linguistic research?"
+author: "Bonnie McLean"
+date: "23/03/2021"
+output: slidy_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+colorize <- function(x, color) {
+  if (knitr::is_latex_output()) {
+    sprintf("\\textcolor{%s}{%s}", color, x)
+  } else if (knitr::is_html_output()) {
+    sprintf("<span style='color: %s;'>%s</span>", color, 
+      x)
+  } else x
+}
+```
+
+## Kinds of linguistic research
+
+1. Research that makes use of existing data
+   - [cldf data](https://cldf.clld.org/examples.html)--mainly structural data (typological, grammatical) and wordlists
+   - [wals](https://wals.info/)
+   - [clics](https://clics.clld.org/)
+   - corpora, e.g. [språkbanken](https://spraakbanken.gu.se/en/about), [more swedish corpora](https://www.ling.su.se/english/nlp/corpora-and-resources), [sketchengine](https://www.sketchengine.eu/), [childes](https://childes.talkbank.org/)
+   - [osf](https://osf.io/search/?q=tags:(%22linguistics%22)&filter=project&page=1)/previous studies (check the **supplementary materials** section of the paper)
+2. Research that creates its own data
+   - fieldwork / language description
+   - linguistic experiments
+   - make your own corpus, e.g. through twitter or youtube
+
+## Assessing linguistic research
+
+1. What is the *research question*? --- **Introduction**/**Abstract**
+2. Is the data *appropriate* for answering that research question? Are there any issues with how the data was collected, selected, or coded that could potentially affect the interpretation of the results? -- **Methods**
+3. What are the *key findings*? (What are the authors claiming to have found?) -- **Abstract**/**Conclusion**
+4. How well do their *results* reflect the key findings? -- **Results** (raw results)/**Discussion** (linking results to claims)
+
+Plus:
+
+- How well do their *figures* and *(e.g. statistical) tables* communicate their results? Have they explained their figures and their statistics well so that you can see how these demonstrate their claims?
+
+Good linguistics papers should be understandable to any linguist, regardless of their field, so if you can't understand a paper it's not because you're dumb, it means it's a bad paper! (Badly communicated research)
+
+## Making your own data
+
+* fieldwork (creating corpora) --- see the course [Linguistic Fieldwork](https://www.uu.se/en/admissions/exchange/courses/list/course-description/?kKod=5LN147&typ=1&lasar=20/21)
+* linguistic experiments -- *this lecture*!
+* make your own corpus, e.g. through twitter or youtube -- see the course [Natural Language Processing](https://www.uu.se/en/admissions/exchange/courses/list/course-description/?kKod=5LN710&typ=1&lasar=20/21)
+
+## Basic structure of an experiment
+
+1. Intro to the experiment and collection of informed consent.
+2. The experiment itself
+3. Demographic questions
+
+## Informed consent
+
+* Informed consent is a very important part of doing research with people, and should be the first thing you do in every study.
+* Informed consent should minimally mean that:
+  - Participants are informed of the **purpose** of the research.
+  - Participants are informed of **what they will be doing in the study** including *the type of task*, *what kind of data will be collected*, *how long it will take*, etc.
+  - Participants are informed of **how the results from the study will be used/shared**.
+* Informed consent for online studies is much simpler than informed consent for, e.g., fieldwork or lab-based studies. There are additional things to consider when:
+   - You are collecting personal (identifying) information from participants (e.g. names, contact details etc.).
+   - You are recording participants (with photographs, audio, or video recordings).
+   - You are working with participants for a long/undelineated amount of time: in this case you need to make it clear to participants that they can stop and take a break at any time.
+* If you are collecting personal data from participants (names, contact details, images or recordings of them) then you need to **apply for ethical review** and report your study to the university's **data protection officer**. You can read more about this [here](https://mp.uu.se/en/web/info/forska/etiskafragor/tillstand-och-etisk-provning). When  you write up the results, in the methods section of the paper you should state that you got ethics approval from Uppsala University (or wherever) and site the approval number/code. 
+
+## Experimental design - terminology
+
+* The things that the experimenter deliberately varies as part of the study are called the *independent variables*, or explanatory variables.
+* Different values of the independent variables are called *conditions*.
+* The things that the experimenter measures as part of the study are called the *dependent variables* or response variables.
+* The things experiment participants are shown are called *stimuli*.
+* When a participant is shown a stimulus and responds to it, this is called a *trial*.
+
+## A simple example - the stroop test
+
+* Participants are shown a colour word (like "red" or "blue" or "green") and asked to say which colour the word is written in (not which word it is!).
+* Sometimes the word is written with letters which are the same colour as the word, e.g. "red" in red letters
+* Other times the word is written with letters of a different colour, e.g. "red" in blue letters
+* [Demo](https://www.psytoolkit.org/experiment-library/experiment_stroop.html)
+
+## A simple example - the stroop test
+
+The hypothesis is that people will answer faster and more correctly when the colour and the word match (e.g. "red" in red)
+
+* **Independent variables** (what we vary) -- the word, its colour
+* **Conditions** -- word and colour match, word and colour don't match
+* **Dependent variables** (what we measure) -- how fast the participant responds, whether they respond correctly/incorrectly
+* **Stimuli** -- coloured words
+
+## In our cake study
+
+* **(Potential) independent variables**: height, shape, use of sugar, use of leavener, hardness
+* **Conditions**: [low, medium, high], [circular, rectangular], [yes/no], [yes/no], [hard/soft]
+* **Dependent variable**: choice of label (cake/pie/pastry, etc.)
+* **Stimuli**: cake pictures
+* Every time the participant sees an image and chooses a label, this is a **trial**
+
+In this case, we don't really know which (if any) of our independent variables will be relevant, but it can be useful to think about variables that could potentially be relevant when choosing stimuli. 
+
+## Extra challenge in assignment
+
+* Cluster representation of the distances between the *stimuli* for English and Swedish, based on how often they are named using the same term.
+
+![](images/answer.png)
+
+* For every speaker you need to make a matrix for that speaker of which stimuli they used the same word for, and which they used different words for.
+* Then you need to add all these matrices together for all the speakers for that language.
+
+## Confounds
+
+* Confounds (and how these are addressed) are another *very important factor* in any experiment.
+* These are external factors--that is, variables *other than* the dependent and independent variables--that could potentially affect participants' responses/performance in an experiment.
+* There are three main sources of confounds in any experiment:
+  - *Order effects*
+  - *Stimuli*
+  - *Participants*
+* It is important to brainstorm potential confounds in each of these areas before you run an experiment, and develop a plan to address them.
+
+## Order effects - randomisation
+
+* Over many trials, people may become slower or less accurate as they get bored or tired. 
+* By showing the trials in a random order that varies between participants, we can 'average out' these order effects. 
+* This ensures that certain trials/images aren't disadvantaged by always being first/last.
+* This is easy to implement in shiny, using Rs sample function.
+
+```
+trials=1:len(experiment_items)
+trial_order=sample(trials,len(experiment_items))
+```
+
+## Practice trials
+
+* In an experiment where you are measuring performance (e.g. the stroop test), it is a good idea to include 'practice trials' at the start of the experiment (the data from which you do not use).
+* This is because at the start of the experiment people are still figuring out how the task works, and so their performance is often worse than later in the experiment (once they figure out what's going on).
+* This is also easy to implement in shiny 
+
+```
+practice_trials=1:length(practice_items)
+   # the next trial after the practice trial
+real_trials=(length(practice_items)+1):(length(practice_items)+length(real_items))
+
+trial_order=c(sample(practice_trials,length(practice_trials)),sample(real_trials,length(real_trials)))
+```
+
+## Counterbalancing
+
+* Randomisation is good when all your stimuli are of the same type, but if you have disparate groups of stimuli then randomisation can be disorienting for participants. 
+* In this case we can use counterbalancing. 
+
+## Counterbalancing example
+
+![](images/exteroceptivestimuli.svg){width=50%}
+
+* **Research question:** do participants use *ideophones* (/onomatopoeia) more often when describing auditory, visual, tactile, olfactory or gustatory stimuli?
+* If you always present the auditory stimuli first, and the gustatory stimuli last, it may be that they use more ideophones in response to the auditory stimuli simply because they had more energy/motivation to provide different responses when they did this part of the experiment, and were tired/bored towards the end of the experiment.
+* Because of this, I presented the stimuli in the reverse order (gustatory stimuli first, auditory stimuli last) for every second participant. 
+* This creates two groups of participants, group A who did the tasks in the order shown, and group B who did the tasks in the reverse order.
+* If the results are consistent between these two groups, then you can conclude that the order the stimuli were presented in wasn't having an undue influence on people's responses.
+* I kept the ordering consistent *between* stimuli groups (e.g. all sounds in one block, all tastes in another block) because it would be pretty disjointed for participants to go between listening to something, then tasting something, then feeling something etc. However, *within* stimuli groups (e.g. within the sound group), I randomly varied the order of stimuli between participants.
+* So this study used *counterbalancing betweens stimuli groups*, and *randomisation within stimuli groups* to protect against order effects.  
+
+## Another example: counterbalancing in bilingual studies
+
+* Counterbalancing is often used in bilingual studies, where you are interested in comparing how participants perform a task in each of their two languages.
+* You want to make sure that the differences you find between how they perform the task in each language is because of the different language they were using, and not because of any order effects.
+* Half the participants do the task first in Language A, then in Language B.
+* The other half do the task first in Language B, then in Language A.
+* Check that there are no differences in the results between these two groups (if the effects are language-driven, the order shouldn't matter).
+
+## What if we do expect order to matter? (Priming effects)
+
+* There are some situations where order *does* matter.
+* For example, in a naming task, if you have already named a stimulus once before, you will be faster to name it a second time.
+* These are known as *priming effects*.
+* We address priming effects with a **between-subjects design**
+
+## Between-subjects versus within-subjects designs 
+
+* An experiment can be performed so that every participant sees all the stimuli in every condition, which is called a *within-subjects* design.
+* E.g. in the Stroop test every participant sees some words where the colours match and some where they differ.
+* Or, an experiment can be performed so that every participant sees only *one* condition, which is called a *between-subjects* design.
+* E.g. in the Stroop test some participants only see words where the colours match, and others only see words where the colours differ.
+
+## Use between-subjects designs only when order matters
+
+* Generally, within-subjects designs (where all participants see all conditions) are preferable because then variation within participants affects all conditions equally; e.g. say you ran one of your experiments on a Friday afternoon, and those participants were all a little tired. Their RTs would be slower in general across all conditions, so it wouldn't seem like its your conditions that are causing this effect. However, if you had a between-subjects design and those participants only completed one condition, that could lower the RTs for the whole condition (relative to the other conditions), giving the false impression of a condition effect. 
+* However, sometimes experience on previous experimental items can affect performance on subsequent items--as with the naming task if you are using the same stimuli in multiple conditions.
+* In this case, our only option is to use a between-subjects design, where half the participants name the stimuli under one condition, and the other half of the participants name the same stimuli under a different condition.
+* Just be careful to try to keep everything else roughly the same between conditions. E.g. don't run condition 1 on a Monday morning, and condition 2 on a Friday afternoon!
+
+## Other ways to address priming effects -- filler items
+
+* If your priming effect is not very longlasting, and you really don't want to use a between-subjects design, another way you could address it is by using *filler items*.
+* E.g. *syntactic priming* is a robust phenomenon where participants are more likely to use a particular syntactic construction if they have heard/used it recently.
+* If this effect is not very long-lasting, you could address it in a within-subjects experiment by introducing *filler items* (which look similar to your real trials, but don't contain the words/items you are testing) between trials so that people forget about the thing they read previously (that might affect their performance on the next real item). This would allow you to still use a within-subjects design as long as you have enough filler items between your real trials. 
+* Sometimes people also use filler items when they don't want participants to figure out what is being studied. Sometimes knowing what is being studied may make participants respond in the ways they think the experimenter wants them to, or ways they think are more socially acceptable (e.g. if you're testing for unconscious biases), instead of how they would naturally. So you can use filler items to make what you are *really* studying less obvious to participants.
+
+## Dealing with order-related confounds (summary)
+
+* We have seen how to address order-related confounds with the following techniques:
+  - Randomisation (for stimuli of a single kind)
+  - Practice trials (when you are measuring performance)
+  - Counterbalancing (for disparate groups of stimuli, or for bilingual studies)
+  - Filler items (when you can address the order effect by introducing more space/time between real trials)
+  - Between-subjects designs (when none of the above techniques are sufficient to address order effects, we eliminate order completely with a between-subjects design)
+  
+## Dealing with stimuli-related confounds
+
+* Your choice of stimuli are another very common source of confounds. There are two ways we can deal with stimuli-related confounds:
+
+1. Control for the confound
+2. Measure the confound (and exclude data if necessary)
+
+If you can't control for it, measure it! And then remove if necessary. 
+
+## Controlling for confounds
+
+* An easy way to deal with stimuli-related confounds is to just keep everything the same. This is called *controlling* for a confound.
+* A potential confound in the Stroop experiment is that, no matter whether the text colour matches or conflicts, high-frequency (common) words like "red" will be read faster than low-frequency words like "crimson" or "burgundy".
+* We could *control for* confounding variables like frequency by:
+  - Only using words of the same frequency, or very similar frequency (hard with a small category like colour words!)
+  - Using the same words in each condition (the same number of times)
+
+Condition 1 (matching): `r colorize("red","red")`, `r colorize("blue","blue")`, `r colorize("burgundy","darkred")`    
+Condition 2 (not matching): `r colorize("red","blue")`, `r colorize("blue","darkred")`, `r colorize("burgundy","blue")`
+
+## Measuring a confound: weird stimuli
+
+* Sometimes *weird stimuli* can lead to participants answering differently for particular items.
+* Say in our baked goods survey we showed participants something they are unfamiliar with 
+
+![](https://www.biggerbolderbaking.com/wp-content/uploads/2020/08/Mochi-Ice-cream-WS-Thumbnail.jpeg){width=60%}
+
+* People may just guess randomly in this case, if they don't know what the thing in the picture is.
+* If there are enough weird items, these random guesses could make our results difficult to interpret.
+* For that reason, it's good to be able to identify these weird stimuli and exclude them if necessary.
+
+## Identifying weird stimuli
+
+Some techniques for identifying weird stimuli are:
+
+- Collecting **familiarity ratings** for potential stimuli in a separate experiment *beforehand*, and then only using stimuli that were familiar to most participants. This is a good idea if you really have no idea what will be 'too weird'/unfamiliar for participants.
+- Collecting **reaction time data** during your experiment: 'weird' items often have longer reaction times compared to other stimuli, so you can weed them out after you do your experiment and exclude them from your analyses if necessary.
+- Reaction times can also be used to identify problematic participants; e.g. partipants who are not paying attention/not completing your task properly may have unusually slow or fast RTs. This is particularly relevant for online studies.
+- You can collect reaction time data in Shiny using the function `Sys.time()`, there is a demo [here](https://github.com/BonnieMcLean/ShinySurvey)
+- But for our experiments, because we don't have a lot of time, I have just chosen stimuli that I'm fairly certain will be familiar to all participants to avoid these issues. 
+
+## Dealing with participant-related confounds: collecting demographics
+
+* It's very important, when conducting experiments, that you *know your participants*.
+* This collection of demographic information usually happens *after* the participants have completed your experiment--you take them to a quick survey where you collect some information on them.
+* Demographic variables that are often collected in linguistic experiments (because they can influence people's linguistic behaviour) are:
+  - native language
+  - any other languages spoken
+  - age
+  - gender
+  - level of education
+  - place of birth
+  - places lived in for more than X years
+* Having this information can help you understand any extra variation in your results (not directly related to whatever you're studying).
+
+## Crowd-sourcing services
+
+* Many researchers use *crowd-sourcing* services to recruit participants.
+* An example is [Prolific](https://www.prolific.co/).
+* People can sign up to Prolific to earn money by completing online experiments. 
+* When you sign up, Prolific collects a bunch of demographic data on you, and asks whether you are okay with sharing this (anonymised) demographic data with the people whose studies you participate in.
+* Researchers use Prolific to find people to do their experiments.
+* The researcher pays Prolific to find participants for them, and pays the participants to complete their experiments.
+* Because Prolific already has demographic data on all its users, you don't need to collect demographic information when running studies on Prolific (unless Prolific doesn't have information on your demographic variable of interest).  
+* You can also *search for participants* by demographic variables of interest. For example, you could choose to only recruit monolingual English-speaking participants from England (if you are worried about the effect that speaking different languages might have on participants' behaviour in your experiment).
+
+## Dealing with confounds - SUMMARY
+
+* **Order effects**: randomisation, counterbalancing, filler items, practice items, between-subjects designs where necessary
+* **Stimuli**: either control for differences in stimuli, or at least measure/keep track of them where controlling for them isn't possible
+* **Participants**: collect demographic information, use filler items if you don't want people to get the point of your experiment (if you think that will bias their responses), and record RTs to weed out participants who aren't paying attention
+
+## Homework
+
+* Provide a short summary and critical analysis of some linguistic research in your favourite field. 
+* I have tried to find an interesting paper from each of your favourite fields, but feel to choose another paper if there is one you would like to read instead!
+* Answer the following questions about the paper:
+
+1. What was the research question?
+2. What were the main findings?
+3. What was the data and how was it collected (if it's an experiment) or (if the study used existing data), how was it selected?
+4. How were potential confounds dealt with or not dealt with? (Either in the data collection or selection). Remember, confounds are things that may affect the interpretation of the results, so whether you think these were handled well or not will determine whether you think their findings are valid. 
+5. Were their figures/statistics well-explained? 
+6. Were these figures/statistics--in the results section--clearly linked to their conclusions /main findings--in the discussion and conclusion?
+7. Do you think they made good visualisation choices? If not, how would you have visualised the data differently? 
+
+## Sociolinguistics
+
+* *The expectation mismatch effect in accentedness perception of Asian and Caucasian non-native speakers of English*
+* Ksenia Gnevsheva (Australian National University, Australia)
+* Experiment where they demonstrate that people expect *Caucasian* non-native English speakers (Germans) to be *less accented* than *Asian* non-native English speakers (Koreans). The people rating their accentedness were New Zealanders. 
+
+## Semantics
+
+- *Revisiting the limits of language: The odor lexicon of Maniq*
+- Ewelina Wnuk & Asifa Majid (MPI for Psycholinguistics, the Netherlands)
+- They figured out the structure of the odor lexicon in Maniq by performing a task where participants are given three smell terms, and have to choose the odd one out (so the other two terms are grouped together). 
+- They did multidimensional scaling on this and found the main dimensions of the smell lexicon were pleasantness and dangerousness. 
+
+## Pragmatics
+
+- *Politeness and the perception of irony: honourics in Japanese*
+- Shinichiro Okamoto, (Aichi University, Japan)
+- They did some experiments and found that when speaking to people of a lower status, using more honourifics is interpreted as more iconic; but when speaking to people of a higher status, using less honourifics is more ironic. 
+
+## Historical Linguistics - Corpus study
+
+- *Sound–meaning association biases evidenced across thousands of languages*
+- Damián E. Blasi et al. (University of Zurich, Switzerland) 
+- This uses wordlists, not experimental data. 
+- They found words for the same concepts sounded similar *even across unrelated languages*, and propose that there may be some universal *sound-meaning association biases* (e.g. *i* is small, *a* is big) that explain these similarities. 
+
+## Language technology
+
+- *Uncovering the language of wine experts*
+- Croijmans, I., Hendrickx, I., Lefever, E., Majid, A., & Van Den Bosch, A. (Max Planck Institute for Psycholinguistics, The Netherlands)
+- They studied a corpus of expert wine descriptions, to uncover terms specifically used for describing wines, and found that while there was some overlap with existing lists of wine vocabulary used to train expert wine tasters, their computational method also uncovered some new terms--so this is good for the field of expert wine trainers.
+- They also found that the colour and variety of the grape used in the wine were able to be predicted from the wine descriptions used with high accuracy, showing that contrary to popular belief, wine descriptions aren't actually complete gibberish.
+
+## Computational linguistics
+
+- *Language monitoring in bilinguals as a mechanism for rapid lexical divergence*
+- Mark Ellison (Australian National University) and Luisi Miceli (University of Western Australia)
+- They combine linguistic experiments with real human participants, and computational simulations, to show that language contact can actually lead to linguistic *divergence* (usually we think of language contact as leading to convergence). 
+- They think this is because of the way that bilinguals think.
+
+## Cognitive linguistics
+
+- *Differential coding of perception in the world's languages*
+- Asifa Majid et al. (MPI for Pyscholinguistics, The Netherlands)
+- They examined the diversity of responses to different sensory stimuli across different languages
+- They found that which senses were more encoded (showed a higher diversity of respones) varied considerably across languages, e.g in some languages more diverse responses were given for visual stimuli, in others taste stimuli elicited more diverse responses
+- There is no universal hierarchy of the senses for humans
+
+## Phonetics
+
+- *Monophthongal vowel changes in Received Pronunciation: an acoustic analysis of the Queen's Christmas broadcasts*
+- Jonathon Harrington et al. (Macquarie University, Australia)
+- They analysed the Queen's vowels in her Christmas broadcasts from the 50s until the 80s, and found that her vowel space is becoming slightly less posh and more like "mainstream received pronunciation" in that time.
+
+## Preparation for next time -- install Git and make a github account
+
+1. Visit [the git website](git-scm.com/downloads) and download the relevant version of git for your operating system.
+2. Click on the downloaded file to install it. You can accept most of the defaults, but when you get to the bit about 'Adjusting the name of the initial branch in new repositories', I want you to select the option to 'Override the default branch name for new repositories', and the specified name should be "main". Github already uses "main" for new repositories, so it's just more convenient if your git does as well. 
+3. Start (or restart) R. Go to tools > version control > project setup, and then in the dropdown menu for the version control system, you should see 'Git' as an option. That means it worked!
+4. Then I want you to go to [github](https://github.com/) and sign up/make an account.
+
+We will learn how to work with git and github in R next time!

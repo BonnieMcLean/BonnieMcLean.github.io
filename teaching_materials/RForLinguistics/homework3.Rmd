@@ -1,0 +1,73 @@
+---
+title: "Homework 3 solution"
+output: 
+  html_notebook:
+    toc: yes
+    toc_float: yes
+
+---
+
+```{r message=FALSE,include=FALSE}
+library(tidyverse)
+library(barnnamn)
+```
+
+# Exercise statement
+
+Look at the barnnamn data:
+
+(1) Can you order the names by the year they peak (i.e. the year they were most popular), going from the names which peaked earliest to those that peaked latest?
+(2) Are there any gender biases in the initial letters of male versus female names? Create a percent stacked barplot showing the proportion of names beginning with (e.g. A, Ä, Å etc.) that are male versus female. Make sure you appropriately label your x axis, y axis and title.
+
+**Extra challenge**: For a bonus point, see if you can make the same graph, but with the items on the x-axis arranged so they go from predominantly female, to predominantly male initials, like this:
+
+# Names ordered by the year they peak
+
+Here, you needed to use the functions `group_by` (to see the data for each name separately), `max()` (to figure out the highest value of n for that name), `filter()` (to only look at rows, i.e. years, where `n==max(n)`), and of course `arrange()` (to arrange the names by the year they peak).
+
+If you wanted to split the task into subtasks, you could also use `mutate()` to store your calculations.
+
+```{r names_by_peak}
+barnnamn%>%
+  # 1. group by name
+  group_by(name)%>%
+  # 2. calculate the maximum n value for that name
+  mutate(max_n=max(n))%>%
+  # 3. filter the data to only include the row where n==max_n
+  filter(n==max_n)%>%
+  # 4. arrange by year
+  arrange(year)
+
+# OR, a quicker way:
+
+barnnamn%>%
+  group_by(name)%>%
+  filter(n==max(n))%>%
+  arrange(year)
+```
+
+# Sex bias in initial letters
+
+This was pretty straightforward, everybody did this right!
+
+```{r}
+barnnamn%>%
+  mutate(InitialLetter=str_sub(name,1,1))%>%
+  ggplot(aes(x=InitialLetter,y=n,fill=sex))+geom_col(position='fill')+labs(x='Initial Letter',y='Proportion',title="Sex Bias in Initial Letters in Swedish Names")
+```
+
+# Challenge
+
+The challenge was to see if you could arrange the letters on the x-axis according to the proportion of females. This was a bit tricky. You needed to make another column which,for every letter separately, contained the proportion of names starting with that letter which were female, and then reorder the x-axis by this column (going in decreasing order). 
+
+```{r}
+barnnamn%>%
+  mutate(InitialLetter=str_sub(name,1,1))%>%
+  # for each initial letter separately
+  group_by(InitialLetter)%>%
+  # calculate the ratio of girl names (i.e. sum of n where sex==F, divided by sum of all n for that name)
+  mutate(girl_ratio=sum(n[sex=="F"])/sum(n))%>%
+  ggplot(aes(x=reorder(InitialLetter,-girl_ratio),y=n,fill=sex))+geom_col(position='fill')+theme_classic()+labs(x="Initial Lettter",y="Proportion",title="Sex Bias in Initial Letters in Swedish Names")
+```
+
+
