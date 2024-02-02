@@ -2,7 +2,10 @@
 title: "Running Linguistic Experiments in R Shiny"
 author: "Bonnie McLean"
 date: "11/05/2021"
-output: slidy_presentation
+output: 
+  slidy_presentation:
+    footer: "Copyright (CC-By Attribution 4.0 International) 2021, Bonnie McLean"
+
 ---
 
 ```{r setup, include=FALSE}
