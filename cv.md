@@ -2,8 +2,9 @@
 <a href="https://orcid.org/0000-0002-5487-9239">
 <img alt="ORCID logo" src="https://info.orcid.org/wp-content/uploads/2019/11/orcid_16x16.png" width="16" height="16" />
 0000-0002-5487-9239
-</a>
+</a>  
 
+Doctoral student  
 Uppsala University <span class="icon-library" aria-hidden="true"></span><br>Department of Linguistics and Philology
 
 ## Education <span class="icon-googlescholar" aria-hidden="true"></span>
