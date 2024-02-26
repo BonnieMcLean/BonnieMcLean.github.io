@@ -6,6 +6,7 @@ description: >
   Mark Dingemanse and I just released a preprint on methods for studying my favourite type of words, ideophones! 
 sitemap: false
 hide_last_modified: true
+tags: [ideophones, fieldwork, semantics, papers]
 ---
 
 Releasing a preprint of mine and Mark's upcoming chapter in the book *Capturing Expressivity*, which should be out sometime later this year hopefully. We talk about methods for conducting documentary linguistic research on ideophones, one of the absolute best things you could be doing with your life!
