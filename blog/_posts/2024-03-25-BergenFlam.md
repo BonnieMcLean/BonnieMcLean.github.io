@@ -32,6 +32,6 @@ Below is a summary of the whole trip:
 |Day 6|SJ train Oslo - Stockholm (5 hours)|
 |Day 6|SJ train Stockholm - Uppsala (40 minutes)|
 
-In hindsight, it would've been good to add one more day to the trip and spend the night in Oslo on Day 6, then go back to Uppsala the day after. But unfortunately Johan had to teach so as they say in Japanese, *shou-ga naka-tta* (it couldn't be helped).
+In hindsight, it would've been good to add one more day to the trip and spend the night in Oslo on Day 6, then go back to Uppsala the day after. But unfortunately Johan had to teach so as they say in Japanese, *shou=ga naka-tta* (it couldn't be helped).
 
 We booked the tour through [Norway in a Nutshell](https://www.norwaynutshell.com/original-tour/). You could also organise it yourself and that would likely be cheaper, but we've been so busy getting ready for the baby and with our new summer house lately that I decided to just splurge on a shortcut. It's a self-guided tour, and the information we got through them was all really good. We just organised our own accommodation because the ones they offered did not run cheap. 
