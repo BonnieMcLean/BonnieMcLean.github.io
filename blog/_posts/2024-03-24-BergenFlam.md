@@ -38,4 +38,19 @@ We booked the tour through [Norway in a Nutshell](https://www.norwaynutshell.com
 
 We traveled at the end of March and were very lucky with the weather. The only thing was I was hoping to see spring flowers but no such luck yet. I thought since Oslo and Bergen are further south than Uppsala and towards the warm sea, maybe we'd get lucky. We had the first snowdrops in Uppsala just before we left. The only thing I didn't factor in was the effect of altitude 😅 Most of the train journey is in the mountains and there was still snow and frozen waterfalls for a lot of it! I was actually able to wear the spring dresses I brought though, albeit with leggings, thermal undershirts and a massive coat (temperatures were between 7 and 10 degrees).
 
-We'll just have to come back again, next time with baby Huisman — May or June would be best I think. 
+We'll just have to make the same trip again another time — May or June would be best I think. I've written a summary of all the best bits and tips below.
+
+## Oslo
+
+## Bergen railway, Oslo - Myrdal
+
+## Flåm railway, Myrdal - Flåm
+
+## Flåm
+
+## Gudvangen
+
+## Bergen railway, Voss - Bergen
+
+## Bergen
+
