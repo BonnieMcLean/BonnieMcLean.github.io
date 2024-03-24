@@ -1,6 +1,6 @@
 ---
 layout: post
-title: So you're thinking about getting pregnant - read this first!
+title: So you're thinking about getting pregnant...
 image: /assets/img/blog/Screenshot_20240131-075517.png
 description: >
   Writing this because hormones are evil, biology doesn't care about you, and I want an objective record of the pros and cons of this in case I ever want to try it again!
