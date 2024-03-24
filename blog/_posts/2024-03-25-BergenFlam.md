@@ -20,3 +20,5 @@ Below is a summary of the whole trip:
 |Day  |Route    |
 |-----|---------|
 |Day 1|SJ train from Uppsala - Stockholm (40 minutes)|
+
+We booked the tour through [Norway in a Nutshell](https://www.norwaynutshell.com/original-tour/). You could also organise it yourself and that would likely be cheaper, but we've been so busy getting ready for the baby and with the our new summer house lately that I decided to just splurge on a shortcut. It's a self-guided tour, and the information we got through them was all really good. We just organised our own accommodation because the ones they offered did not run cheap. 
