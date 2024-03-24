@@ -42,6 +42,8 @@ We'll just have to make the same trip again another time — May or June would b
 
 ## Oslo
 
+We had very little time in Oslo, so I'd like to come back again, but one thing I can recommend is the restaurant Helt Vilt! They specialise in wild meat, and I had a delicious Arctic Moose burger with brunost and cloudberry dressing, as well as the best rhubarb and apple soda I've ever had! Brunost means "brown cheese". It's not actually cheese but a by-product of it — caramelised whey, very nice. Norwegians have it on waffles for breakfast (we had that in Bergen).
+
 ## Bergen railway, Oslo - Myrdal
 
 ## Flåm railway, Myrdal - Flåm
