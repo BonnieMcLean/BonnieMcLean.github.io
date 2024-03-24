@@ -55,10 +55,13 @@ We had very little time in Oslo, so I'd like to come back again, but one thing I
 Flåm is a very pretty Fjord village. Things to check out are:
 
 - The train museum! 
-- (If you're up for it) hiking
-- 
+- (If you're up for it) hiking—the tourist information centre can give you a map with a lot of routes
+- Ægir BryggeriPub (really good food and beer; also pretty much the only restaurant in town so if you're staying multiple nights maybe plan to cook at home for some of them, there's a supermarket in town where you can get everything you need)
+- Flåm Bakeri (very good pastries and sandwiches)
 
 ## Gudvangen
+
+You can get here from Flåm by bus or scenic fjord cruise. The main thing to do is the Viking village, it was really fun and educational! They want to show people that Vikings were more than just vicious pillaging rapists (although they were that too). But when they were home in Norway apparently they were actually quite chill, civilised people. They had a proto-democracy. Slaves could work in their spare time to eventually buy back their freedom. And if you were a woman and your husband died (not hard to arrange with all the fighting and conquering the vikings did) you inherited all his political rights, so widows could actually become quite powerful.
 
 ## Bergen railway, Voss - Bergen
 
