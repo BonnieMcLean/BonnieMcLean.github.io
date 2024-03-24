@@ -1,6 +1,6 @@
 ---
 layout: post
-title: New Preprint - a multi-methods toolkit for documentary research on ideophones!
+title: ✨New Preprint - a multi-methods toolkit for documentary research on ideophones!
 image: /assets/img/iconicity/ideophones_senses.jpg
 description: >
   Mark Dingemanse and I just released a preprint on methods for studying my favourite type of words, ideophones! 
