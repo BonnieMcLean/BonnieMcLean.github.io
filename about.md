@@ -8,7 +8,7 @@ redirect_from:
 
 <!--author-->
 
-Hej! I'm Bonnie. I'm a PhD student in Linguistics at Uppsala University (Sweden), and I love words that suit their meanings! 
+Hej! I'm Bonnie. I'm a PhD student in Linguistics at Uppsala University in Sweden, and I love words that suit their meanings!
 
 Want to know what I'm talking about? Think about words like *perky*, *pesky*, or *fug*. Words that are really satisfying to use.
 
