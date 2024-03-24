@@ -23,11 +23,11 @@ Below is a summary of the entire trip:
 |Day 1|🚆SJ train Stockholm - Oslo (5 hours)|
 |Day 2|🚆Vy train Oslo - Myrdal (4.5 hours)|
 |Day 2|🚆Vy train Myrdal - Flåm (1 hour)|
-|Day 3|🥾Sightseeing in Flåm and Gudvangen|
-|Day 4|🛥️Flåm - Gudvangen by electric fjord cruise|
-|Day 4|🚍Gudvangen - Voss by bus (Skyss)|
+|Day 3|🥾 Sightseeing in Flåm and Gudvangen|
+|Day 4|🛥️ Flåm - Gudvangen by electric fjord cruise|
+|Day 4|🚍 Gudvangen - Voss by bus (Skyss)|
 |Day 4|🚆Vy train Voss - Bergen (1.5 hours)|
-|Day 5|🥾Sightseeing in Bergen|
+|Day 5|🥾 Sightseeing in Bergen|
 |Day 6|🚆Vy train Bergen - Oslo (7 hours)|
 |Day 6|🚆SJ train Oslo - Stockholm (5 hours)|
 |Day 6|🚆SJ train Stockholm - Uppsala (40 minutes)|
@@ -49,6 +49,12 @@ We had very little time in Oslo, so I'd like to come back again, but one thing I
 ## Flåm railway, Myrdal - Flåm
 
 ## Flåm
+
+Flåm is a very pretty Fjord village. Things to check out are:
+
+- The train museum! 
+- (If you're up for it) hiking
+- 
 
 ## Gudvangen
 
