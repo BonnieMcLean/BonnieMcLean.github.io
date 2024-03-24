@@ -54,7 +54,7 @@ We had very little time in Oslo, so I'd like to come back again, but one thing I
 
 Flåm is a very pretty Fjord village. Things to check out are:
 
-- The train museum!🚇 Learn how they built the Flåm railway from scratch *by hand*! It took forever digging out the tunnels without dynamite or anything like that, and a lot of people died. I felt bad for the horses that had to work on the railway but never got to ride the train ☹️
+- The train museum!🚇 Learn how they built the Flåm railway from scratch *by hand!* It took forever digging out the tunnels without dynamite or anything like that, and a lot of people died. I felt bad for the horses that had to work on the railway but never got to ride the train ☹️
 - (If you're up for it) hiking—the tourist information centre can give you a map with a lot of routes
 - Scenic fjord cruise on an electric boat (runs between Flåm and Gudvangen)
 - Ægir BryggeriPub (really good food and beer; also pretty much the only restaurant in town so if you're staying multiple nights maybe plan to cook at home for some of them, there's a supermarket in town where you can get everything you need)
