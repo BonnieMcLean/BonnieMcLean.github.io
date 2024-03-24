@@ -19,7 +19,7 @@ Below is a summary of the whole trip:
 
 |Day  |Route    |
 |-----|---------|
-|Day 1|SJ train from Uppsala - Stockholm (40 minutes)|
+|Day 1|SJ train Uppsala - Stockholm (40 minutes)|
 |Day 1|SJ train Stockholm - Oslo (5 hours)|
 |Day 2|Vy train Oslo - Myrdal (4.5 hours)|
 |Day 2|Vy train Myrdal - Flåm (1 hour)|
