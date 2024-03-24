@@ -11,11 +11,11 @@
 1. McLean, B., & Dingemanse, M. (in press). A multi-methods toolkit for documentary research on ideophones.  In Williams, J.P. (Ed), *Capturing Expressivity*. Oxford University Press. Preprint at [https://doi.org/10.31219/osf.io/3n85v](https://doi.org/10.31219/osf.io/3n85v). 
 2.  Akita, K., & McLean, B. (2021). [Onsyootyoo-tikaku-no niti/ei-taisyoo: Imi-tizu-ni yoru kentoo](https://drive.google.com/file/d/1NhMszLjBaVynXeFuwEa2xtCih-BUd1UP/view) [A contrastive study of Japanese and English speakers’ sound-symbolic perception: A semantic-map approach]. In K. Shinohara & R. Uno (Eds.), *Zikken-ninti-gengogaku [Progress in experimental cognitive linguistics]* (pp. 165–189). Hitsuji Shobo.
 
-## Popular Science Articles
+## Popular science articles
 
 1. McLean, B. (2022, August). Iconicity in language change. [*Babel Linguistic Horizons*](https://cloud.3dissue.com/18743/41457/106040/issue40/index.html?page=40). 🧵[Summary](https://www.bonniemclean.net/news/2022-08-01-babellinguisticshorizons/)
 
-## Conference Presentations
+## Conference presentations
 
 1. McLean, B. (2022, August 22). What’s in a name? On the persistence of motivated form-meaning
 mappings in lexicons. ✨Invited plenary at _Societas Linguistica Europaea 55_, Bucharest, Romania.   
@@ -32,7 +32,7 @@ mappings in lexicons. ✨Invited plenary at _Societas Linguistica Europaea 55_, 
 1. McLean, B. (2019). [*A Multimedia Encyclopedia of Mundari Expressives*](https://web.archive.org/web/20201020072116/https://sites.google.com/site/mundaexpressives/)
 2. McLean, B. (2018). Mundari Ideophones. [*PARADISEC (Pacific and Regional Archive for Digital Sources in Endangered Cultures)*](https://catalog.paradisec.org.au/collections/BMM1)
 
-## Unpublished Reports
+## Unpublished reports
 
 1. [Report on Gamilaraay Demonstratives](https://drive.google.com/file/d/12pTnCZgmIkViAbHPG7KVBRXME4FBc3XF/view), work with John Giacon. 
 2. [Memrise for Indigenous Languages](https://drive.google.com/file/d/1Rwzk6qkUA3ah5CdZE4uFgjEmkaWKZiJ0/view), work with Jane Simpson and the [Papulu Apparr-kari Aboriginal Corporation](https://www.papak.com.au/). See also the 📒 [handbook](https://drive.google.com/file/d/1mWYR2MPNBpmFU734qi0SR4JsGdUQYXXl/view) and 📊 [poster](https://drive.google.com/file/d/1jeCeKMJqPkFaphLbE_ZD1cXhmitLEgWy/view). Example memrise courses include the [Warumungu memrise course](https://app.memrise.com/course/1201862/warumungu/) (now run by Randall Morrison), [Warlmanpa picture course](https://app.memrise.com/course/1195899/warlmanpa/), and [Gamilaraay word of the day](https://app.memrise.com/course/1177760/garay-yaadhagu-gamilaraay-word-of-the-day/) (now run by John Giacon and Hilary Smith).
