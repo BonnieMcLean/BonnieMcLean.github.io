@@ -67,3 +67,9 @@ You can get here from Flåm by bus or scenic fjord cruise. The main thing to do 
 
 ## Bergen
 
+We only had a day here and it was raining so we didn't do everything, but the sights include:
+
+- The old town (Bryggen)—small but very cool. I found it a bit weird the streets were all wooden instead of cobblestone. Seems a bit impractical in such a wet place.
+- The fish market (Fisketorget). Also small but the fish was very fresh and delicious! We had some very good sashimi there. There's a nice view of the old town from across the harbour.
+- Bryggen Tracteursted—traditional Norwegian restaurant in the old town. This was the best meal we had the entire trip!
+- Fløibanen funicular—sad we ran out of time for this but if I went back I would definitely do it for more trains!🚇
