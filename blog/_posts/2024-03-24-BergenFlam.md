@@ -15,7 +15,7 @@ Norway has been on my travel list since we moved to Sweden in 2020, especially s
 
 I can highly recommend train journeys for the pregnant traveler (or any traveler for that matter, this was so scenic!). My husband estimates the longest I can walk at the moment (in the middle of second trimester, supposedly the prime time of the pregnancy!) is 4km, so a holiday that is mostly sitting on trains all day was ideal. We noticed (probably for the same reason) there were also a lot of older travelers on board with us, so just be aware of that as well, some patience may be needed 😅
 
-Below is a summary of the whole trip:
+Below is a summary of the entire trip:
 
 |Day  |Route    |
 |-----|---------|
