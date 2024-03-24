@@ -7,7 +7,7 @@ description: >
 sitemap: false
 hide_last_modified: true
 excerpt_separator: <!--more-->
-tags: [fieldwork, ryukyuan]
+tags: [fieldwork, ryukyuan, travel]
 ---
 
 Top photo is of us and my mum (who tagged along) at Nakijin castle, one of the few surviving ruined castles of the Ryukyu Kingdom, and a UNESCO world heritage site!
