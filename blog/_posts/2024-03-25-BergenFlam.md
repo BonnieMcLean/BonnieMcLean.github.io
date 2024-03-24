@@ -20,5 +20,18 @@ Below is a summary of the whole trip:
 |Day  |Route    |
 |-----|---------|
 |Day 1|SJ train from Uppsala - Stockholm (40 minutes)|
+|Day 1|SJ train Stockholm - Oslo (5 hours)|
+|Day 2|Vy train Oslo - Myrdal (4.5 hours)|
+|Day 2|Vy train Myrdal - Flåm (1 hour)|
+|Day 3|We spent this day sightseeing in Flåm and Gudvangen|
+|Day 4|Flåm - Gudvangen by electric fjord cruise|
+|Day 4|Gudvangen - Voss by bus (Skyss)|
+|Day 4|Vy train Voss - Bergen (1.5 hours)|
+|Day 5|Sightseeing in Bergen|
+|Day 6|Vy train Bergen - Oslo (7 hours)|
+|Day 6|SJ train Oslo - Stockholm (5 hours)|
+|Day 6|SJ train Stockholm - Uppsala (40 minutes)|
+
+In hindsight, it would've been good to add one more day to the trip and spend the night in Oslo on Day 6, then go back to Uppsala the day after. But unfortunately Johan had to teach so as they say in Japanese, *shou-ga nakka-ta* (it couldn't be helped).
 
 We booked the tour through [Norway in a Nutshell](https://www.norwaynutshell.com/original-tour/). You could also organise it yourself and that would likely be cheaper, but we've been so busy getting ready for the baby and with our new summer house lately that I decided to just splurge on a shortcut. It's a self-guided tour, and the information we got through them was all really good. We just organised our own accommodation because the ones they offered did not run cheap. 
