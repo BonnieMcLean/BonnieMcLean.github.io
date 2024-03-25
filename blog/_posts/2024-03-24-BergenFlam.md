@@ -53,7 +53,7 @@ We had very little time in Oslo, so I'd like to come back again, but one thing I
 
 ![](/assets/img/blog/trains/oslo_myrdal.jpeg)
 
-The most impressive thing about this route is the sheer variety of landscapes. It's crazy how quickly the differences in altitude make such massive changes to the landscapes, and how the weather on one side of a mountain can be so completely different to the weather on the other side. The fjord landscapes in Norway really are something else.
+The most impressive thing about this route is the sheer variety of landscapes. It's crazy how quickly the differences in altitude make such massive changes to the environment, and how the weather on one side of a mountain can be so completely different to the weather on the other side. The fjord landscapes in Norway really are something else.
 
 ## Flåm railway, Myrdal - Flåm
 
