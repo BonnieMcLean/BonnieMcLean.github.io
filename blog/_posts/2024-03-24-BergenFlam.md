@@ -48,7 +48,7 @@ We had very little time in Oslo, so I'd like to come back again, but one thing I
 
 ## Bergen railway, Oslo - Myrdal
 
-![](/assets/img/blog/trains/oslo_myrdal.jpg)
+![](/assets/img/blog/trains/oslo_myrdal.jpeg)
 
 ## Flåm railway, Myrdal - Flåm
 
@@ -70,7 +70,7 @@ You can get here from Flåm by bus or scenic fjord cruise. The main thing to do 
 
 ## Bergen railway, Voss - Bergen
 
-![](/assets/img/blog/trains/voss-bergen)
+![](/assets/img/blog/trains/voss-bergen.png)
 
 ## Bergen
 
