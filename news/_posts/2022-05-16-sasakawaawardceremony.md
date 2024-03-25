@@ -15,7 +15,7 @@ John and I found this Japan-Scandinavia Sasakawa foundation grant, and we applie
 
 But anyway, any excuse to visit Japan! We are really looking forward to going, we'll use the data in our upcoming new tree for Japonic which is also very exciting! We are working on that together with the help of Chieh-Hsi Wu, a fabulous statistician from the University of Southampton, and also fellow Japanophile!
 
-It was so cool to eat sushi with the Japanese Ambassador to Sweden and hear from all the other interesting researchers who got the same grant!
+It was so cool to eat sushi with the Japanese Ambassador to Sweden and hear from all the other interesting researchers heading off to Japan soon! 🇯🇵
 
 ![](/assets/img/blog/sasakawa-individual.jpg)
 Us with the Japanese Ambassador to Sweden!
