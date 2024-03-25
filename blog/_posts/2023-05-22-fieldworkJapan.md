@@ -12,9 +12,11 @@ tags: [fieldwork, ryukyuan, travel]
 
 Top photo is of us and my mum (who tagged along) at Nakijin castle, one of the few surviving ruined castles of the Ryukyu Kingdom, and a UNESCO world heritage site!
 
-More photos and highlights below:
-
 <!--more-->
+
+We were very lucky to get a [grant from the Japan-Scandinavia Sasakawa Foundation](https://www.bonniemclean.net/news/2022-05-16-sasakawaawardceremony/) to go to Okinawa to visit the University of the Ryukyus and get some very valuable dialect data that's archived there on microfilm. We want to use it for our new family tree for the Japonic languages that we've been working on for far too long now. 
+
+Of course, the trip was also a very good excuse to enjoy Okinawan food again and do some sightseeing! See photos and highlights below:
 
 ![](/assets/img/blog/okinawa/okinawa-soba.jpg)
 Delicious Okinawa soba, missed this!
