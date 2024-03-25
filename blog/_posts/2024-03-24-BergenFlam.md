@@ -59,7 +59,7 @@ The most impressive thing about this route is the sheer variety of landscapes. I
 
 ![](/assets/img/blog/trains/myrdal-flam.png)
 
-This is the most famous stretch of the journey. It's crazily steep—the route takes you from 867m above sea level to 2m in just 20km. The other insane thing is that the majority of the tunnels on the trip were dug out by hand (we found out at the railway museum at the bottom). 
+This is the most famous stretch of the journey. It's crazily steep—the route takes you from 867m above sea level to 2m in just 20km. The other insane thing is that the majority of the tunnels on the route were dug out by hand (we found out at the railway museum at the bottom). 
 
 ## Flåm
 
