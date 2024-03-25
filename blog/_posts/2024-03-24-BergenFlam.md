@@ -41,9 +41,9 @@ We booked the tour through [Norway in a Nutshell](https://www.norwaynutshell.com
 We traveled at the end of March and were very lucky with the weather. The only thing was I was hoping to see spring flowers but no such luck yet. I thought since Oslo and Bergen are further south than Uppsala and towards the warm sea, maybe we'd get lucky. We had the first snowdrops in Uppsala just before we left. The only thing I didn't factor in was the effect of altitude 😅 Most of the train journey is in the mountains and there was still snow and frozen waterfalls for a lot of it! I was actually able to wear the spring dresses I brought though, albeit with leggings, thermal undershirts and a massive coat (temperatures were between 7 and 10 degrees).
 
 ![](/assets/img/blog/trains/flam-outfitcold.jpg)
-See above how optimistically dressed we are in front of the frozen waterfall at Kjosfossen. The  Flåm train makes a stop here for people to get off and take photos. At first I didn't get what the big deal was about a massive rock face—took a while to realise it was actually a frozen waterfall!🤣
+See above how optimistically dressed we are in front of the frozen waterfall at Kjosfossen. The  Flåm train makes a stop here for people to get off and take photos. At first I didn't get what the big deal was about a massive rock face—took a while to realise it was actually a waterfall!🤣
 
-We'll just have to make the same trip again another time — May or June would be best I think. I've written a summary of all the best bits and tips below.
+We'll just have to do the same trip again another time — May or June would be best I think. I've written a summary of all the best bits and tips below.
 
 ## Oslo
 
@@ -52,6 +52,8 @@ We had very little time in Oslo, so I'd like to come back again, but one thing I
 ## Bergen railway, Oslo - Myrdal
 
 ![](/assets/img/blog/trains/oslo_myrdal.jpeg)
+
+The most impressive thing about this route is the sheer variety of landscapes. It's crazy how quickly the differences in altitude make such massive changes to the landscapes, and how the weather on one side of a mountain can be so completely different to the weather on the other side. The fjord landscapes in Norway really are something else.
 
 ## Flåm railway, Myrdal - Flåm
 
