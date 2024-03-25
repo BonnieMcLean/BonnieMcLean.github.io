@@ -56,11 +56,15 @@ We had very little time in Oslo, so I'd like to come back again, but one thing I
 
 The most impressive thing about this route is the sheer variety of landscapes. It's crazy how quickly the differences in altitude make such massive changes to the environment, and how the weather on one side of a mountain can be so completely different to the weather on the other side. The fjord landscapes in Norway really are something else.
 
+Sitting on the left side of the train (in the direction of travel) is overall most scenic I think, although it's best to book seats near the bistro because sometimes the other side will be better. If you go to the bistro you can get great views from the windows on both sides. I actually spent most of the time here. And the food in the bistro is very good too.
+
 ## Flåm railway, Myrdal - Flåm
 
 ![](/assets/img/blog/trains/myrdal-flam.png)
 
 This is the most famous stretch of the journey. It's crazily steep—the route takes you from 867m above sea level to 2m in just 20km. The other insane thing is that the majority of the tunnels on the route were dug out by hand (we found out at the railway museum at the bottom). 
+
+You want to sit on the left side of the train (in the direction of travel) for this trip, and note that the train moves in the *opposite* direction to the train from Oslo! 
 
 ## Flåm
 
@@ -79,6 +83,8 @@ You can get here from Flåm by bus or scenic fjord cruise. The main thing to do 
 ## Bergen railway, Voss - Bergen
 
 ![](/assets/img/blog/trains/voss-bergen.png)
+
+The right side (in the direction of travel) is best for this part of the trip.
 
 ## Bergen
 
