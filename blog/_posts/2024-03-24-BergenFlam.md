@@ -44,7 +44,7 @@ We traveled at the end of March and were very lucky with the weather. The only t
 ![](/assets/img/blog/trains/flam-outfitcold.jpg)
 See above how optimistically dressed we are in front of the frozen waterfall at Kjosfossen. The  Flåm train makes a stop here for people to get off and take photos. At first I didn't get what the big deal was about a massive rock face—took a while to realise it was actually a waterfall!🤣
 
-We'll just have to do the same trip again another time — May or June would be best I think. I've written a summary of all the best bits and tips below.
+We'll just have to do the same trip again another time — May or June would be best I think. I've written a summary of all the best bits and tips below for future reference!
 
 ## Oslo
 
