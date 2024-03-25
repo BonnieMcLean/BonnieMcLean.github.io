@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Six days on the Bergen and Flåm railways
+image: /assets/img/blog/trains/bergen-mountainvalley.jpg
 description: >
   Easily the best train journey I have ever taken in my life. 
 sitemap: false
