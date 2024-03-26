@@ -50,11 +50,11 @@ We'll just have to do the same trip again another time — May or June would be 
 
 We had very little time in Oslo, so I'd like to come back again, but one thing I can recommend is the restaurant Helt Vilt! They specialise in wild meat, and I had a delicious Arctic Moose burger with brunost and cloudberry dressing, as well as the best rhubarb and apple soda I've had in my life! Brunost means "brown cheese". It's not actually cheese but a by-product of it — caramelised whey, very nice. Norwegians have it on waffles for breakfast (we had that in Bergen later).
 
-## Bergen railway, Oslo - Myrdal
+## Bergen railway (Oslo - Myrdal, Voss - Bergen)
 
 ![](/assets/img/blog/trains/oslo_myrdal.jpeg)
 
-The most impressive thing about this route is the sheer variety of landscapes. It's crazy how quickly the differences in altitude make such massive changes to the environment, and how the weather on one side of a mountain can be so completely different to the weather on the other side. The fjord landscapes in Norway really are something else.
+The most impressive thing about the Bergen railway is the sheer variety of landscapes. It's crazy how quickly the differences in altitude make such massive changes to the environment, and how the weather on one side of a mountain can be so completely different to the weather on the other side. The fjord landscapes in Norway really are something else.
 
 Sitting on the left side of the train (in the direction of travel) is overall most scenic I think, although it's best to book seats near the bistro because sometimes the other side will be better. If you go to the bistro you can get great views from the windows on both sides. I actually spent most of the time here. And the food in the bistro is very good too.
 
