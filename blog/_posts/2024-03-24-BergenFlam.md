@@ -78,13 +78,13 @@ It gets colder and colder fairly quickly as the train climbs higher into the mou
 
 ![](/assets/img/blog/trains/colder-5.jpg)
 
-It sometimes makes stops for a while in the larger towns. 
+It sometimes stops for a while in larger towns. 
 
 ![](/assets/img/blog/trains/train-stop.jpg)
 
 ![](/assets/img/blog/trains/train-stopview.jpg)
 
-The craziest station by far is Finse. It's 1222m above sea level, only accessible by train or snowmobile (no roads in or out) and it's where they filmed the scenes of the snow planet (Hoth) in Star Wars. You can see why.
+The craziest stop by far is Finse. It's 1222m above sea level, only accessible by train or snowmobile (no roads in or out) and it's where they filmed the scenes of the snow planet (Hoth) in Star Wars. You can see why.
 
 ![](/assets/img/blog/trains/finse.jpg)
 
