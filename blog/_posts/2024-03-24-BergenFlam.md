@@ -120,7 +120,7 @@ At the top station, you can see this crazy blue ice in the mountains!
 
 The train also makes a stop at a famous waterfall, Kjosfossen, where you can get out and take pictures. I imagine it would be more spectacular in summer; it was frozen when we saw it, so at first I just thought it was more rocks.
 
-![](/assets/img/blog/trains/frozen.jpg)
+![](/assets/img/blog/trains/waterfall-frozen.jpg)
 
 As the train continues further down into the valley though there were a bunch of running waterfalls we could see as well. 
 
@@ -152,7 +152,15 @@ The other thing to do is hiking, which I wasn't really up to but we went for a f
 
 ![](/assets/img/blog/trains/scenic_fjord.jpg)
 
-There's only really one place to eat in the town, but it happens to be a brewery and it's very good! It's called Ægir BryggeriPub. They're connected to a hotel and if you stay there you can book a table at the pub. We didn't stay with them because it was really expensive (maybe next time). This meant we couldn't pre-book our table and if that's the case for you too I recommend showing up early (like as soon as they open) for dinner otherwise you'll have to wait for a seat. They're very popular and (like I said) basically the only place to eat in town. We cooked for ourselves the other night that we were there, there's a supermarket in the village with everything you need. 
+There's only really one place to eat in the town, but it happens to be a brewery and it's very good! It's called Ægir BryggeriPub. They're connected to a hotel and if you stay there you can book a table at the pub. We didn't stay with them because it was really expensive (maybe next time). This meant we couldn't pre-book our table and if that's the case for you too I recommend showing up early (like as soon as they open) for dinner otherwise you'll have to wait for a seat. They're very popular and (like I said) basically the only place to eat in town.
+
+![](/assets/img/blog/trains/pubfood-1.jpg)
+
+I had the carrot hummus with seasonal vegetables (mostly more carrots and beetroots because nothing else was growing yet), with some really good local goats cheese and pulled goat meat! Johan was much luckier though, he got to have the beer tasting set which he had with sticky ribs. 
+
+![](/assets/img/blog/trains/pubfood-2.jpg)
+
+We came back a second night just for dessert, the sticky toffee pudding with dates and homemade boozy sauce was the best! Johan also had some mead flavoured with cherries to go with his chocolate ganache (lucky!). 
 
 The other place I'd recommend for lunch and fika is the Flåm Bakeri—very good pastries and take-away sandwiches!
 
