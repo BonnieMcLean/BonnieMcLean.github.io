@@ -56,7 +56,46 @@ We had very little time in Oslo, so I'd like to come back again, but one thing I
 
 The most impressive thing about the Bergen railway is the sheer variety of landscapes. It's crazy how quickly the differences in altitude make such massive changes to the environment, and how the weather on one side of a mountain can be so completely different to the weather on the other side. The fjord landscapes in Norway really are something else.
 
-Sitting on the left side of the train (in the direction of travel) is overall most scenic I think, although it's best to book seats near the bistro because sometimes the other side will be better. If you go to the bistro you can get great views from the windows on both sides. I actually spent most of the time here. And the food in the bistro is very good too.
+Sitting on the left side of the train (in the direction of travel) from Oslo to Myrdal, and the right from Voss to Bergen is overall most scenic I think, but it's best to just book seats near the bistro because sometimes the scenery on the other side will be better. If you go to the bistro you can get great views from the windows on both sides. I actually spent most of the time here. And the food in the bistro is very good too.
+
+Below is the scenery leaving Oslo...
+
+![](/assets/img/blog/trains/leavingOslo-scenery1.jpg)
+
+![](/assets/img/blog/trains/leavingOslo-scenery2.jpg)
+
+![](/assets/img/blog/trains/leavingOslo-train.jpg)
+
+It gets colder and colder fairly quickly as the train climbs higher into the mountains...
+
+![](/assets/img/blog/trains/colder1.jpg)
+
+![](/assets/img/blog/trains/colder2.jpg)
+
+![](/assets/img/blog/trains/colder3.jpg)
+
+![](/assets/img/blog/trains/colder4.jpg)
+
+![](/assets/img/blog/trains/colder5.jpg)
+
+It sometimes makes stops for a while in the larger towns. 
+
+![](/assets/img/blog/trains/train-stop.jpg)
+
+![](/assets/img/blog/trains/train-stopview.jpg)
+
+The craziest station by far is Finse. It's 1222m above sea level, only accessible by train or snowmobile (no roads in or out) and it's where they filmed the scenes of the snow planet (Hoth) in Star Wars. You can see why.
+
+![](/assets/img/blog/trains/finse.jpg)
+
+![](/assets/img/blog/trains/finse-landscape.jpg)
+
+![](/assets/img/blog/trains/finse-landscape2.jpg)
+
+You also get to see the hotel where Harrison Ford stayed during the filming! In truth Harrison Ford is the only part I actually like about Star Wars so I was most excited for this bit.
+
+![](/assets/img/blog/trains/harrisonfordhotel.jpg)
+
 
 ## Flåm railway, Myrdal - Flåm
 
