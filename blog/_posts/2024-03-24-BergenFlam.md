@@ -140,7 +140,7 @@ It's a short trip compared to the Bergen railway, but very scenic and technologi
 
 ## Flåm
 
-Flåm is a very pretty Fjord village. We stayed two nights here. 
+The train brings you to Flåm which is a very pretty Fjord village. We stayed two nights here. 
 
 ![](/assets/img/blog/trains/flamfjord.jpg)
 
@@ -156,7 +156,7 @@ There's only really one place to eat in the town, but it happens to be a brewery
 
 ![](/assets/img/blog/trains/pubfood-1.jpg)
 
-I had the carrot hummus with seasonal vegetables (mostly more carrots and beetroots because nothing else was growing yet), with some really good local goats cheese and pulled goat meat! Johan was much luckier though, he got to have the beer tasting set which he had with sticky ribs. 
+I had the carrot hummus with seasonal vegetables (mostly more carrots and beetroots because nothing else was growing yet😅), with some really good local goats cheese and pulled goat meat! Johan was much luckier though, he got to have the beer tasting set with sticky ribs 😡 Guess I'll just have to come back again when I'm not pregnant.
 
 ![](/assets/img/blog/trains/pubfood-2.jpg)
 
