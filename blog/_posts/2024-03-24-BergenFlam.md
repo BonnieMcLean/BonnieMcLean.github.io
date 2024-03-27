@@ -106,9 +106,9 @@ At Myrdal we got off and switched over to the Flåm railway.
 
 This is the most famous stretch of the journey. It's crazily steep—the route takes you from 867m above sea level to 2m in just 20km. The other insane thing is that the majority of the tunnels on the route were dug out by hand (we found out at the railway museum at the bottom). 
 
-![](/assets/img/blog/trains/flamtrain.jpg)
-
 You want to sit on the left side of the train (in the direction of travel) for this trip, and note that the train moves in the *opposite* direction to the train from Oslo! 
+
+![](/assets/img/blog/trains/flamtrain.jpg)
 
 At the top station, you can see this crazy blue ice in the mountains!
 
