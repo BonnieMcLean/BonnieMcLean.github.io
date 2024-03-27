@@ -110,13 +110,17 @@ You want to sit on the left side of the train (in the direction of travel) for t
 
 ## Flåm
 
-Flåm is a very pretty Fjord village. Things to check out are:
+Flåm is a very pretty Fjord village. We stayed two nights here. 
 
-- The train museum!🚇 Learn how they built the Flåm railway from scratch *by hand!* It took forever digging out the tunnels without dynamite or anything like that, and a lot of people died. I felt bad for the horses that had to work on the railway but never got to ride the train ☹️
-- (If you're up for it) hiking—the tourist information centre can give you a map with a lot of routes
-- Scenic fjord cruise on an electric boat (runs between Flåm and Gudvangen)
-- Ægir BryggeriPub (really good food and beer; also pretty much the only restaurant in town so if you're staying multiple nights maybe plan to cook at home for some of them, there's a supermarket in town where you can get everything you need)
-- Flåm Bakeri (very good pastries and sandwiches)
+There's not a whole lot to do, but definitely check out the train museum! You can learn how they built the Flåm railway from scratch *by hand!* It took forever digging out the tunnels without dynamite or anything like that, and a lot of people died. I felt bad for the horses that had to work on the railway but never got to ride the train ☹️
+
+The other thing to do is hiking, which I wasn't really up to but we went for a flat walk just through the fjord and Johan made some pretty photos of me and these cute highland cows that we found!
+
+There's only really one place to eat in the town, but it happens to be a brewery and it's very good! It's called Ægir BryggeriPub. They're connected to a hotel and if you stay there you can book a table at the pub. We didn't stay with them because it was really expensive (maybe next time). This meant we couldn't pre-book our table and if that's the case for you too I recommend showing up early (like as soon as they open) for dinner otherwise you'll have to wait for a seat. They're very popular and (like I said) basically the only place to eat in town. We cooked for ourselves the other night that we were there, there's a supermarket in the village with everything you need. 
+
+The other place I'd recommend for lunch and fika is the Flåm Bakeri—very good pastries and take-away sandwiches!
+
+Then of course there are the famous fjord cruises and I'd definitely recommend doing one of them. We did the one that goes to Gudvangen on an electric boat, then we got off in Gudvangen to visit the Viking Village (see below). 
 
 ## Gudvangen
 
