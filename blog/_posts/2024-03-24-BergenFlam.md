@@ -78,6 +78,8 @@ It gets colder and colder fairly quickly as the train climbs higher into the mou
 
 ![](/assets/img/blog/trains/colder-5.jpg)
 
+![](/assets/img/blog/trains/colder-6.jpg)
+
 It sometimes stops for a while in larger towns. 
 
 ![](/assets/img/blog/trains/train-stop.jpg)
