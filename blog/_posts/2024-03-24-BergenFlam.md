@@ -124,7 +124,18 @@ You can get here from Flåm by bus or scenic fjord cruise. The main thing to do 
 
 ![](/assets/img/blog/trains/voss-bergen.png)
 
-The right side (in the direction of travel) is best for this part of the trip.
+We got back on the Bergen railway again at Voss, and from Voss to Bergen it's best to sit on the right side of the train (in the direction of travel). The fjords in this part of the trip are particularly beautiful.  
+
+![](/assets/img/blog/trains/tobergen-fjord3.jpg)
+
+![](/assets/img/blog/trains/tobergen-fjord.jpg)
+
+![](/assets/img/blog/trains/tobergen-fjord2.jpg)
+
+On the way back to Oslo again coming home, there was an accident on the line between Bergen and Voss, so we had to do that part of the route the second time on a replacement bus. Annoying but it meant I got to make some nice pictures of the track itself as well.
+
+![](/assets/img/blog/trains/bergenoslo-track.jpg)
+
 
 ## Bergen
 
