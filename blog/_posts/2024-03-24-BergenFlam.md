@@ -50,7 +50,7 @@ We'll just have to do the same trip again another time — May or June would be 
 
 We had very little time in Oslo, so I'd like to come back again, but one thing I can recommend is the restaurant Helt Vilt! They specialise in wild meat, and I had a delicious Arctic Moose burger with brunost and cloudberry dressing, as well as the best rhubarb and apple soda I've had in my life! Brunost means "brown cheese". It's not actually cheese but a by-product of it — caramelised whey, very nice. Norwegians have it on waffles for breakfast (we had that in Bergen later).
 
-## Bergen railway (Oslo - Myrdal, Voss - Bergen)
+## Bergen railway (Oslo - Myrdal)
 
 ![](/assets/img/blog/trains/oslo_myrdal.jpeg)
 
@@ -68,23 +68,23 @@ Below is the scenery leaving Oslo...
 
 It gets colder and colder fairly quickly as the train climbs higher into the mountains...
 
-![](/assets/img/blog/trains/colder1.jpg)
+![](/assets/img/blog/trains/colder-1.jpg)
 
-![](/assets/img/blog/trains/colder2.jpg)
+![](/assets/img/blog/trains/colder-2.jpg)
 
-![](/assets/img/blog/trains/colder3.jpg)
+![](/assets/img/blog/trains/colder-3.jpg)
 
-![](/assets/img/blog/trains/colder4.jpg)
+![](/assets/img/blog/trains/colder-4.jpg)
 
-![](/assets/img/blog/trains/colder5.jpg)
+![](/assets/img/blog/trains/colder-5.jpg)
 
-It sometimes makes stops for a while in the larger towns. 
+It sometimes stops for a while in larger towns. 
 
 ![](/assets/img/blog/trains/train-stop.jpg)
 
 ![](/assets/img/blog/trains/train-stopview.jpg)
 
-The craziest station by far is Finse. It's 1222m above sea level, only accessible by train or snowmobile (no roads in or out) and it's where they filmed the scenes of the snow planet (Hoth) in Star Wars. You can see why.
+The craziest stop by far is Finse. It's 1222m above sea level, only accessible by train or snowmobile (no roads in or out) and it's where they filmed the scenes of the snow planet (Hoth) in Star Wars. You can see why.
 
 ![](/assets/img/blog/trains/finse.jpg)
 
@@ -96,6 +96,7 @@ You also get to see the hotel where Harrison Ford stayed during the filming! In 
 
 ![](/assets/img/blog/trains/harrisonfordhotel.jpg)
 
+At Myrdal we got off and switched over to the Flåm railway.
 
 ## Flåm railway, Myrdal - Flåm
 
