@@ -106,15 +106,51 @@ At Myrdal we got off and switched over to the Flåm railway.
 
 This is the most famous stretch of the journey. It's crazily steep—the route takes you from 867m above sea level to 2m in just 20km. The other insane thing is that the majority of the tunnels on the route were dug out by hand (we found out at the railway museum at the bottom). 
 
+![](/assets/img/blog/trains/flamtrain.jpg)
+
 You want to sit on the left side of the train (in the direction of travel) for this trip, and note that the train moves in the *opposite* direction to the train from Oslo! 
+
+At the top station, you can see this crazy blue ice in the mountains!
+
+![](/assets/img/blog/trains/blueice1.jpg)
+
+![](/assets/img/blog/trains/blueice2.jpg)
+
+![](/assets/img/blog/trains/blueice3.jpg)
+
+The train also makes a stop at a famous waterfall, Kjosfossen, where you can get out and take pictures. I imagine it would be more spectacular in summer; it was frozen when we saw it, so at first I just thought it was more rocks.
+
+![](/assets/img/blog/trains/frozen.jpg)
+
+As the train continues further down into the valley though there were a bunch of running waterfalls we could see as well. 
+
+![](/assets/img/blog/trains/waterfall2.jpg)
+
+I most enjoyed the views lower in the valley.
+
+![](/assets/img/blog/trains/valleyview1.jpg)
+
+![](/assets/img/blog/trains/valleyview2.jpg)
+
+![](/assets/img/blog/trains/valleyview3.jpg)
+
+It's a short trip compared to the Bergen railway, but very scenic and technologically among the most impressive parts of the track (particularly with all the tunnels), so I definitely wouldn't skip it!
+
+![](/assets/img/blog/trains/flamtrainsolo.jpg)
 
 ## Flåm
 
 Flåm is a very pretty Fjord village. We stayed two nights here. 
 
+![](/assets/img/blog/trains/flamfjord.jpg)
+
 There's not a whole lot to do, but definitely check out the train museum! You can learn how they built the Flåm railway from scratch *by hand!* It took forever digging out the tunnels without dynamite or anything like that, and a lot of people died. I felt bad for the horses that had to work on the railway but never got to ride the train ☹️
 
 The other thing to do is hiking, which I wasn't really up to but we went for a flat walk just through the fjord and Johan made some pretty photos of me and these cute highland cows that we found!
+
+![](/assets/img/blog/trains/scenic_hike.jpg)
+
+![](/assets/img/blog/trains/scenic_fjord.jpg)
 
 There's only really one place to eat in the town, but it happens to be a brewery and it's very good! It's called Ægir BryggeriPub. They're connected to a hotel and if you stay there you can book a table at the pub. We didn't stay with them because it was really expensive (maybe next time). This meant we couldn't pre-book our table and if that's the case for you too I recommend showing up early (like as soon as they open) for dinner otherwise you'll have to wait for a seat. They're very popular and (like I said) basically the only place to eat in town. We cooked for ourselves the other night that we were there, there's a supermarket in the village with everything you need. 
 
