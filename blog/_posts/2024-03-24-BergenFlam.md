@@ -152,6 +152,8 @@ The other thing to do is hiking, which I wasn't really up to but we went for a f
 
 ![](/assets/img/blog/trains/scenic_fjord.jpg)
 
+![](/assets/img/blog/trains/cows.jpg)
+
 There's only really one place to eat in the town, but it happens to be a brewery and it's very good! It's called Ægir BryggeriPub. They're connected to a hotel and if you stay there you can book a table at the pub. We didn't stay with them because it was really expensive (maybe next time). This meant we couldn't pre-book our table and if that's the case for you too I recommend showing up early (like as soon as they open) for dinner otherwise you'll have to wait for a seat. They're very popular and (like I said) basically the only place to eat in town.
 
 ![](/assets/img/blog/trains/pubfood-1.jpg)
@@ -169,6 +171,12 @@ Then of course there are the famous fjord cruises and I'd definitely recommend d
 ## Gudvangen
 
 You can get here from Flåm by bus or scenic fjord cruise. The main thing to do is the Viking village, it was really fun and educational! They want to show people that Vikings were more than just vicious pillaging rapists (although they were that too). But when they were home in Norway apparently they were actually quite chill, civilised people. They had a proto-democracy. Slaves could work in their spare time to eventually buy back their freedom. And if you were a woman and your husband died (not hard to arrange with all the fighting and conquering the vikings did) you inherited all his political rights, so widows could actually become quite powerful.
+
+![](/assets/img/blog/trains/vikingvillage.jpg)
+
+![](/assets/img/blog/trains/vikingthreads.jpg)
+
+![](/assets/img/blog/trains/vikingboat.jpg)
 
 ## Bergen railway, Voss - Bergen
 
@@ -189,9 +197,34 @@ On the way back to Oslo again coming home, there was an accident on the line bet
 
 ## Bergen
 
-We only had a day here and it was raining so we didn't do everything, but the sights include:
+We only had a day here and it was raining so we didn't do everything, but we did manage to visit the old town which was small but very pretty. I found it a bit weird that the streets were all wooden instead of cobbltestone, seems a bit impractical in such a wet place.
 
-- The old town (Bryggen)—small but very cool. I found it a bit weird the streets were all wooden instead of cobblestone. Seems a bit impractical in such a wet place.
-- The fish market (Fisketorget). Also small but the fish was very fresh and delicious! We had some very good sashimi there. There's a nice view of the old town from across the harbour.
-- Bryggen Tracteursted—traditional Norwegian restaurant in the old town. This was the best meal we had the entire trip!
-- Fløibanen funicular—sad we ran out of time for this but if I went back I would definitely do it for more trains!🚇
+![](/assets/img/blog/trains/bergen.jpg)
+
+![](/assets/img/blog/trains/bergen-oldtown.jpg)
+
+We had the most delicious meal of the whole trip at Bryggen Tracteursted in the old town. 
+
+![](/assets/img/blog/trains/bestmeal.jpg)
+
+The meal included whale which is traditional in Norway (the whale hunting is heavily controlled). It was lightly smoked and tasted mainly like beef but then with a slight aftertaste of the sea. 
+
+![](/assets/img/blog/trains/whale.jpg)
+
+I actually enjoyed the lamb cured in aquavit best though, I want to try it myself later. 
+
+And of course Johan got to enjoy some more beer tasting from local breweries. 
+
+![](/assets/img/blog/trains/johan-beer.jpg)
+
+I had to make do with soda again but at least they put it in a fancy glass for me.
+
+![](/assets/img/blog/trains/me-lask.jpg)
+
+For dessert we had the most delicious pudding with cloudberries (called flöterande) and some local cheeses. 
+
+![](/assets/img/blog/trains/pudding.jpg)
+
+![](/assets/img/blog/trains/cheese.jpg)
+
+I am sad we missed out on the Fløibanen funicular, we could've added one more train trip to our holiday!🚇 And you get some beautiful views over Bergen from the top. But it was raining unfortunately so there was no point. Oh well, we'll just have to come back again and stay longer next time!
