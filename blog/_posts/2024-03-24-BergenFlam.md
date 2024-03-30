@@ -212,11 +212,11 @@ We had the most delicious meal of the whole trip at Bryggen Tracteursted in the 
 
 ![](/assets/img/blog/trains/bestmeal.jpg)
 
-Given the location it was mostly fish based (fish soup and a stockfish stew). It also included whale which I'd never had before but they're traditionally hunted in Norway (nowadays the hunting is heavily controlled). The whale was lightly smoked and tasted mainly like beef but with a slight aftertaste of the sea. 
+Given the location it was mostly fish based (fish soup and a stockfish stew). It also included whale which I'd never had before but they're traditionally hunted in Norway (nowadays the hunting is heavily controlled). 
 
 ![](/assets/img/blog/trains/whale.jpg)
 
-It was very nice, they prepared it really well. But I actually enjoyed the lamb cured in aquavit that we also had there the best. I want to try making it at home myself later.
+The whale was lightly smoked and tasted mainly like beef but with a slight aftertaste of the sea. It was very good but I actually enjoyed the lamb cured in aquavit that we also had there best. I want to try making it at home myself later.
 
 And of course Johan got to enjoy some more beer tasting from local breweries 😡
 
