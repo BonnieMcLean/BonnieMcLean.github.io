@@ -22,7 +22,7 @@ Shiny is primarily used for displaying data interactively. See for example my Sh
 
 *shinyapps.io provides free hosting for up to 5 apps, with up to 25 active hours per month. After that you have to pay a monthly fee to increase the number of apps/active hours per month (the cheapest option is $9/month for 25 apps and 100 active hours)
 
-Pretty much everything you can do with javascript, you can do with shiny, but it has the added advantage of being easier to learn and write (since it's built on R, which most linguists already know). Also, since you're likely to use R for data analysis, it's good to have the data already in a format that R can work with. Running your experiments in RShiny thus simplifies your workflow from data collection > analysis.
+Pretty much everything you can do with javascript, you can do with shiny, but it has the added advantage of being easier to learn and write (since it's built on R, which most researchers already know). Also, since you're likely to use R for data analysis, it's good to have the data already in a format that R can work with. Running your experiments in RShiny thus simplifies your workflow from data collection > analysis.
 
 
 
