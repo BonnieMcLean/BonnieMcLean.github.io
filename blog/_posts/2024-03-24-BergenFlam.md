@@ -150,9 +150,10 @@ The other thing to do is hiking, which I wasn't really up to but we went for a f
 
 ![](/assets/img/blog/trains/scenic_hike.jpg)
 
+![](/assets/img/blog/trains/cows.jpg)
+
 ![](/assets/img/blog/trains/scenic_fjord.jpg)
 
-![](/assets/img/blog/trains/cows.jpg)
 
 There's only really one place to eat in the town, but it happens to be a brewery and it's very good! It's called Ægir BryggeriPub. They're connected to a hotel and if you stay there you can book a table at the pub. We didn't stay with them because it was really expensive (maybe next time). This meant we couldn't pre-book our table and if that's the case for you too I recommend showing up early (like as soon as they open) for dinner otherwise you'll have to wait for a seat. They're very popular and (like I said) basically the only place to eat in town.
 
@@ -197,7 +198,7 @@ On the way back to Oslo again coming home, there was an accident on the line bet
 
 ## Bergen
 
-We only had a day here and it was raining so we didn't do everything, but we did manage to visit the old town which was small but very pretty. I found it a bit weird that the streets were all wooden instead of cobbltestone, seems a bit impractical in such a wet place.
+We only had a day here and it was raining so we didn't do everything, but we did manage to visit the old town which was small but very pretty. I found it a bit weird that the streets were all wooden instead of cobblestone though, seems impractical for such a wet place.
 
 ![](/assets/img/blog/trains/bergen.jpg)
 
@@ -207,24 +208,24 @@ We had the most delicious meal of the whole trip at Bryggen Tracteursted in the 
 
 ![](/assets/img/blog/trains/bestmeal.jpg)
 
-The meal included whale which is traditional in Norway (the whale hunting is heavily controlled). It was lightly smoked and tasted mainly like beef but then with a slight aftertaste of the sea. 
+It was mostly fish based (fish soup and a stockfish stew) given the location. It also included whale which I'd never had before but they're traditionally hunted in Norway (nowadays the hunting is heavily controlled). The whale was lightly smoked and tasted mainly like beef but with a slight aftertaste of the sea. 
 
 ![](/assets/img/blog/trains/whale.jpg)
 
-I actually enjoyed the lamb cured in aquavit best though, I want to try it myself later. 
+It was very nice, they prepared it really well. But I actually enjoyed the lamb cured in aquavit that we also had there the best. I want to try making it at home myself later.
 
-And of course Johan got to enjoy some more beer tasting from local breweries. 
+And of course Johan got to enjoy some more beer tasting from local breweries 😡
 
 ![](/assets/img/blog/trains/johan-beer.jpg)
 
-I had to make do with soda again but at least they put it in a fancy glass for me.
+I made do with soda again but at least they put it in a fancy glass for me this time 🤷‍♀️
 
 ![](/assets/img/blog/trains/me-lask.jpg)
 
-For dessert we had the most delicious pudding with cloudberries (called flöterande) and some local cheeses. 
+For dessert we had the most delicious pudding with cloudberries (called fløterand) and some local cheeses. 
 
 ![](/assets/img/blog/trains/pudding.jpg)
 
 ![](/assets/img/blog/trains/cheese.jpg)
 
-I am sad we missed out on the Fløibanen funicular, we could've added one more train trip to our holiday!🚇 And you get some beautiful views over Bergen from the top. But it was raining unfortunately so there was no point. Oh well, we'll just have to come back again and stay longer next time!
+I am sad we missed out on the Fløibanen funicular, we could've added one more train trip to our holiday!🚇 And you get some beautiful views over Bergen from the top. But it was raining unfortunately so there was no point. We'll just have to come back again another time and stay longer!
