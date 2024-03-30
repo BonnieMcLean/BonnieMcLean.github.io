@@ -212,7 +212,7 @@ We had the most delicious meal of the whole trip at Bryggen Tracteursted in the 
 
 ![](/assets/img/blog/trains/bestmeal.jpg)
 
-It was mostly fish based (fish soup and a stockfish stew) given the location. It also included whale which I'd never had before but they're traditionally hunted in Norway (nowadays the hunting is heavily controlled). The whale was lightly smoked and tasted mainly like beef but with a slight aftertaste of the sea. 
+Given the location it was mostly fish based (fish soup and a stockfish stew). It also included whale which I'd never had before but they're traditionally hunted in Norway (nowadays the hunting is heavily controlled). The whale was lightly smoked and tasted mainly like beef but with a slight aftertaste of the sea. 
 
 ![](/assets/img/blog/trains/whale.jpg)
 
