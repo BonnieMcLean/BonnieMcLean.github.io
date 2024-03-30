@@ -35,7 +35,7 @@ mappings in lexicons. ✨Invited plenary at _Societas Linguistica Europaea 55_, 
 
 ## Teaching Materials
 
-1. [R Cheatsheet](https://www.bonniemclean.net/RCheatsheet)
+1. [R Cheatsheet](https://www.bonniemclean.net/RCheatsheet)🌐
 2. *Making and running experiments in R Shiny*. Summary🧵. Slides 📊. [Code](https://github.com/BonnieMcLean/ShinySurvey) 🧑‍💻.  
 
 ## Unpublished reports
