@@ -35,7 +35,7 @@ mappings in lexicons. ✨Invited plenary at _Societas Linguistica Europaea 55_, 
 
 ## Teaching Materials
 
-- [R Cheatsheet](https://www.bonniemclean.net/RCheatsheet)
+1. [R Cheatsheet](https://www.bonniemclean.net/RCheatsheet)
 
 ## Unpublished reports
 
