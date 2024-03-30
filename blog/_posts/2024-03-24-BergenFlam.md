@@ -155,7 +155,7 @@ The other thing to do is hiking, which I wasn't really up to but we went for a f
 ![](/assets/img/blog/trains/scenic_fjord.jpg)
 
 
-There's only really one place to eat in the town, but it happens to be a brewery and it's very good! It's called Ægir BryggeriPub. They're connected to a hotel and if you stay there you can book a table at the pub. We didn't stay with them because it was really expensive (maybe next time). This meant we couldn't pre-book our table and if that's the case for you too I recommend showing up early (like as soon as they open) for dinner otherwise you'll have to wait for a seat. They're very popular and (like I said) basically the only place to eat in town.
+There's really only one place to eat in the town, but it happens to be a brewery and it's very good! It's called Ægir BryggeriPub. They're connected to a hotel and if you stay there you can book a table at the pub. We didn't stay with them because it was really expensive (maybe next time). This meant we couldn't pre-book our table and if that's the case for you too I recommend showing up early (like as soon as they open) for dinner otherwise you'll have to wait for a seat. They're very popular and (like I said) basically the only place to eat in town.
 
 ![](/assets/img/blog/trains/pubfood-1.jpg)
 
