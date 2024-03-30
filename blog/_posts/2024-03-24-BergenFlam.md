@@ -167,7 +167,7 @@ We came back a second night just for dessert, the sticky toffee pudding with dat
 
 The other place I'd recommend for lunch and fika is the Flåm Bakeri—very good pastries and take-away sandwiches!
 
-Then of course there are the famous fjord cruises and I'd definitely recommend doing one of them. We did the one that goes to Gudvangen on an electric boat.
+Then of course there are the famous fjord cruises which you should definitely do. We did the one that goes to Gudvangen on an electric boat.
 
 INSERT CRUISE PICS
 
