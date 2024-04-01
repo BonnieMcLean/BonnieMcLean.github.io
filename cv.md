@@ -31,7 +31,7 @@ Uppsala University <span class="icon-library" aria-hidden="true"></span><br>Depa
 ## Teaching <span class="icon-briefcase"></span>
   
 * Språk, kultur, och tanke (Language, Culture, Thought), Spring 2023, Uppsala University
-* Lingvistisk forskning och forskningsmetoder (Linguistic research and research methods), Spring 2021, Uppsala University
+* [Lingvistisk forskning och forskningsmetoder](https://osf.io/94vmj/) (Linguistic research and research methods), Spring 2021, Uppsala University
 
 ## Supervision <span class="icon-users" aria-hidden="true"></span>
 
