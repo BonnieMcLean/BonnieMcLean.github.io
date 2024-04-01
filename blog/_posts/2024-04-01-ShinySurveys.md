@@ -1,7 +1,7 @@
 ---
 layout: post  
 title: Conducting online linguistic research with R Shiny  
-image: /assets/img/blog/eng-bakedgoodssurvey.png
+image: /assets/img/blog/eng-bakedgoodssurvey~2.png
 description: >  
   A quick blog post about my experiences using R Shiny and Google Sheets (free) to conduct online linguistic research. 
 sitemap: false  
