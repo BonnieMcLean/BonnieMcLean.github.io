@@ -9,7 +9,9 @@ hide_last_modified: true
 tags: [research, coding, teaching, online_data]  
 excerpt_separator: <!--more-->  
 ---
-Back in 2021, I taught a course on 'Doing Linguistic Research with R'. As part of the course the students had to conduct their own linguistic research and analyse the results in R, and I figured out a way that they could use R Shiny to design simple linguistic surveys and collect linguistic data from online participants. 
+Back in 2021, I taught a course on 'Doing Linguistic Research with R'. As part of the course the students had to conduct their own linguistic research and analyse the results in R, and I figured out a way that they could use R Shiny to design simple linguistic surveys and collect linguistic data from online participants.
+
+<!--more-->  
 
 Shiny is primarily used for displaying data interactively. See for example my Shiny app on [Ideophones in Japan](https://bonnie-mclean.shinyapps.io/ideophonesacrossjapan-eng/). However, I've discovered that you can also use it for running experiments. It's easier than Javascript, and cheaper + more customisable than paying for a service like Qualtrics or Gorilla (though I would still use Gorilla if you want to do more complicated things). 
 
