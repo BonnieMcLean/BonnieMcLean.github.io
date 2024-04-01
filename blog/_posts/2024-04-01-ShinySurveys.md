@@ -34,7 +34,7 @@ Participants click through the images and choose a label for each type of baked 
 
 ![](/assets/img/blog/eng-bakedgoods-exitques.png)
 
-At the end they get a message thanking them for their participation, along with a question about where they're from. Their answers are then written to google sheets (you have to give Shiny permission to write to your google docs for it to work).
+At the end they get a message thanking them for their participation, along with a question about where they're from. Their answers are then written to google sheets (you have to give Shiny permission to write to your google drive for it to work).
 
 Shiny can handle all kinds of input, from radio buttons, sliders, and drop down menus to free text and [even drawing](https://stackoverflow.com/questions/41701807/way-to-free-hand-draw-shapes-in-shiny). 
 
