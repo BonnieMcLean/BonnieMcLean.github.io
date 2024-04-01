@@ -1,7 +1,7 @@
 ---
 layout: post  
 title: Conducting online linguistic research with R Shiny  
-image: /assets/img/blog/mogyufuwa.jpg
+image: /assets/img/blog/eng-bakedgoodssurvey.png
 description: >  
   A quick blog post about my experiences using R Shiny and Google Sheets (free) to conduct online linguistic research. 
 sitemap: false  
@@ -24,6 +24,19 @@ Shiny is primarily used for displaying data interactively. See for example my Sh
 
 Pretty much everything you can do with javascript, you can do with shiny, but it has the added advantage of being easier to learn and write (since it's built on R, which most researchers already know). Also, since you're likely to use R for data analysis, it's good to have the data already in a format that R can work with. Running your experiments in RShiny thus simplifies your workflow from data collection > analysis.
 
+The experiment we made in class was very simple. We were comparing Swedish and English terms for different types of baked goods, to see how the semantics can differ even between words belonging to the same cognate set. Below is an example of the English version of the survey:
+
+![](/assets/img/blog/eng-bakedgoodssurvey.png)
+
+Participants click through the images and choose a label for each type of baked good (or provide their own using the text box). 
+
+![](/assets/img/blog/eng-bakedgoods-exitques.png)
+
+At the end they get a message thanking them for their participation, along with a question about where they're from. Their answers are then written to google sheets (you have to give Shiny permission to write to your google docs for it to work).
+
+Shiny can handle all kinds of input, from radio buttons, sliders, and drop down menus to free text and [even drawing](https://stackoverflow.com/questions/41701807/way-to-free-hand-draw-shapes-in-shiny). 
+
+I've shared the code for the experiment above on Github [here](https://github.com/BonnieMcLean/ShinySurvey), along with code for similar experiments with audio files and videos. Enjoy!
 
 
 
