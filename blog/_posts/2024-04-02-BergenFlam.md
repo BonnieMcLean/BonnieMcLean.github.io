@@ -167,9 +167,17 @@ We came back a second night just for dessert, the sticky toffee pudding with dat
 
 The other place I'd recommend for lunch and fika is the Flåm Bakeri—very good pastries and take-away sandwiches!
 
-Then of course there are the famous fjord cruises which you should definitely do. We did the one that goes to Gudvangen on an electric boat.
+Then of course there are the famous fjord cruises which you should definitely do. We did the one that goes to Gudvangen on an electric boat. It's the best to really appreciate the sheer size of the cliffs in the fjords. 
 
-INSERT CRUISE PICS
+![](/assets/img/blog/trains/fjord-cliff.jpg)
+
+![](/assets/img/blog/trains/fjord-cliff2.jpg)
+
+We had bad weather again, but we did see a rainbow!
+
+![](/assets/img/blog/trains/fjord-church.jpg)
+
+![](/assets/img/blog/trains/fjord-rainbow.jpg)
 
 In Gudvangen you can get off and visit the Viking Village! (see below)
 
