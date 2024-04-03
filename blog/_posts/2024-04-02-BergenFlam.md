@@ -173,7 +173,7 @@ Then of course there are the famous fjord cruises which you should definitely do
 
 ![](/assets/img/blog/trains/fjord-cliff2~2.JPG)
 
-We had bad weather again, but we did see a rainbow!
+It was misty again, but we did see a rainbow!
 
 ![](/assets/img/blog/trains/fjord-church~2.JPG)
 
