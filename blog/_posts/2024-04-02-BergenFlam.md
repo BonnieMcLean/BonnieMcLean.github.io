@@ -169,15 +169,15 @@ The other place I'd recommend for lunch and fika is the Flåm Bakeri—very good
 
 Then of course there are the famous fjord cruises which you should definitely do. We did the one that goes to Gudvangen on an electric boat. It's the best to really appreciate the sheer size of the cliffs in the fjords. 
 
-![](/assets/img/blog/trains/fjord-cliff.jpg)
+![](/assets/img/blog/trains/fjord-cliff~2.jpg)
 
-![](/assets/img/blog/trains/fjord-cliff2.jpg)
+![](/assets/img/blog/trains/fjord-cliff2~2.jpg)
 
 We had bad weather again, but we did see a rainbow!
 
-![](/assets/img/blog/trains/fjord-church.jpg)
+![](/assets/img/blog/trains/fjord-church~2.jpg)
 
-![](/assets/img/blog/trains/fjord-rainbow.jpg)
+![](/assets/img/blog/trains/fjord-rainbow~2.jpg)
 
 In Gudvangen you can get off and visit the Viking Village! (see below)
 
