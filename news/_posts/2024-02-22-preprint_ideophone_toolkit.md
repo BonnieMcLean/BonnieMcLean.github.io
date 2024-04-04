@@ -9,7 +9,7 @@ hide_last_modified: true
 tags: [ideophones, fieldwork, semantics, papers]
 ---
 
-Releasing a preprint of mine and Mark's upcoming chapter in the book *Capturing Expressivity*, which should be out sometime later this year hopefully. We talk about methods for conducting documentary linguistic research on ideophones, one of the absolute best things you could be doing with your life!
+Releasing a preprint of mine and Mark's upcoming chapter in the book *Capturing Expressivity* by Oxford University Press, which should be out sometime later this year hopefully. We talk about methods for conducting documentary linguistic research on ideophones, one of the absolute best things you could be doing with your life!
 
 You can find (and cite) the preprint here:
 
