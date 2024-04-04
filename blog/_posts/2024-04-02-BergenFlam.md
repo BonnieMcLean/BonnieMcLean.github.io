@@ -187,7 +187,7 @@ You can get here from Flåm by bus or scenic fjord cruise. The main thing to do 
 
 ![](/assets/img/blog/trains/vikingvillage.jpg)
 
-I found the tour guide's explanation of how the vikings dyed their clothes different colours interesting. Purple and blue were the hardest colours to make. You had to get these special flowers from overseas and then heat it to precisely the right temperature (no more no less).
+I found the tour guide's explanation of how the vikings dyed their clothes different colours interesting too. Purple and blue were the hardest colours to make. You had to get these special flowers from overseas and then heat it to precisely the right temperature (no more no less).
 
 ![](/assets/img/blog/trains/vikingthreads.jpg)
 
