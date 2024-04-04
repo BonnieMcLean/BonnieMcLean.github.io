@@ -159,7 +159,7 @@ There's really only one place to eat in the town, but it happens to be a brewery
 
 ![](/assets/img/blog/trains/pubfood-1.jpg)
 
-I had the carrot hummus with seasonal vegetables (mostly more carrots and beetroots because nothing else was growing yet😅), with some really good local goats cheese and pulled goat meat! Johan was much luckier though, he got to have the beer tasting set with sticky ribs 😡 Guess I'll just have to come back again when I'm not pregnant.
+I had the carrot hummus with seasonal vegetables (mostly more carrots and beetroots because nothing else was growing yet😅), with some really good local goats cheese and pulled goat meat! Johan was much luckier though, he got to have the beer tasting set with sticky ribs 😡 Guess I'll just have to come back when I can drink again.
 
 ![](/assets/img/blog/trains/pubfood-2.jpg)
 
@@ -167,7 +167,7 @@ We came back a second night just for dessert, the sticky toffee pudding with dat
 
 The other place I'd recommend for lunch and fika is the Flåm Bakeri—very good pastries and take-away sandwiches!
 
-Then of course there are the famous fjord cruises which you should definitely do. We did the one that goes to Gudvangen on an electric boat. It's the best to really appreciate the sheer size of the cliffs in the fjords. 
+Then of course there are the famous fjord cruises. We did the one that goes to Gudvangen on an electric boat. It's the best way to really appreciate the sheer size of the cliffs in the fjords. 
 
 ![](/assets/img/blog/trains/fjord-cliff~2.JPG)
 
