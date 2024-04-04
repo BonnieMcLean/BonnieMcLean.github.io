@@ -36,4 +36,3 @@ So, here you have the pros and cons of pregnancy as of day 115:
 |No periods for nine months!|Mega period post partum. Google post-partum pads 😬|
 |You get *a baby!*|You have to look after *a baby*.|
 
-There are probably more things that I'm forgetting. I'll continue to update as needed until the vampire baby is finally out of me.
