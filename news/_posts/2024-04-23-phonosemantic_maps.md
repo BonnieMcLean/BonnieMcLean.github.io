@@ -16,7 +16,7 @@ You can find and cite the paper here:
 
 > Akita, K., McLean, B., Park, J., & Thompson, A.L. (2024). [Iconicity mediates semantic networks of sound symbolism](https://doi.org/10.1121/10.0025763). *The Journal of the Acoustical Society of America*, *155*, 2687–2697.
 
-The main research question was are iconic associations independent of one another, or linked? Say we find that the same sound is associated with two different meanings, Y and Z. The logical possibilities for explaining how that sounds came to be associated with both those meanings are shown in the figure below (Figure 1 from the paper). 
+The main research question was are iconic associations independent of one another, or linked? Say we find that the same sound is associated with two different meanings, Y and Z. The logical possibilities for explaining how that sound came to be associated with both those meanings are shown in the figure below (Figure 1 from the paper). 
 
 ![](https://aipp.silverchair-cdn.com/aipp/content_public/journal/jasa/155/4/10.1121_10.0025763/1/2687_1_10.0025763.figures.online.f1.jpeg)
 
