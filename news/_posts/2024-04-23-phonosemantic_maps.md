@@ -22,6 +22,7 @@ The main research question was are iconic associations independent of one anothe
 
 Either
  - The two meanings are instances of some broader meaning X that is associated with the sound (A)
- - One of the sound-meaning links is prior, while the other is the result of a metaphorical extension from the first meaning (B or C)
+ - One of the sound-meaning links is prior, while the other is the result of a metaphorical extension from the first meaning (B)
+- The two meanings are instances of some broader meaning X that is associated with the sound, and there is additionally a metaphorical link between them (C)
 - Both meanings are directly associated with the sound, but these two associations are independent (D)
 
