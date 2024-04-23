@@ -10,4 +10,4 @@ tags: [iconicity]
 excerpt_separator: <!--more-->
 ---
 
-This is part of a longstanding collaboration with Kimi Akita from Nagoya University. We started the phonosemantic maps with data from Japanese and English (see [here](https://drive.google.com/file/d/1NhMszLjBaVynXeFuwEa2xtCih-BUd1UP/view)), then we teamed up with Jiyeon Park and Arthur Lewis Thompson to add data from Korean and Mandarin Chinese respectively😄 It was a really fun collaborative project and it's great to see the results finally come to fruition! <!--more-->
+This paper is the culmination of a longstanding collaborative effort led by Kimi Akita from Nagoya University. We started the phonosemantic maps with data from Japanese and English (see [here](https://drive.google.com/file/d/1NhMszLjBaVynXeFuwEa2xtCih-BUd1UP/view)), then teamed up with Jiyeon Park and Arthur Lewis Thompson to add data from Korean and Mandarin Chinese respectively😄 It was a really fun collaborative project and it's great to see the results finally come to fruition! <!--more-->
