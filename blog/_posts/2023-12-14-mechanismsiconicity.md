@@ -33,7 +33,7 @@ The authors attributed this finding to the close relationship between our senses
 
 The diagram at the top of this post is inspired by Figure 1 in Jarkko's paper, and is supposed to illustrate the different mechanisms for iconicity in spoken language (Jarkko's diagram is for FinSL). With iconic words in spoken languages, and particularly ideophones, we have iconicity in:
 * The **auditory modality**; acoustic iconicity
-* The **visual modality**; from the articulatory gestures involved (e.g. consider the iconicity of bilabials in words like _bulbous_, _bumpy_ and _burst_, it's at least equally about the actions of the lips as it is the sound itself) + accompanying manual gestures (there is a very strong link between ideophones and manual gestures, e.g. Dingemanse 2013; Dingemanse & Akita 2017)
+* The **visual modality**; from the articulatory gestures involved (e.g. consider the iconicity of bilabials in words like _bulbous_, _bumpy_ and _burst_, it's at least equally about the actions of the lips as it is the sound itself) + accompanying manual gestures (there is a very strong link between ideophones and manual gestures, e.g. Kita 1997; Dingemanse 2013; Dingemanse & Akita 2017)
 * **Proprioception**; from the articulatory gestures involved, from the perspective of the producer. For example, one Japanese study showed that English speakers were better able to guess the meanings of Japanese ideophones when they pronounced the ideophones themselves as opposed to when they only heard them (Oda 2000).
 
 According to Emmorey et al. (2009), the proprioceptive iconicity would only be available to the producer of the sign, but I am wondering now whether that is really true, since we know that we have 'mirror neurons' that are activated both when performing an action ourselves, as well as when witnessing others performing the same action. Proprioceptive iconicity is probably stronger in production, but may not necessarily be absent from perception, especially when perceiving a sign from a language that you use (not sure how it would work with a foreign language). In any case, it's an interesting open question for future research.
@@ -50,10 +50,11 @@ That's the main thing I wanted to talk about from this paper, but I've also incl
 
 1. Emmorey, Karen, Rain Bosworth, and Tanya Kraljic. 2009. ‘Visual Feedback and Self-Monitoring of Sign Language’. Journal of Memory and Language 61(3): 398–411.
 2. Keränen, Jarkko. 2023. ‘Cross-Modal Iconicity and Indexicality in the Production of Lexical Sensory and Emotional Signs in Finnish Sign Language’. Cognitive Linguistics 34(3–4): 333–69.
-3. Perlman, Marcus, Hannah Little, Bill Thompson, and Robin L Thompson. 2018. ‘Iconicity in Signed and Spoken Vocabulary: A Comparison Between American Sign Language, British Sign Language, English, and Spanish’. Frontiers in psychology 9: 1433.
-4. Winter, Bodo, Marcus Perlman, Lynn K Perry, and Gary Lupyan. 2017. ‘Which Words Are Most Iconic?’ Interaction Studies 18(3): 443–64.
-5. Winter, Bodo. 2019. ‘Synaesthetic Metaphors Are Neither Synaesthetic nor Metaphorical’. In Perception Metaphors, eds. Laura J. Speed, Carolyn O’Meara, Lila San Roque, and Asifa Majid. Amsterdam & Philadelphia: John Benjamins Publishing Company, 105–26.
-6. Sonesson, Göran. 1996. ‘Indexicality as Perceptual Mediation’. In Christiane Pankow (ed.), Indexicality. Papers from the Third Biannual Meeting of the Swedish Society for Semiotic Studies , 127–143. Gothenburg University SSKKII Report 9604.
-7. Sonesson, Göran. 2014. The cognitive semiotics of the picture sign. In David Machin (ed.). Visual communication,23–50. Berlin, Boston: Walter de Gruyter.
+3. Kita, Sotaro. 1997. 'Two-dimensional semantic analysis of Japanese mimetics'. Linguistics, vol. 35, no. 2, pp. 379-416.
+4. Perlman, Marcus, Hannah Little, Bill Thompson, and Robin L Thompson. 2018. ‘Iconicity in Signed and Spoken Vocabulary: A Comparison Between American Sign Language, British Sign Language, English, and Spanish’. Frontiers in psychology 9: 1433.
+5. Winter, Bodo, Marcus Perlman, Lynn K Perry, and Gary Lupyan. 2017. ‘Which Words Are Most Iconic?’ Interaction Studies 18(3): 443–64.
+6. Winter, Bodo. 2019. ‘Synaesthetic Metaphors Are Neither Synaesthetic nor Metaphorical’. In Perception Metaphors, eds. Laura J. Speed, Carolyn O’Meara, Lila San Roque, and Asifa Majid. Amsterdam & Philadelphia: John Benjamins Publishing Company, 105–26.
+7. Sonesson, Göran. 1996. ‘Indexicality as Perceptual Mediation’. In Christiane Pankow (ed.), Indexicality. Papers from the Third Biannual Meeting of the Swedish Society for Semiotic Studies , 127–143. Gothenburg University SSKKII Report 9604.
+8. Sonesson, Göran. 2014. The cognitive semiotics of the picture sign. In David Machin (ed.). Visual communication,23–50. Berlin, Boston: Walter de Gruyter.
 
 
