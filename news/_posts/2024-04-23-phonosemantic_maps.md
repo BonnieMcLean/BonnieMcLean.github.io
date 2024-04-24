@@ -26,5 +26,5 @@ Either
 - The two meanings are instances of some broader meaning X that is associated with the sound, and there is additionally a metaphorical link between them (C)
 - Both meanings are directly associated with the sound, but these two associations are independent (D)
 
-To investigate this, we explored Japanese, English, Korean and Mandarin Chinese speakers associations with different sounds, along three semantic scales: size, brightness, and hardness. We found the same sounds associated with meanings spanning multiple of these scales, but the combinations of meanings that we found did not match any known metaphorical relations. That is, the patterns we found were more likely to be explained by situations of the type A and D rather than B or C.
+To investigate this, we explored Japanese, English, Korean and Mandarin Chinese speakers associations with different sounds, along three semantic scales: size, brightness, and hardness. We found the same sounds associated with meanings spanning multiple of these scales, but the combinations of meanings that we found did not match any known metaphorical or metonymic relations (nor any reported colexifications). That is, the patterns we found were more likely to be explained by situations of the type A and D rather than B or C.
 
