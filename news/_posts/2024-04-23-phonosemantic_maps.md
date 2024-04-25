@@ -28,5 +28,5 @@ Either
 
 To investigate this, we explored Japanese, English, Korean and Mandarin Chinese speakers associations with different sounds, along three semantic scales: size, brightness, and hardness. We found the same sounds associated with meanings spanning multiple of these scales, but the combinations of meanings that we found did not match any known metaphorical or metonymic relations (nor any reported colexifications). That is, the patterns we found were more likely to be explained by situations of the type A and D rather than B or C. This is cool because it means that (at least some of) the semantic networks that we find in iconic lexicons are likely unique to those lexicons. It also highlights how iconicity is pluripotential. 
 
-
+i
  raising questions about how such networks might interact with semantic relations in the general lexicon. For instance, whether they might interfere with or "block" certain patterns of semantic extension, as has been reported for sign languages (Meir, 2020).
