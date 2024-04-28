@@ -6,7 +6,7 @@ description: >
     Our new paper on phonosemantic maps for exploring iconic associations is out in the JASA special issue on Iconicity and Sound Symbolism 🎉  
 sitemap: false
 hide_last_modified: true
-tags: [iconicity]
+tags: [papers, iconicity]
 excerpt_separator: <!--more-->
 ---
 
