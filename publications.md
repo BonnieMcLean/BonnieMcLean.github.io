@@ -9,7 +9,7 @@
 
 ## Book chapters
 
-1. McLean, B., & Dingemanse, M. (in press). [A multi-methods toolkit for documentary research on ideophones](https://doi.org/10.31219/osf.io/3n85v](https://doi.org/10.31219/osf.io/3n85v).  In Williams, J.P. (Ed), *Capturing Expressivity*. Oxford University Press. Preprint at [https://doi.org/10.31219/osf.io/3n85v](https://doi.org/10.31219/osf.io/3n85v). 
+1. McLean, B., & Dingemanse, M. (in press). [A multi-methods toolkit for documentary research on ideophones](https://doi.org/10.31219/osf.io/3n85v).  In Williams, J.P. (Ed), *Capturing Expressivity*. Oxford University Press. Preprint at [https://doi.org/10.31219/osf.io/3n85v](https://doi.org/10.31219/osf.io/3n85v). 
 2.  Akita, K., & McLean, B. (2021). [Onsyootyoo-tikaku-no niti/ei-taisyoo: Imi-tizu-ni yoru kentoo](https://drive.google.com/file/d/1NhMszLjBaVynXeFuwEa2xtCih-BUd1UP/view) [A contrastive study of Japanese and English speakers’ sound-symbolic perception: A semantic-map approach]. In K. Shinohara & R. Uno (Eds.), *Zikken-ninti-gengogaku [Progress in experimental cognitive linguistics]* (pp. 165–189). Hitsuji Shobo.
 
 ## Popular science articles
