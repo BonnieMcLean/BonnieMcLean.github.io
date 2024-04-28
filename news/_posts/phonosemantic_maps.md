@@ -28,8 +28,9 @@ Either
 
 To investigate this, we explored Japanese, English, Korean and Mandarin Chinese speakers associations with different sounds, along three semantic scales: size, brightness, and hardness. We found the same sounds associated with meanings spanning multiple of these scales, but the combinations of meanings that we found did not match any known metaphorical or metonymic relations (nor any reported colexifications). That is, the patterns we found were more likely to be explained by situations of the type A and D rather than B or C. This is cool because it means that (at least some of) the semantic networks that we find in iconic lexicons are likely unique to those lexicons, as well as highlighting how iconicity is pluripotential. 
 
+We also introduce a novel transformation of Haspelmath's semantic maps, a tool used in typological research on patterns of grammaticalistion, into *phonosemantic maps* for typological explorations of patterns of sound symbolism. 
 
-
+In a typical semantic map, the base of the map is the cognitive space, and it is onto this cognitive space that the functions of different grammatical morphemes are mapped. In our phonosemantic maps, on the other hand, the base of the map is instead the phonological (or phonetic) space, and it is onto this phonological space that phonosemantic associations are mapped. Whereas in a typical semantic map, the assumption is that semantic extension occurs primarily through conceptual links, in our phonosemantic maps, we assume that semantic extension occurs primarily via links mediated by iconicity.
 
 
  
