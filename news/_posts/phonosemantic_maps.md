@@ -38,7 +38,7 @@ The phonosemantic maps we made for the concepts of SIZE, BRIGHTNESS, and HARDNES
  
 As shown in the map, some associations were widely shared between the languages (e.g. the association between /i/ and small, and the association between /u/ and dark), while others were language specific (e.g. only Japanese speakers formed specific associations with voiceless consonants). 
 
-The most interesting cases are the patterns of multiple associations, especially when we see these same patterns recur across languages. For example, in all four languages we found an association between /u/ and dark, while in three languages there was additionally an association between /u/ and soft.
+The most interesting cases are the patterns of multiple associations, especially when we see these same patterns recur across languages. For example, in all four languages we found an association between /u/ and dark, while in three languages there was *additionally* an association between /u/ and soft.
 
 
 
