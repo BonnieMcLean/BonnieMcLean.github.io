@@ -7,7 +7,7 @@ description: >
 sitemap: false
 hide_last_modified: true
 excerpt_separator: <!--more-->
-tags: [life, home]
+tags: [life, home_design]
 ---
 
 Very soon there will be three of us in our small, Uppsala apartment. Now that we have everything ready for our new arrival, I'm amazed by how much you can really do with just 50sqm and two rooms (one bedroom, one living)! Although I know we won't be able to stay here forever, for the next few months I'm really looking forward to bunkering down and living small! 
