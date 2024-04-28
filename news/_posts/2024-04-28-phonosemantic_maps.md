@@ -38,7 +38,7 @@ The phonosemantic maps we made for the concepts of SIZE, BRIGHTNESS, and HARDNES
  
 As shown in the map, some associations were widely shared between the languages (e.g. the association between /i/ and small, and the association between /u/ and dark), while others were language specific (e.g. only Japanese speakers formed specific associations with voiceless consonants). 
 
-The most interesting cases are the patterns of multiple associations, especially when we see these same patterns recur across languages. For example, in all four languages we found an association between /u/ and dark, while in three of the languages there was *additionally* an association between /u/ and soft. Neither of these specific associations have been reported on in the literature before. However, the association between /u/ and darkness could be mediated by a more general crossmodal correspondence between pitch and brightness, in which lower frequency sounds are perceived as darker than high frequency sounds (Marks, 1975; Moos et al., 2014; Kim et al., 2018; Cuskley et al., 2019; Anikin and Johansson, 2019; Johansson et al. 2020a). The /u/-darkness association could be one instance of this more general cross-modal correspondence; a situation as in pattern A in the first figure[^1]. 
+The most interesting cases are the patterns of multiple associations, especially when we see these same patterns recur across languages. For example, in both English and Korean we found an association between /u/ and dark, while in English, Mandarin, and Japanese there was an association between /u/ and soft. Neither of these specific associations have been reported on in the literature before. However, the association between /u/ and darkness could be mediated by a more general crossmodal correspondence between pitch and brightness, in which lower frequency sounds are perceived as darker than high frequency sounds (Marks, 1975; Moos et al., 2014; Kim et al., 2018; Cuskley et al., 2019; Anikin and Johansson, 2019; Johansson et al. 2020a). The /u/-darkness association could be one instance of this more general cross-modal correspondence; a situation as in pattern A in the first figure[^1]. 
 
 The association between /u/ and softness has again not been directly reported before. However, Johansson et al. (2020b) suggest a general link between rounded sounds and softness, which could explain a collection of specific connections that they find between /u/ and the concepts BRAIN, BUTTOCKS, and ROTTEN (all soft things). Our data would support this analysis. As for the motivation behind this association, it's hard to say since iconicity is inherently subjective, but we suggest that the the softness of the lips in rounded vowels could match a soft object, or that the rounded shape of the lips evokes a dull, rather than sharp, image that matches a soft surface (see, e.g., Köhler, 1929).
 
@@ -61,6 +61,8 @@ Johansson, N., Anikin, A., and Aseyev, N. (2020a). “Color sound symbolism in n
 Johansson, N. E., Anikin, A., Carling, G., and Holmer, A. (2020b). “The typology of sound symbolism: Defining macro-concepts via their semantic and phonetic features,” Linguist. Typol. 24, 253–310.
 
 Kim, H. W., Nam, H., & Kim, C. Y. (2018). "[i] is lighter and more greenish than [o]: Intrinsic association between vowel sounds and colors." Multisensory Research, 31(5), 419-437.
+
+Köhler, W. (1929). Gestalt Psychology (Horace Liveright, New York).
 
 Marks, L. E. (1975). “On colored-hearing synesthesia: Cross-modal translations of sensory dimensions,” Psychol. Bull. 82, 303–331.
 
