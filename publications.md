@@ -20,7 +20,7 @@
 
 1. McLean, B. (2022, August 22). What’s in a name? On the persistence of motivated form-meaning
 mappings in lexicons. ✨Invited plenary at _Societas Linguistica Europaea 55_, Bucharest, Romania.   
-2.  McLean, B. (2019, May 3 – 5). The diachronic stability of Japanese ideophones and the iconicity-systematicity relationship. Paper presented at the [*12th International Symposium on Iconicity in Language and Literature*](https://konferens.ht.lu.se/fileadmin/user_upload/conference/ill-12/McLean_IIL-12.pdf), Lund, Sweden.
+2.  McLean, B. (2019, May 3 – 5). [The diachronic stability of Japanese ideophones and the iconicity-systematicity relationship](https://konferens.ht.lu.se/fileadmin/user_upload/conference/ill-12/McLean_IIL-12.pdf). Paper presented at the *12th International Symposium on Iconicity in Language and Literature*, Lund, Sweden.
 
 ## Theses  
 1. McLean, B. (2019). [*One form, many meanings: Iconicity in phonological and semantic development*](https://doi.org/10.25911/5dd659ead7a5e). Honours thesis, Australian National University
@@ -31,7 +31,7 @@ mappings in lexicons. ✨Invited plenary at _Societas Linguistica Europaea 55_, 
 ## Datasets
 
 1. McLean, B. (2019). [*A Multimedia Encyclopedia of Mundari Expressives*](https://web.archive.org/web/20201020072116/https://sites.google.com/site/mundaexpressives/)
-2. McLean, B. (2018). Mundari Ideophones. [*PARADISEC (Pacific and Regional Archive for Digital Sources in Endangered Cultures)*](https://catalog.paradisec.org.au/collections/BMM1)
+2. McLean, B. (2018). [Mundari Ideophones.](https://catalog.paradisec.org.au/collections/BMM1) *PARADISEC (Pacific and Regional Archive for Digital Sources in Endangered Cultures)*
 
 ## Teaching Materials
 
