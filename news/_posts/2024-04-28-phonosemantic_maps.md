@@ -36,7 +36,7 @@ The phonosemantic maps we made for the concepts of SIZE, BRIGHTNESS, and HARDNES
 
 ![](/assets/img/iconicity/phonosemantic_map.png)
  
-As shown in the map, some associations were widely shared between the languages (e.g. the association between /i/ and small, and the association between /u/ and dark), while others were language specific (e.g. only Japanese speakers formed specific associations with voiceless consonants). 
+As shown in the map, some associations were widely shared between the languages (e.g. the association between /i/ and small), while others were language specific (e.g. only Japanese speakers formed specific associations with voiceless consonants). 
 
 The most interesting cases are the patterns of multiple associations, especially when we see these same patterns recur across languages. For example, in both English and Korean we found an association between /u/ and dark, while in English, Mandarin, and Japanese there was an association between /u/ and soft. Neither of these specific associations have been reported on in the literature before. However, the association between /u/ and darkness could be mediated by a more general crossmodal correspondence between pitch and brightness, in which lower frequency sounds are perceived as darker than high frequency sounds (Marks, 1975; Moos et al., 2014; Kim et al., 2018; Cuskley et al., 2019; Anikin and Johansson, 2019; Johansson et al. 2020a). The /u/-darkness association could be one instance of this more general cross-modal correspondence; a situation as in pattern A in the first figure[^1]. 
 
