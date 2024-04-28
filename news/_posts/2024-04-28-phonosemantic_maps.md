@@ -46,7 +46,7 @@ The crucial thing is that softness and darkness would probably never be linked a
 
 Of course, we only looked at three semantic scales and a handful of phonological contrasts. However, we hope this study will serve as a useful framework for future investigations of iconicity, in particular to unite and compare findings across different studies so that we can better identify, for example, higher-order factors mediating specific iconic associations (Sidhu and Pexman, 2018; Sidhu et al., 2022), and to study how semantic networks in the iconic lexicon differ from those we know from the general lexicon. 
 
-[^1]The association  between /u/ and DEEP reported in Johansson et al. (2020b) could be another instance of this more general cross-modal association.  
+[^1]: The association  between /u/ and DEEP reported in Johansson et al. (2020b) could be another instance of this more general cross-modal association.  
 
 ## References
 
