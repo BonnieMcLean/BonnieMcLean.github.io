@@ -32,11 +32,18 @@ We also introduce a novel transformation of Haspelmath's semantic maps, a tool u
 
 In a typical semantic map, the base of the map is the cognitive space, and it is onto this cognitive space that the functions of different grammatical morphemes are mapped. In our phonosemantic maps, on the other hand, the base of the map is instead the phonological (or phonetic) space, and it is onto this phonological space that phonosemantic associations are mapped. Whereas in a typical semantic map the assumption is that semantic extension occurs primarily through conceptual links, in our phonosemantic maps we assume that semantic extension occurs primarily via links mediated by iconicity.
 
-The phonosemantic maps we made for the concepts of LARGENESS, BRIGHTNESS, and HARDNESS in Japanese, English, Mandarin Chinese, and Korean are shown below:
+The phonosemantic maps we made for the concepts of SIZE, BRIGHTNESS, and HARDNESS in Japanese, English, Mandarin Chinese, and Korean are shown below:
 
 ![](/assets/img/iconicity/phonosemantic_map.png)
  
+As shown in the map, some associations were widely shared between the languages (e.g. the association between /i/ and small, and the association between /u/ and dark), while others were language specific (e.g. only Japanese speakers formed specific associations with voiceless consonants). 
 
+The most interesting cases are the patterns of multiple associations, especially when we see these same patterns recur across languages. For example, in all four languages we found an association between /u/ and dark, while in three languages there was additionally an association between /u/ and soft.
+
+
+
+
+was found in all four languages), and some were language specific ()
 
 
  raising questions about how such networks might interact with semantic relations in the general lexicon. For instance, whether they might interfere with or "block" certain patterns of semantic extension, as has been reported for sign languages (Meir, 2020).
