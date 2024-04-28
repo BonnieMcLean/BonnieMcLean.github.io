@@ -64,4 +64,4 @@ talk about the label machine, your super impressive filing system in the cupboar
 
 Since now I am really showing off I feel obliged to mention that, having said all of this, we still cheat by having the summer house plus our offices at uni where we can store all the extra books that we accumulate through our work/nerdiness, and that enables my addiction to antique shopping. There's no way I could fit all of the cute plates and things I can't resist at secondhand places in just our Uppsala apartment; the bulk of them end up at the summer house!
 
-Not saying that I don't think it would be *doable* to manage with just 50 square meters, you just couldn't be as addicted to shopping as I am!😆
+Not saying that I don't think it would be *doable* to manage with just 50 square meters, you just couldn't be as addicted to vintage shopping as I am!😆
