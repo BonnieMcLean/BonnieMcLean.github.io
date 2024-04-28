@@ -9,7 +9,7 @@
 
 ## Book chapters
 
-1. McLean, B., & Dingemanse, M. (in press). A multi-methods toolkit for documentary research on ideophones.  In Williams, J.P. (Ed), *Capturing Expressivity*. Oxford University Press. Preprint at [https://doi.org/10.31219/osf.io/3n85v](https://doi.org/10.31219/osf.io/3n85v). 
+1. McLean, B., & Dingemanse, M. (in press). [A multi-methods toolkit for documentary research on ideophones](https://doi.org/10.31219/osf.io/3n85v](https://doi.org/10.31219/osf.io/3n85v).  In Williams, J.P. (Ed), *Capturing Expressivity*. Oxford University Press. Preprint at [https://doi.org/10.31219/osf.io/3n85v](https://doi.org/10.31219/osf.io/3n85v). 
 2.  Akita, K., & McLean, B. (2021). [Onsyootyoo-tikaku-no niti/ei-taisyoo: Imi-tizu-ni yoru kentoo](https://drive.google.com/file/d/1NhMszLjBaVynXeFuwEa2xtCih-BUd1UP/view) [A contrastive study of Japanese and English speakers’ sound-symbolic perception: A semantic-map approach]. In K. Shinohara & R. Uno (Eds.), *Zikken-ninti-gengogaku [Progress in experimental cognitive linguistics]* (pp. 165–189). Hitsuji Shobo.
 
 ## Popular science articles
@@ -23,7 +23,7 @@ mappings in lexicons. ✨Invited plenary at _Societas Linguistica Europaea 55_, 
 2.  McLean, B. (2019, May 3 – 5). The diachronic stability of Japanese ideophones and the iconicity-systematicity relationship. Paper presented at the [*12th International Symposium on Iconicity in Language and Literature*](https://konferens.ht.lu.se/fileadmin/user_upload/conference/ill-12/McLean_IIL-12.pdf), Lund, Sweden.
 
 ## Theses  
-1. McLean, B. (2019). *One form, many meanings: Iconicity in phonological and semantic development*. [Honours thesis, Australian National University](https://doi.org/10.25911/5dd659ead7a5e)
+1. McLean, B. (2019). [*One form, many meanings: Iconicity in phonological and semantic development*](https://doi.org/10.25911/5dd659ead7a5e). Honours thesis, Australian National University
 
 ## Packages  
 1. McLean, B. `Icotools`. *Python Package Index*. Available at: [https://pypi.org/project/icotools/](https://pypi.org/project/icotools/)
