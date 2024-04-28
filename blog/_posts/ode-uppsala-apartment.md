@@ -18,7 +18,7 @@ In Sweden, the cost of your home insurance is dependent on the size of the place
 
 Some of the space-saving things that have saved us are:
 
-**1. We don't have a dining table.**
+**1. Not having a dining table.**
 
 Instead, we got a massive kitchen island that doubles as a space for eating and food prep, as well as functioning as a desk for working at home. We designed it ourselves so it's really optimised to our specific needs. Of course, first thing on the list (and my favourite feature) was a spot to store all our alcohol for cocktails! Not that I'm getting much use out of it at the moment😢
 
