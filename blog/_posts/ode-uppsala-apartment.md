@@ -56,7 +56,7 @@ a couple of people have asked why we're still hanging on to our uppsala apartmen
 
 and I am still a city girl at heart, I really enjoy a bit of civilisation as well every once in a while, and try to make the most of the city when we are in Uppsala, also with day trips to Stockholm
 
-**7. An insane level of organisation**
+**7. Turntables!**
 
 talk about the label machine, your super impressive filing system in the cupboard under the tv
 
