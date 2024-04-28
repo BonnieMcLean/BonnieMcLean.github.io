@@ -26,7 +26,14 @@ Either
 - (C) in the figure above is a combination of situations (A) and (B). So it could be that there is some higher level semantic feature that connects both meanings to the sound, but also a metaphorical link between the two meanings
 - Or, as in (D), the two sound-meaning associations could also be independent. This is possible because iconicity is in general selective. That is, it is only certain *aspects* of sound and certain *aspects* of meaning that get mapped, so multiple associations can exist independently and concurrently. We refer to this in the paper as the "pluripotentiality* of iconicity (see paper for further discussion and references).
 
-To investigate this, we explored Japanese, English, Korean and Mandarin Chinese speakers associations with different sounds, along three semantic scales: size, brightness, and hardness. We found the same sounds associated with meanings spanning multiple of these scales, but the combinations of meanings that we found did not match any known metaphorical or metonymic relations (nor any reported colexifications). That is, the patterns we found were more likely to be explained by situations of the type A and D rather than B or C. This is cool because it means that (at least some of) the semantic networks that we find in iconic lexicons are likely unique to those lexicons. It also highlights how iconicity is pluripotential. 
+To investigate this, we explored Japanese, English, Korean and Mandarin Chinese speakers associations with different sounds, along three semantic scales: size, brightness, and hardness. We found the same sounds associated with meanings spanning multiple of these scales, but the combinations of meanings that we found did not match any known metaphorical or metonymic relations (nor any reported colexifications). That is, the patterns we found were more likely to be explained by situations of the type A and D rather than B or C. This is cool because it means that (at least some of) the semantic networks that we find in iconic lexicons are likely unique to those lexicons, as well as highlighting how iconicity is pluripotential. 
 
-i
+
+
+
+
+ 
+
+
+
  raising questions about how such networks might interact with semantic relations in the general lexicon. For instance, whether they might interfere with or "block" certain patterns of semantic extension, as has been reported for sign languages (Meir, 2020).
