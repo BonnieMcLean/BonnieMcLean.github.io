@@ -60,6 +60,8 @@ Johansson, N., Anikin, A., and Aseyev, N. (2020a). “Color sound symbolism in n
 
 Johansson, N. E., Anikin, A., Carling, G., and Holmer, A. (2020b). “The typology of sound symbolism: Defining macro-concepts via their semantic and phonetic features,” Linguist. Typol. 24, 253–310.
 
+Kim, H. W., Nam, H., & Kim, C. Y. (2018). "[i] is lighter and more greenish than [o]: Intrinsic association between vowel sounds and colors." Multisensory Research, 31(5), 419-437.
+
 Marks, L. E. (1975). “On colored-hearing synesthesia: Cross-modal translations of sensory dimensions,” Psychol. Bull. 82, 303–331.
 
 Meir, I. (2010). “Iconicity and metaphor: Constraints on metaphorical extension of iconic forms,” Language 86, 865–896.
