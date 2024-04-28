@@ -44,13 +44,13 @@ The association between /u/ and softness has again not been directly reported be
 
 The crucial thing is that softness and darkness would probably never be linked as concepts if it weren't for the mediating factor of iconicity. In fact, in the general lexicon softness is more likely to be associated with brightness rather than darkness, presumably through the positive valence they have in common (for examples, see p.2695 of the paper). An interesting question for future research is thus whether and how semantic networks in the iconic lexicon interact with those of the general lexicon. For example, whether they might interfere with or "block" certain patterns of semantic extension, as has been reported for sign languages (Meir, 2020).
 
-Of course, we only looked at three semantic scales and a handful of phonological contrasts. However, we hope this study will serve as a useful framework for future investigations of iconicity, in particular to unite and compare findings across different studies so that we can better identify, for example, higher-order factors mediating specific iconic associations (Sidhu et al. 2022), and to study how semantic networks in the iconic lexicon differ from those we know from the general lexicon. 
+Of course, we only looked at three semantic scales and a handful of phonological contrasts. However, we hope this study will serve as a useful framework for future investigations of iconicity, in particular to unite and compare findings across different studies so that we can better identify, for example, higher-order factors mediating specific iconic associations (Sidhu and Pexman, 2018; Sidhu et al., 2022), and to study how semantic networks in the iconic lexicon differ from those we know from the general lexicon. 
 
 [^1]The association  between /u/ and DEEP reported in Johansson et al. (2020b) could be another instance of this more general cross-modal association.  
 
 ## References
 
-Haspelmath,M.(2003). “The geometry of grammatical meaning: Semantic maps and cross-linguistic comparison,” in The New Psychology of Language, edited by M. Tomasello (Erlbaum, Mahwah), Vol. 2, pp. 211–242.
+Haspelmath, M.(2003). “The geometry of grammatical meaning: Semantic maps and cross-linguistic comparison,” in The New Psychology of Language, edited by M. Tomasello (Erlbaum, Mahwah), Vol. 2, pp. 211–242.
 
 Johansson, N., Anikin, A., and Aseyev, N. (2020a). “Color sound symbolism in natural languages,” Lang. Cogn. 12, 56–83.
 
@@ -59,6 +59,8 @@ Johansson, N. E., Anikin, A., Carling, G., and Holmer, A. (2020b). “The typolo
 Marks, L. E. (1975). “On colored-hearing synesthesia: Cross-modal translations of sensory dimensions,” Psychol. Bull. 82, 303–331.
 
 Meir, I. (2010). “Iconicity and metaphor: Constraints on metaphorical extension of iconic forms,” Language 86, 865–896.
+
+Sidhu, D. M., and Pexman, P.M. (2018) "Five mechanisms of sound symbolic association." Psychonomic bulletin & review 25, 1619-1643.
 
 Sidhu, D. M., Vigliocco, G., and Pexman, P. M. (2022). “Higher order factors of sound symbolism,” J. Mem. Lang. 125, 104323.
 
