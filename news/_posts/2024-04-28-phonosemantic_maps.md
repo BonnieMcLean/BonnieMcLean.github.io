@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ✨New paper - phonosemantic maps for exploring iconic associations
+title: ✨New paper - Phonosemantic maps for exploring iconic associations
 image: /assets/img/iconicity/phonosemantic_map~2.png
 description: > 
     Our new paper on phonosemantic maps for exploring iconic associations is out in the JASA special issue on Iconicity and Sound Symbolism 🎉  
