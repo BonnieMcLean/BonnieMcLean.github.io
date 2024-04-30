@@ -30,7 +30,7 @@ To investigate this, we explored Japanese, English, Korean and Mandarin Chinese 
 
 We also introduce a novel transformation of Haspelmath's semantic maps—a tool used in typological research on patterns of grammaticalistion, see e.g., Haspelmath (2008)—into *phonosemantic maps* for typological explorations of patterns of sound symbolism. 
 
-In a typical semantic map, the base of the map is the cognitive space, and it is onto this cognitive space that the functions of different grammatical morphemes are mapped. In our phonosemantic maps, on the other hand, the base of the map is instead the phonological (or phonetic) space, and it is onto this phonological space that phonosemantic associations are mapped. Whereas in a typical semantic map the assumption is that semantic extension occurs primarily through conceptual links, in our phonosemantic maps we assume that semantic extension occurs primarily via links mediated by iconicity.
+In a typical semantic map, the base of the map is the cognitive space, and it is onto this cognitive space that the functions of different grammatical morphemes are mapped. In our phonosemantic maps, on the other hand, the base of the map is instead the phonological (or phonetic) space, and it is onto this phonological space that phonosemantic associations are mapped. Whereas in a typical semantic map the assumption is that semantic extension occurs primarily through conceptual links, for phonosemantic maps we assume that semantic extension occurs primarily via links mediated by iconicity.
 
 The phonosemantic maps we made for the concepts of SIZE, BRIGHTNESS, and HARDNESS in Japanese, English, Mandarin Chinese, and Korean are shown below:
 
