@@ -1,3 +1,15 @@
+---
+layout: post
+title: New Year, Same Me!
+image: /assets/img/blog/PXL_20250104_201106083.NIGHT~2.jpg
+description: >
+  2024 was wonderful as it was the year I became a mum, but in 2025 I'm looking forward to getting some of the old me back!
+sitemap: false
+hide_last_modified: true
+excerpt_separator: <!--more-->
+tags: [life, feminism, cooking, gardening, research]
+---
+
 2024 was both a big and a small year. Big because we had our first baby, a little boy called Duncan, and small because I don't really know what happened after that. He was born in July, and the three months after he arrived are still a complete blur. I kept Duncan alive, my husband kept me alive, and that was about it. It was a time of great wonder and joy, but also great boredom. 
 
 Before Duncan came, in February, we became the proud new owners of a cute little yellow house in the country two hours north of Uppsala, where we spent Duncan's first Christmas and where I'm now writing this blog post. We just managed to get it furnished in time to host my husband's family at Easter, and mine at Christmas. But there's still a lot to do and a lot of my goals for the New Year relate to the house.
