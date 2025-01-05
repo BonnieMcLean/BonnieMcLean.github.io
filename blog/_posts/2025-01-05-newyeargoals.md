@@ -10,7 +10,8 @@ excerpt_separator: <!--more-->
 tags: [life, feminism, cooking, gardening, research]
 ---
 
-2024 was both a big and a small year. Big because we had our first baby, a little boy called Duncan, and small because I don't really know what happened after that. <!--more--> He was born in July, and the three months after he arrived are still a complete blur. I kept Duncan alive, my husband kept me alive, and that was about it. It was a time of great wonder and joy, but also great boredom. 
+<!--more-->
+2024 was both a big and a small year. Big because we had our first baby, a little boy called Duncan, and small because I don't really know what happened after that. He was born in July, and the three months after he arrived are still a complete blur. I kept Duncan alive, my husband kept me alive, and that was about it. It was a time of great wonder and joy, but also great boredom. 
 
 ![](assets/img/blog/PXL_20241007_103506419~2.jpg)*The year two became three*
 
