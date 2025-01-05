@@ -27,7 +27,7 @@ Speaking of which, I've just canned our first batch of chicken stock for the new
 
 - Get back into cooking and particularly canning food. Some of the things I'd like to can this year are stocks, beans, soups, stews, cordials, pie and crumble fillings, fruit juice, and tomato passata. Not too ambitious then 🤣 We'll see how much I actually get time for! Although the whole idea of the canning is that it should save us time in the long run by taking some of the work out of cooking.
 
-![]()
+![](/assets/img/blog/PXL_20250105_153949741.jpg)
 *First full canner of the year.*
 
 - Make improvements to our house. An absolute must is that we need to repaint it, and maybe replace some of the wood at the front. I'd be really happy if, in addition to repainting it, we could do up at least one room. And I'm going to aim for Duncan's bedroom, because it's the smallest, and because my greatest dream is that one day he'll at least nap there instead of on me, but for that he's going to need a bed and it's pretty sad in there at the moment so I want to make it nice for him as well first. Any other rooms we manage to do by the end of the year will be bonuses.
