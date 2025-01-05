@@ -7,7 +7,7 @@ description: >
 sitemap: false
 hide_last_modified: true
 excerpt_separator: <!--more-->
-tags: [life, feminism, cooking, gardening, research]
+tags: [life, feminism, cooking, gardening]
 ---
 
 <!--more-->
