@@ -33,8 +33,8 @@ Speaking of which, I've just canned our first batch of chicken stock for the new
 - Make improvements to our house. An absolute must is that we need to repaint it, and maybe replace some of the wood at the front. I'd be really happy if, in addition to repainting it, we could do up at least one room. And I'm going to aim for Duncan's bedroom, because it's the smallest, and because my greatest dream is that one day he'll at least nap there instead of on me, but for that he's going to need a bed and it's pretty sad in there at the moment so I want to make it nice for him as well first. Any other rooms we manage to do by the end of the year will be bonuses.
 - Get back into gardening. I bought a bunch of stuff to make an indoor flood and drain hydroponics system then ran out of time to actually build it before Duncan came, but it would be great to at least start growing our own herbs again. And perhaps to make one small vegetable patch outside using the No Dig method of Charles Dowding's, whose book I bought last year.
 
-![]()
-*My neglected DIY hydroponics.*
+![](/assets/img/blog/PXL_20250105_180035175.jpg)
+*Poor, neglected, DIY hydroponics.*
  
 - Get back into research. My PhD has been on hold for most of this year, but lately I've been really itching to get back into it, Duncan willing. I did manage to get through the proofs for a book chapter and to keep up with one collaboration over the Christmas holidays, so I'm cautiously optimistic that I can do a bit more research next year, though my husband thinks actually finishing the thesis by the end of the year is a bit much to ask, given we also have to take Duncan to Australia for his first birthday, visiting Malaysia and Japan on the way there and back. We'll see what happens. Suffice to say I'll be very grateful for any research projects completed this year, however many that ends up being.
 
