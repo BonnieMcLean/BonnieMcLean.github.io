@@ -14,7 +14,7 @@ tags: [life, feminism, cooking, gardening, research]
 2024 was both a big and a small year. Big because we had our baby boy, Duncan, and small because I don't really know what happened after that. He was born in July, and the three months after he arrived are still a complete blur. I kept Duncan alive, my husband kept me alive, and that was about it. It was a time of great wonder and joy, but also great boredom. 
 
 ![](/assets/img/blog/PXL_20241007_103506419~2.jpg)
-*The year two became three*
+*The year two became three.*
 
 Before Duncan came, in February, we became the proud new owners of a cute little yellow house in the country two hours north of Uppsala, where we spent Duncan's first Christmas and where I'm now writing this blog post. We just managed to get it furnished in time to host my husband's family at Easter, and mine at Christmas. But there's still a lot to do and a lot of my goals for the New Year relate to the house.
 
