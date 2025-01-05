@@ -1,0 +1,1 @@
+2024 was both a big and a small year
