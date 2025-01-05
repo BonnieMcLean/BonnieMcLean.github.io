@@ -18,6 +18,9 @@ tags: [life, feminism, cooking, gardening, research]
 
 Before Duncan came, in February, we became the proud new owners of a cute little yellow house in the country two hours north of Uppsala, where we spent Duncan's first Christmas and where I'm now writing this blog post. We just managed to get it furnished in time to host my husband's family at Easter, and mine at Christmas. But there's still a lot to do and a lot of my goals for the New Year relate to the house.
 
+![](/assets/img/blog/PXL_20241007_103506419~2.jpg)
+*Our house in spring; see the top photo for winter.*
+
 Duncan spent the first few months of his life at our small apartment in Uppsala, which we are still renting, dividing our time between Uppsala and Bergvik, where the new house is. We're calling it a holiday home, although we aim to spend most of the winter here as nothing much happens in Uppsala during the winter anyway and it's cosy up here, with more indoor space and lots of home projects to work on.
 
 Speaking of which, I've just canned our first batch of chicken stock for the new year and it's inspired me to jot down a few goals for 2025, of things in my life I'd like to make space for again, if possible. Most of 2024 was consumed by the baby, which I don't resent at all, but I'm excited to see him grow a little more independent each day and to regain some of the independence I lost in becoming a mum. So, with that in mind, below are some of my goals for 2025 (in no particular order):
